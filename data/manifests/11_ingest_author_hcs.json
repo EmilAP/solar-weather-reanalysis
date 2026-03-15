@@ -1,0 +1,26 @@
+{
+  "assumptions": [
+    "Parsed irregular spacing and optional header lines by tokenizing numeric rows."
+  ],
+  "generated_at": "2026-03-14T15:59:54.334181+00:00",
+  "inputs": [
+    "data/raw/hcs/SBCtorlist1963-2024.txt"
+  ],
+  "metrics": {
+    "count_1963_2023": 1794,
+    "count_1963_2024": 1825,
+    "duplicate_rows": 4,
+    "malformed_rows": 0,
+    "max_datetime_utc": "2024-12-29 12:00:00+00:00",
+    "min_datetime_utc": "1963-01-13 00:00:00+00:00",
+    "paper_count_note": "Paper states 1792, but author note says actual count is 1793 because of IDL indexing.",
+    "row_count": 1825,
+    "source_path": "data/raw/hcs/SBCtorlist1963-2024.txt"
+  },
+  "ok": true,
+  "outputs": {
+    "csv": "data/derived/catalogs/author_hcs_catalog.csv",
+    "parquet": "data/derived/catalogs/author_hcs_catalog.parquet"
+  },
+  "script": "11_ingest_author_hcs.py"
+}

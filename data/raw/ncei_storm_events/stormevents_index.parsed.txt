@@ -1,0 +1,704 @@
+Index of /pub/data/swdi/stormevents/csvfiles/
+Index of /pub/data/swdi/stormevents/csvfiles/
+Name
+Last modified
+Size
+Description
+Parent Directory
+-
+legacy/
+2014-05-14 11:00
+-
+.Storm-Data-Export-Format.docx.old
+2014-05-06 21:49
+23834
+README
+2014-05-14 09:54
+2020
+Storm-Data-Bulk-csv-Format.pdf
+2024-07-30 10:02
+147087
+Storm-Data-Export-Format.pdf
+2024-07-30 10:02
+150527
+StormEvents_details-ftp_v1.0_d1950_c20250520.csv.gz
+2025-07-02 14:22
+10597
+StormEvents_details-ftp_v1.0_d1951_c20250520.csv.gz
+2025-05-20 12:35
+12020
+StormEvents_details-ftp_v1.0_d1952_c20250520.csv.gz
+2025-05-20 12:35
+12634
+StormEvents_details-ftp_v1.0_d1953_c20250520.csv.gz
+2025-05-20 12:35
+21804
+StormEvents_details-ftp_v1.0_d1954_c20250520.csv.gz
+2025-05-20 12:35
+26220
+StormEvents_details-ftp_v1.0_d1955_c20250520.csv.gz
+2025-05-20 12:35
+53699
+StormEvents_details-ftp_v1.0_d1956_c20250520.csv.gz
+2025-05-20 12:35
+63545
+StormEvents_details-ftp_v1.0_d1957_c20250520.csv.gz
+2025-05-20 12:35
+82406
+StormEvents_details-ftp_v1.0_d1958_c20250520.csv.gz
+2025-05-20 12:35
+70591
+StormEvents_details-ftp_v1.0_d1959_c20250520.csv.gz
+2025-05-20 12:35
+67334
+StormEvents_details-ftp_v1.0_d1960_c20250520.csv.gz
+2025-05-20 12:35
+71537
+StormEvents_details-ftp_v1.0_d1961_c20250520.csv.gz
+2025-05-20 12:35
+83323
+StormEvents_details-ftp_v1.0_d1962_c20250520.csv.gz
+2025-05-20 12:35
+84868
+StormEvents_details-ftp_v1.0_d1963_c20250520.csv.gz
+2025-05-20 12:35
+71490
+StormEvents_details-ftp_v1.0_d1964_c20250520.csv.gz
+2025-05-20 12:35
+86117
+StormEvents_details-ftp_v1.0_d1965_c20250520.csv.gz
+2025-05-20 12:35
+104744
+StormEvents_details-ftp_v1.0_d1966_c20250520.csv.gz
+2025-05-20 12:35
+82756
+StormEvents_details-ftp_v1.0_d1967_c20250520.csv.gz
+2025-05-20 12:35
+97777
+StormEvents_details-ftp_v1.0_d1968_c20250520.csv.gz
+2025-05-20 12:35
+115145
+StormEvents_details-ftp_v1.0_d1969_c20250520.csv.gz
+2025-05-20 12:35
+102191
+StormEvents_details-ftp_v1.0_d1970_c20250520.csv.gz
+2025-05-20 12:35
+114713
+StormEvents_details-ftp_v1.0_d1971_c20250520.csv.gz
+2025-05-20 12:35
+125986
+StormEvents_details-ftp_v1.0_d1972_c20250520.csv.gz
+2025-05-20 12:35
+81730
+StormEvents_details-ftp_v1.0_d1973_c20250520.csv.gz
+2025-05-20 12:35
+160970
+StormEvents_details-ftp_v1.0_d1974_c20250520.csv.gz
+2025-05-20 12:35
+187186
+StormEvents_details-ftp_v1.0_d1975_c20250520.csv.gz
+2025-05-20 12:35
+175780
+StormEvents_details-ftp_v1.0_d1976_c20250520.csv.gz
+2025-05-20 12:35
+135759
+StormEvents_details-ftp_v1.0_d1977_c20250520.csv.gz
+2025-05-20 12:35
+140367
+StormEvents_details-ftp_v1.0_d1978_c20250520.csv.gz
+2025-05-20 12:35
+136401
+StormEvents_details-ftp_v1.0_d1979_c20250520.csv.gz
+2025-05-20 12:35
+154238
+StormEvents_details-ftp_v1.0_d1980_c20250520.csv.gz
+2025-05-20 12:35
+216407
+StormEvents_details-ftp_v1.0_d1981_c20250520.csv.gz
+2025-05-20 12:35
+162435
+StormEvents_details-ftp_v1.0_d1982_c20250520.csv.gz
+2025-05-20 12:35
+245391
+StormEvents_details-ftp_v1.0_d1983_c20250520.csv.gz
+2025-05-20 12:35
+276763
+StormEvents_details-ftp_v1.0_d1984_c20250520.csv.gz
+2025-05-20 12:35
+253642
+StormEvents_details-ftp_v1.0_d1985_c20250520.csv.gz
+2025-05-20 12:35
+269660
+StormEvents_details-ftp_v1.0_d1986_c20250520.csv.gz
+2025-05-20 12:35
+298130
+StormEvents_details-ftp_v1.0_d1987_c20250520.csv.gz
+2025-05-20 12:35
+255149
+StormEvents_details-ftp_v1.0_d1988_c20250520.csv.gz
+2025-05-20 12:35
+255646
+StormEvents_details-ftp_v1.0_d1989_c20250520.csv.gz
+2025-05-20 12:35
+356700
+StormEvents_details-ftp_v1.0_d1990_c20250520.csv.gz
+2025-05-20 12:35
+385707
+StormEvents_details-ftp_v1.0_d1991_c20250520.csv.gz
+2025-05-20 12:35
+435734
+StormEvents_details-ftp_v1.0_d1992_c20250520.csv.gz
+2025-05-20 12:35
+479252
+StormEvents_details-ftp_v1.0_d1993_c20250520.csv.gz
+2025-05-20 12:35
+563262
+StormEvents_details-ftp_v1.0_d1994_c20250520.csv.gz
+2025-05-20 12:35
+1046558
+StormEvents_details-ftp_v1.0_d1995_c20250520.csv.gz
+2025-05-20 12:35
+1368533
+StormEvents_details-ftp_v1.0_d1996_c20250520.csv.gz
+2025-05-20 12:35
+6297535
+StormEvents_details-ftp_v1.0_d1997_c20250520.csv.gz
+2025-05-20 12:35
+6633672
+StormEvents_details-ftp_v1.0_d1998_c20250520.csv.gz
+2025-05-20 12:35
+10295893
+StormEvents_details-ftp_v1.0_d1999_c20250520.csv.gz
+2025-05-20 12:35
+10363425
+StormEvents_details-ftp_v1.0_d2000_c20250520.csv.gz
+2025-05-20 12:35
+7914879
+StormEvents_details-ftp_v1.0_d2001_c20250520.csv.gz
+2025-05-20 12:35
+6876097
+StormEvents_details-ftp_v1.0_d2002_c20250520.csv.gz
+2025-05-20 12:35
+7196882
+StormEvents_details-ftp_v1.0_d2003_c20250520.csv.gz
+2025-05-20 12:35
+7213011
+StormEvents_details-ftp_v1.0_d2004_c20250520.csv.gz
+2025-05-20 12:34
+7335293
+StormEvents_details-ftp_v1.0_d2005_c20250520.csv.gz
+2025-05-20 12:34
+7765429
+StormEvents_details-ftp_v1.0_d2006_c20250520.csv.gz
+2025-05-20 12:34
+7589617
+StormEvents_details-ftp_v1.0_d2007_c20250520.csv.gz
+2025-05-20 12:34
+9750633
+StormEvents_details-ftp_v1.0_d2008_c20251204.csv.gz
+2025-12-04 14:51
+12193537
+StormEvents_details-ftp_v1.0_d2009_c20250520.csv.gz
+2025-05-20 12:34
+10259071
+StormEvents_details-ftp_v1.0_d2010_c20250520.csv.gz
+2025-05-20 12:34
+11645378
+StormEvents_details-ftp_v1.0_d2011_c20250520.csv.gz
+2025-05-20 12:34
+15589952
+StormEvents_details-ftp_v1.0_d2012_c20250520.csv.gz
+2025-05-20 12:34
+11743071
+StormEvents_details-ftp_v1.0_d2013_c20250520.csv.gz
+2025-05-20 12:34
+11644810
+StormEvents_details-ftp_v1.0_d2014_c20250520.csv.gz
+2025-05-20 12:34
+11008720
+StormEvents_details-ftp_v1.0_d2015_c20251118.csv.gz
+2025-11-25 10:47
+9955733
+StormEvents_details-ftp_v1.0_d2016_c20250818.csv.gz
+2025-08-18 10:10
+8985576
+StormEvents_details-ftp_v1.0_d2017_c20260116.csv.gz
+2026-01-16 12:58
+9253059
+StormEvents_details-ftp_v1.0_d2018_c20260224.csv.gz
+2026-02-24 12:39
+9491240
+StormEvents_details-ftp_v1.0_d2019_c20260116.csv.gz
+2026-01-16 13:00
+11498440
+StormEvents_details-ftp_v1.0_d2020_c20260116.csv.gz
+2026-01-16 13:01
+10352519
+StormEvents_details-ftp_v1.0_d2021_c20250520.csv.gz
+2025-05-20 12:34
+10475472
+StormEvents_details-ftp_v1.0_d2022_c20250721.csv.gz
+2025-07-21 11:47
+11735996
+StormEvents_details-ftp_v1.0_d2023_c20260116.csv.gz
+2026-01-16 13:02
+12780214
+StormEvents_details-ftp_v1.0_d2024_c20260116.csv.gz
+2026-01-16 13:04
+12600206
+StormEvents_details-ftp_v1.0_d2025_c20260224.csv.gz
+2026-02-24 12:39
+11642991
+StormEvents_fatalities-ftp_v1.0_d1951_c20250520.csv.gz
+2025-05-20 12:35
+487
+StormEvents_fatalities-ftp_v1.0_d1952_c20250520.csv.gz
+2025-05-20 12:35
+654
+StormEvents_fatalities-ftp_v1.0_d1953_c20250520.csv.gz
+2025-05-20 12:35
+972
+StormEvents_fatalities-ftp_v1.0_d1954_c20250520.csv.gz
+2025-05-20 12:35
+568
+StormEvents_fatalities-ftp_v1.0_d1955_c20250520.csv.gz
+2025-05-20 12:35
+586
+StormEvents_fatalities-ftp_v1.0_d1956_c20250520.csv.gz
+2025-05-20 12:35
+516
+StormEvents_fatalities-ftp_v1.0_d1957_c20250520.csv.gz
+2025-05-20 12:35
+997
+StormEvents_fatalities-ftp_v1.0_d1958_c20250520.csv.gz
+2025-05-20 12:35
+546
+StormEvents_fatalities-ftp_v1.0_d1959_c20250520.csv.gz
+2025-05-20 12:35
+468
+StormEvents_fatalities-ftp_v1.0_d1960_c20250520.csv.gz
+2025-05-20 12:35
+454
+StormEvents_fatalities-ftp_v1.0_d1961_c20250520.csv.gz
+2025-05-20 12:35
+569
+StormEvents_fatalities-ftp_v1.0_d1962_c20250520.csv.gz
+2025-05-20 12:35
+386
+StormEvents_fatalities-ftp_v1.0_d1963_c20250520.csv.gz
+2025-05-20 12:35
+475
+StormEvents_fatalities-ftp_v1.0_d1964_c20250520.csv.gz
+2025-05-20 12:35
+513
+StormEvents_fatalities-ftp_v1.0_d1965_c20250520.csv.gz
+2025-05-20 12:35
+953
+StormEvents_fatalities-ftp_v1.0_d1966_c20250520.csv.gz
+2025-05-20 12:35
+386
+StormEvents_fatalities-ftp_v1.0_d1967_c20250520.csv.gz
+2025-05-20 12:35
+724
+StormEvents_fatalities-ftp_v1.0_d1968_c20250520.csv.gz
+2025-05-20 12:35
+652
+StormEvents_fatalities-ftp_v1.0_d1969_c20250520.csv.gz
+2025-05-20 12:35
+453
+StormEvents_fatalities-ftp_v1.0_d1970_c20250520.csv.gz
+2025-05-20 12:35
+584
+StormEvents_fatalities-ftp_v1.0_d1971_c20250520.csv.gz
+2025-05-20 12:35
+678
+StormEvents_fatalities-ftp_v1.0_d1972_c20250520.csv.gz
+2025-05-20 12:35
+524
+StormEvents_fatalities-ftp_v1.0_d1973_c20250520.csv.gz
+2025-05-20 12:35
+894
+StormEvents_fatalities-ftp_v1.0_d1974_c20250520.csv.gz
+2025-05-20 12:35
+1437
+StormEvents_fatalities-ftp_v1.0_d1975_c20250520.csv.gz
+2025-05-20 12:35
+706
+StormEvents_fatalities-ftp_v1.0_d1976_c20250520.csv.gz
+2025-05-20 12:35
+676
+StormEvents_fatalities-ftp_v1.0_d1977_c20250520.csv.gz
+2025-05-20 12:35
+472
+StormEvents_fatalities-ftp_v1.0_d1978_c20250520.csv.gz
+2025-05-20 12:35
+548
+StormEvents_fatalities-ftp_v1.0_d1979_c20250520.csv.gz
+2025-05-20 12:35
+566
+StormEvents_fatalities-ftp_v1.0_d1980_c20250520.csv.gz
+2025-05-20 12:35
+554
+StormEvents_fatalities-ftp_v1.0_d1981_c20250520.csv.gz
+2025-05-20 12:35
+453
+StormEvents_fatalities-ftp_v1.0_d1982_c20250520.csv.gz
+2025-05-20 12:35
+732
+StormEvents_fatalities-ftp_v1.0_d1983_c20250520.csv.gz
+2025-05-20 12:35
+712
+StormEvents_fatalities-ftp_v1.0_d1984_c20250520.csv.gz
+2025-05-20 12:35
+1153
+StormEvents_fatalities-ftp_v1.0_d1985_c20250520.csv.gz
+2025-05-20 12:35
+809
+StormEvents_fatalities-ftp_v1.0_d1986_c20250520.csv.gz
+2025-05-20 12:35
+767
+StormEvents_fatalities-ftp_v1.0_d1987_c20250520.csv.gz
+2025-05-20 12:35
+875
+StormEvents_fatalities-ftp_v1.0_d1988_c20250520.csv.gz
+2025-05-20 12:35
+870
+StormEvents_fatalities-ftp_v1.0_d1989_c20250520.csv.gz
+2025-05-20 12:35
+865
+StormEvents_fatalities-ftp_v1.0_d1990_c20250520.csv.gz
+2025-05-20 12:35
+945
+StormEvents_fatalities-ftp_v1.0_d1991_c20250520.csv.gz
+2025-05-20 12:35
+891
+StormEvents_fatalities-ftp_v1.0_d1992_c20250520.csv.gz
+2025-05-20 12:35
+718
+StormEvents_fatalities-ftp_v1.0_d1993_c20250520.csv.gz
+2025-05-20 12:35
+675
+StormEvents_fatalities-ftp_v1.0_d1994_c20250520.csv.gz
+2025-05-20 12:35
+749
+StormEvents_fatalities-ftp_v1.0_d1995_c20250520.csv.gz
+2025-05-20 12:35
+998
+StormEvents_fatalities-ftp_v1.0_d1996_c20250520.csv.gz
+2025-05-20 12:35
+7032
+StormEvents_fatalities-ftp_v1.0_d1997_c20250520.csv.gz
+2025-05-20 12:35
+7347
+StormEvents_fatalities-ftp_v1.0_d1998_c20250520.csv.gz
+2025-05-20 12:35
+8502
+StormEvents_fatalities-ftp_v1.0_d1999_c20250520.csv.gz
+2025-05-20 12:35
+10073
+StormEvents_fatalities-ftp_v1.0_d2000_c20250520.csv.gz
+2025-05-20 12:35
+6774
+StormEvents_fatalities-ftp_v1.0_d2001_c20250520.csv.gz
+2025-05-20 12:35
+6319
+StormEvents_fatalities-ftp_v1.0_d2002_c20250520.csv.gz
+2025-05-20 12:35
+6320
+StormEvents_fatalities-ftp_v1.0_d2003_c20250520.csv.gz
+2025-05-20 12:35
+5989
+StormEvents_fatalities-ftp_v1.0_d2004_c20250520.csv.gz
+2025-05-20 12:34
+5208
+StormEvents_fatalities-ftp_v1.0_d2005_c20250520.csv.gz
+2025-05-20 12:34
+11831
+StormEvents_fatalities-ftp_v1.0_d2006_c20250520.csv.gz
+2025-05-20 12:34
+8115
+StormEvents_fatalities-ftp_v1.0_d2007_c20250520.csv.gz
+2025-05-20 12:34
+8748
+StormEvents_fatalities-ftp_v1.0_d2008_c20251204.csv.gz
+2025-12-04 14:51
+10358
+StormEvents_fatalities-ftp_v1.0_d2009_c20250520.csv.gz
+2025-05-20 12:34
+7530
+StormEvents_fatalities-ftp_v1.0_d2010_c20250520.csv.gz
+2025-05-20 12:34
+8910
+StormEvents_fatalities-ftp_v1.0_d2011_c20250520.csv.gz
+2025-05-20 12:34
+14674
+StormEvents_fatalities-ftp_v1.0_d2012_c20250520.csv.gz
+2025-05-20 12:34
+8840
+StormEvents_fatalities-ftp_v1.0_d2013_c20250520.csv.gz
+2025-05-20 12:34
+7600
+StormEvents_fatalities-ftp_v1.0_d2014_c20250520.csv.gz
+2025-05-20 12:34
+7490
+StormEvents_fatalities-ftp_v1.0_d2015_c20251118.csv.gz
+2025-11-25 10:47
+9236
+StormEvents_fatalities-ftp_v1.0_d2016_c20250818.csv.gz
+2025-08-18 10:10
+9069
+StormEvents_fatalities-ftp_v1.0_d2017_c20260116.csv.gz
+2026-01-16 12:58
+9252
+StormEvents_fatalities-ftp_v1.0_d2018_c20260224.csv.gz
+2026-02-24 12:39
+12121
+StormEvents_fatalities-ftp_v1.0_d2019_c20260116.csv.gz
+2026-01-16 13:00
+9582
+StormEvents_fatalities-ftp_v1.0_d2020_c20260116.csv.gz
+2026-01-16 13:01
+10185
+StormEvents_fatalities-ftp_v1.0_d2021_c20250520.csv.gz
+2025-05-20 12:34
+13470
+StormEvents_fatalities-ftp_v1.0_d2022_c20250721.csv.gz
+2025-07-21 11:47
+12291
+StormEvents_fatalities-ftp_v1.0_d2023_c20260116.csv.gz
+2026-01-16 13:02
+14739
+StormEvents_fatalities-ftp_v1.0_d2024_c20260116.csv.gz
+2026-01-16 13:04
+13408
+StormEvents_fatalities-ftp_v1.0_d2025_c20260224.csv.gz
+2026-02-24 12:39
+9905
+StormEvents_locations-ftp_v1.0_d1951_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1952_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1953_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1954_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1955_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1956_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1957_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1958_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1959_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1960_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1961_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1962_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1963_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1964_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1965_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1966_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1967_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1968_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1969_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1970_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1971_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1972_c20250520.csv.gz
+2025-05-20 12:35
+201
+StormEvents_locations-ftp_v1.0_d1973_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1974_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1975_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1976_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1977_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1978_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1979_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1980_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1981_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1982_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1983_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1984_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1985_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1986_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1987_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1988_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1989_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1990_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1991_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1992_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1993_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1994_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1995_c20250520.csv.gz
+2025-05-20 12:35
+147
+StormEvents_locations-ftp_v1.0_d1996_c20250520.csv.gz
+2025-05-20 12:35
+679152
+StormEvents_locations-ftp_v1.0_d1997_c20250520.csv.gz
+2025-05-20 12:35
+576515
+StormEvents_locations-ftp_v1.0_d1998_c20250520.csv.gz
+2025-05-20 12:35
+756346
+StormEvents_locations-ftp_v1.0_d1999_c20250520.csv.gz
+2025-05-20 12:35
+636880
+StormEvents_locations-ftp_v1.0_d2000_c20250520.csv.gz
+2025-05-20 12:35
+619156
+StormEvents_locations-ftp_v1.0_d2001_c20250520.csv.gz
+2025-05-20 12:35
+600828
+StormEvents_locations-ftp_v1.0_d2002_c20250520.csv.gz
+2025-05-20 12:35
+629217
+StormEvents_locations-ftp_v1.0_d2003_c20250520.csv.gz
+2025-05-20 12:35
+670748
+StormEvents_locations-ftp_v1.0_d2004_c20250520.csv.gz
+2025-05-20 12:34
+661072
+StormEvents_locations-ftp_v1.0_d2005_c20250520.csv.gz
+2025-05-20 12:34
+722286
+StormEvents_locations-ftp_v1.0_d2006_c20250520.csv.gz
+2025-05-20 12:34
+2742556
+StormEvents_locations-ftp_v1.0_d2007_c20250520.csv.gz
+2025-05-20 12:34
+913110
+StormEvents_locations-ftp_v1.0_d2008_c20251204.csv.gz
+2025-12-04 14:51
+1703421
+StormEvents_locations-ftp_v1.0_d2009_c20250520.csv.gz
+2025-05-20 12:34
+1459937
+StormEvents_locations-ftp_v1.0_d2010_c20250520.csv.gz
+2025-05-20 12:34
+1538856
+StormEvents_locations-ftp_v1.0_d2011_c20250520.csv.gz
+2025-05-20 12:34
+1927071
+StormEvents_locations-ftp_v1.0_d2012_c20250520.csv.gz
+2025-05-20 12:34
+1217501
+StormEvents_locations-ftp_v1.0_d2013_c20250520.csv.gz
+2025-05-20 12:34
+1441104
+StormEvents_locations-ftp_v1.0_d2014_c20250520.csv.gz
+2025-05-20 12:34
+1278966
+StormEvents_locations-ftp_v1.0_d2015_c20251118.csv.gz
+2025-11-25 10:47
+1544929
+StormEvents_locations-ftp_v1.0_d2016_c20250818.csv.gz
+2025-08-18 10:10
+1368739
+StormEvents_locations-ftp_v1.0_d2017_c20260116.csv.gz
+2026-01-16 12:58
+1503461
+StormEvents_locations-ftp_v1.0_d2018_c20260224.csv.gz
+2026-02-24 12:39
+1711003
+StormEvents_locations-ftp_v1.0_d2019_c20260116.csv.gz
+2026-01-16 13:00
+1771140
+StormEvents_locations-ftp_v1.0_d2020_c20260116.csv.gz
+2026-01-16 13:01
+1466482
+StormEvents_locations-ftp_v1.0_d2021_c20250520.csv.gz
+2025-05-20 12:34
+1232105
+StormEvents_locations-ftp_v1.0_d2022_c20250721.csv.gz
+2025-07-21 11:47
+941576
+StormEvents_locations-ftp_v1.0_d2023_c20260116.csv.gz
+2026-01-16 13:02
+1011397
+StormEvents_locations-ftp_v1.0_d2024_c20260116.csv.gz
+2026-01-16 13:04
+969717
+StormEvents_locations-ftp_v1.0_d2025_c20260224.csv.gz
+2026-02-24 18:06
+1191380
+ugc_areas.csv
+2014-02-18 09:15
+924123

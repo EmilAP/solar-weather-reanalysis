@@ -1,0 +1,12 @@
+2026-03-07 20:59:51,460 INFO Downloading https://www.spc.noaa.gov/wcm/ -> /home/owner/dev/reanalysis/data/raw/spc_tornado/spc_wcm_index.html
+2026-03-07 20:59:52,130 INFO Downloading https://www.spc.noaa.gov/wcm/data/1950-2023_actual_tornadoes.csv -> /home/owner/dev/reanalysis/data/raw/spc_tornado/spc_actual_tornadoes_1950_2023.csv
+2026-03-07 20:59:53,938 INFO Rows: 70022; Observed range 1950-2023
+2026-03-07 21:00:12,214 INFO Downloading https://www.spc.noaa.gov/wcm/ -> /home/owner/dev/reanalysis/data/raw/spc_tornado/spc_wcm_index.html
+2026-03-07 21:00:12,427 INFO Downloading https://www.spc.noaa.gov/wcm/data/1950-2023_actual_tornadoes.csv -> /home/owner/dev/reanalysis/data/raw/spc_tornado/spc_actual_tornadoes_1950_2023.csv
+2026-03-07 21:00:13,608 INFO Rows: 70022; Observed range 1950-2023
+2026-03-07 21:20:53,532 INFO Downloading https://www.spc.noaa.gov/wcm/ -> /home/owner/dev/reanalysis/data/raw/spc_tornado/spc_wcm_index.html
+2026-03-07 21:20:53,930 INFO Downloading https://www.spc.noaa.gov/wcm/data/1950-2023_actual_tornadoes.csv -> /home/owner/dev/reanalysis/data/raw/spc_tornado/spc_actual_tornadoes_1950_2023.csv
+2026-03-07 21:20:55,581 INFO Rows: 70022; Observed range 1950-2023
+2026-03-08 16:31:47,942 INFO Downloading https://www.spc.noaa.gov/wcm/ -> /home/owner/dev/reanalysis/data/raw/spc_tornado/spc_wcm_index.html
+2026-03-08 16:31:48,484 INFO Downloading https://www.spc.noaa.gov/wcm/data/1950-2023_actual_tornadoes.csv -> /home/owner/dev/reanalysis/data/raw/spc_tornado/spc_actual_tornadoes_1950_2023.csv
+2026-03-08 16:31:49,476 INFO Rows: 70022; Observed range 1950-2023

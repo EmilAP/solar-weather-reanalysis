@@ -1,0 +1,768 @@
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VNE5GEVT4X');
+Storm Prediction Center Maps, Graphics, and Data Page
+.SPCWeatherHeadlinesBoxMdt {
+        border: 2px solid #d20011;
+        background-color:#eb7e82;
+        width: 99%;
+        margin: 5px auto 5px auto;
+        padding: 2px;
+        border-radius: 6px
+}
+.SPCWeatherHeadlinesMdt {
+        color:#d20011;
+        text-align: center;
+        font: bold 14pt Arial;
+        text-shadow: 1px 1px #aaa;
+}
+.SPCWeatherHeadlinesBody {
+        color: #000000;
+        padding-left: 15px;
+        padding-right: 15px;
+        font: 10pt Arial;
+}
+.SPCWeatherHeadlinesBody a {
+	color: #004a82;
+}
+
+.SPCWeatherHeadlinesBody a:hover {
+	color: #4ba3e3;
+}
+function showtab(val)
+   {
+   if (val == 1) { g1 = "ustormaps/1995-2024-stateavgtornadoes.png"; }
+   if (val == 2) { g1 = "ustormaps/2005-2024-stateavgtornadoes.png"; }
+   if (val == 3) { g1 = "ustormaps/2015-2024-stateavgtornadoes.png"; }
+   document.map1.src=g1;
+   }
+function showtab3(val)
+   {
+   if (val == 4) { b1 = "ustormaps/1995-2024-stateavgfatals.png"; }
+   if (val == 5) { b1 = "ustormaps/2005-2024-stateavgfatals.png"; }
+   if (val == 6) { b1 = "ustormaps/2015-2024-stateavgfatals.png"; }
+   document.map3.src=b1;
+   }
+function showtab4(val)
+   {
+   if (val == 1) { c1 = "ustormaps/2005-2024-tornadoes-per10k-perstate.png"; }
+   if (val == 2) { c1 = "ustormaps/tornadoes-by-county.png"; }
+   if (val == 3) { c1 = "ustormaps/2015-2024-fatals.png"; }
+   document.map4.src=c1;
+   }
+function showtab2(val)
+   {
+   if (val == 4) { g2 = "ptorngraph.png"; g5 = "newimgs/torn-counts.png";}
+   if (val == 5) { g2 = "phailgraph.png"; g5 = "newimgs/hail-counts.png";}
+   if (val == 6) { g2 = "pwindgraph.png"; g5 = "newimgs/wind-counts.png";}
+   document.map2.src=g2;
+   document.map5.src=g5;
+   }
+weather.gov
+Site Map
+News
+Organization
+Search for:
+SPC
+NCEP
+All NOAA
+Search by city or zip code. Press enter or select the go button to submit request
+Local forecast by
+"City, St" or "ZIP"
+SPC on Facebook
+@NWSSPC
+NCEP Quarterly Newsletter
+Home
+(
+Classic
+)
+SPC Products
+All SPC Forecasts
+Current Watches
+Meso. Discussions
+Conv. Outlooks
+Tstm. Outlooks
+Fire Wx Outlooks
+RSS Feeds
+E-Mail Alerts
+Weather Information
+Storm Reports
+Storm Reports Dev.
+NWS Hazards Map
+Watch/Warning Map
+National RADAR
+Product Archive
+NOAA Weather Radio
+Research
+Non-op. Products
+Forecast Tools
+Svr. Tstm. Events
+SPC Publications
+SPC-NSSL HWT
+Education & Outreach
+About the SPC
+SPC FAQ
+About Tornadoes
+About Derechos
+WCM Page
+Enh. Fujita Page
+Our History
+Public Tours
+Misc.
+Staff
+Contact Us
+SPC Feedback
+Severe Weather Maps, Graphics, and Data Page
+Last Update: 13 May 2025 -
+Change Log
+Intro
+|
+State Summaries
+|
+U.S. Annual Tornado Maps
+|
+2024 Preliminary Reports to Date
+Monthly Tornadoes Since 1950
+|
+Bi-monthly Tornadoes by ENSO Phase Strength
+Watch Frequency Maps
+|
+20y Annual Average Watches by County
+|
+30-year Severe Climatology
+SPC AWIPS Products
+|
+Data
+|
+Tropical Cyclone Tornadoes
+|
+SVR GIS
+This page has charts of the latest preliminary severe storm reports, annual summaries, and links to comma-separated-value (csv) data files from the SPC severe weather database back to 1950.
+2024 Total Severe Weather Reports
+A map of all tornado (red), hail (green), and thunderstorm wind gust (blue) reports from NWS offices in 2024.
+Monthly Tornadoes by State
+(Click on the maps to go to the maps page.)
+Annual Averages: Tornadoes by State
+Mouse over or click for full image --->
+30y Average
+|
+20y Average
+|
+10y Average
+Annual Averages: Tornado Fatalities by State
+Mouse over or click for full image --->
+30y Average
+|
+20y Average
+|
+10y Average
+Other U.S. Tornado Summaries
+Mouse over or click for full image --->
+By State Area
+|
+By County
+|
+Total Fatalities
+Daily Counts and Annual Running Trend (Updated Frequently)
+Mouse over or click for full image --->
+Tornado Reports
+|
+Hail Reports
+|
+Wind Reports
+End of year charts for 2025:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2024:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2023:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2022:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2021:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2020:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2019:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2018:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2017:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2016:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+End of year charts for 2015:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+End of year charts for 2014:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+End of year charts for 2013:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+End of year charts for 2012:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+End of year charts for 2011:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+Mouse over or click for full image --->
+Tornado Reports
+|
+Hail Reports
+|
+Wind Reports
+End of year charts for 2025:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2024:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2023:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2022:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2021:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2020:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2019:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2018:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2017:
+Tornadoes
+,
+Hail
+, and
+Wind
+,
+End of year charts for 2016:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+End of year charts for 2015:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+End of year charts for 2014:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+End of year charts for 2013:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+End of year charts for 2012:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+End of year charts for 2011:
+Tornadoes
+,
+Hail
+, and
+Wind
+.
+Plot of the annual running total of tornado reports compared to inflation adjusted values.
+(Click on graph for a full description.)
+End of year chart for 2025
+End of year chart for 2024
+End of year chart for 2023
+End of year chart for 2022
+End of year chart for 2021
+End of year chart for 2020
+End of year chart for 2019
+End of year chart for 2018
+End of year chart for 2017
+End of year chart for 2016
+End of year chart for 2015
+End of year chart for 2014
+End of year chart for 2013
+End of year chart for 2012
+End of year chart for 2011
+ENSO Strength and Bi-monthly U.S. Tornadoes since 1950
+(Click link above to go to ENSO page.)
+2024 SPC Watch Frequency Maps
+2024 Tornado and Severe Watch Count by County and Anomaly
+(Click for full-resolution version.)
+2023 SPC Watch Frequency Maps
+2023 Tornado and Severe Watch Count by County and Anomaly
+(Click for full-resolution version.)
+2022 SPC Watch Frequency Maps
+2022 Tornado and Severe Watch Count by County and Anomaly
+(Click for full-resolution version.)
+2015 SPC Watch Frequency Maps
+2015 Tornado and Severe Watch Count by County and Anomaly
+(Click for full-resolution version.)
+2014 SPC Watch Frequency Maps
+2014 Tornado and Severe Watch Count by County and Anomaly
+(Click for full-resolution version.)
+2013 SPC Watch Frequency Maps
+2013 Tornado and Severe Watch Count by County and Anomaly
+(Click for full-resolution version.)
+2012 SPC Watch Frequency Maps
+2012 Tornado and Severe Watch Count by County and Anomaly
+(Click for full-resolution version.)
+2011 SPC Watch Frequency Maps
+2011 Tornado and Severe Watch Count by County and Anomaly
+(Click for full-resolution version.)
+2010 SPC Watch Frequency Maps
+2010 Tornado and Severe Watch Count by County and Anomaly
+(Click for full-resolution version.)
+20y SPC Watch Climatology
+Average number of severe weather watches per year (2004-2024).
+(Click for full-resolution version.)
+Average number of tornado watches per year (2004-2024).
+(Click for full-resolution version.)
+Average number of severe thunderstorm watches per year (2004-2024).
+(Click for full-resolution version.)
+Grab Data:
+watches_fips_2005-2024.zip
+30-year Severe Weather Climatology
+Tornado Climatology -- All Tornadoes
+Click Image for Full Resolution
+Click Here to Download Gridded netCDF Data
+Tornado Climatology -- EF1 or Stronger Tornadoes
+Click Image for Full Resolution
+Click Here to Download Gridded netCDF Data
+Tornado Climatology -- EF2 or Stronger Tornadoes
+Click Image for Full Resolution
+Click Here to Download Gridded netCDF Data
+Tornado Climatology -- EF4 of Stronger Tornadoes
+Click Image for Full Resolution
+Click Here to Download Gridded netCDF Data
+Wind Climatology -- Greater than 50-knots & Less than 64-knots
+Click Image for Full Resolution
+Click Here to Download Gridded netCDF Data
+Wind Climatology -- Greater than 64-knots
+Click Image for Full Resolution
+Click Here to Download Gridded netCDF Data
+Wind Climatology -- All Wind Greater Than 50-knots
+Click Image for Full Resolution
+Click Here to Download Gridded netCDF Data
+Hail Climatology -- Old Severe Hail (Greater Than 0.75")
+Click Image for Full Resolution
+Click Here to Download Gridded netCDF Data
+Hail Climatology -- New Severe Hail (Greater Than 1.00")
+Click Image for Full Resolution
+Click Here to Download Gridded netCDF Data
+Hail Climatology -- Significant Hail (Greater Than 2.00")
+Click Image for Full Resolution
+Click Here to Download Gridded netCDF Data
+SPC Tornado and Severe Weather Statistical Products on AWIPS
+Monthly Tornado Statistics
+are maintained in the AWIPS product STAMTS. Use this product to
+find out how many tornadoes have occured so far this year and how
+this year compares to past years.
+Killer Tornado Statistics
+are listed in the AWIPS product STATIJ. Use this product for
+information about killer tornadoes this year and in the past.
+Severe Weather Database Files (1950-2024)
+The tables below provide the links to comma separated value (.csv) files for tornadoes, hail, and damaging wind, as compiled from
+NWS Storm Data
+. Tornado reports exist back to 1950 while hail and damaging wind events date from 1955. The full hail and wind datasets are very large. To facilitate quicker downloads these data have been parsed by decade (1950s through 1990s), and half-decade, or less (from 2000 to the present). Tornado data are provided in raw csv file format below. Actual tornado tracks only (not including individual state segments) are provided in the "Actual_tornadoes.csv" file. Again, please read the format specification for the tornado data.
+Please read this
+document
+carefully as it describes the format of the .csv files (especially important for tornadoes!).
+Note 1
+: The NWS changed criteria for severe hail from 0.75 inch minimum to 1.00 inch minimum in 2010. For legacy purposes, 0.75 inch hail reports will continue to be included in the annual hail csv files. Download the files and sort accordingly if needed.
+Note 2: See last two pages of the database specification document about the addition of the estimated F-scale column "fc", added to tornado.csv data in 2015.
+*** Changes made to the database in 2016 for the 1950-2015 U.S. tornado records ***
+Estimated F-scale ratings were calculated for over 1800 tornadoes in the database previously rated with an F-scale entry of -9 (unknown). The scheme used to modify unknown F-scale to estimated F-scale is described in this document:
+www.spc.noaa.gov/wcm/OneTor_F-scale-modifications.pdf
+For all tornadoes modified in the database, a new information field was added to the database in 2016. The "fc" field (29th column of information in OneTor). "fc" is set to 1 for any tornado with a prior F-scale rating of -9. Thus, it is easy to filter previously unknown ratings, if desired. Please note! Tornadoes were likely underreported prior to 1953. Many tornado statistics are derived from 1953 (or later) to the present. Also, keep in mind that off-CONUS tornadoes are included in the latest version of the 1950-2024 tornado data. These events, while small in total count, include tornadoes in AK, HI, PR, and DC. It is best to filter results carefully when making queries on the tornado database.
+It should also be noted that these data are used by the NWS for verification purposes and may not accurately reflect all storm events. Monetary loss information is highly suspect and should be used with caution, if at all.
+This article
+provides a good overview about the shortcomings in the NWS severe weather data provided here.
+!!! IMPORTANT INFORMATION REGARDING THE SPC SEVERE WEATHER DATABASE !!!
+Read the new
+change log
+for latest information/updates.
+Read
+this paper
+for a discussion of errors and artifacts in tornado data.
+U.S. TORNADOES* (1950-2024)
+*Read format decscription document!
+Change Log
+Last Update: 13 May 2025
+1950-2024_all_tornadoes.csv (7.9 mb)
+Raw database dump includes all state and continuing county segments.
+1950-2024_actual_tornadoes.csv (7.7 mb)
+Single tracks. No state segments or continuing county info (e.g. sg="1").
+TORNADO
+HAIL
+DAMAGING WIND
+2024_torn.csv (0.2 mb)
+Updated: 13 May 2024
+2024_hail.csv (1.0 mb)
+Updated: 13 May 2024
+2024_wind.csv (2.4 mb)
+Updated: 13 May 2024
+2023_torn.csv (0.2 mb)
+Updated: 17 Jul 2024
+2023_hail.csv (1.3 mb)
+Updated: 17 Jul 2024
+2023_wind.csv (2.5 mb)
+Updated: 17 Jul 2024
+2022_torn.csv (0.1 mb)
+Updated: 25 Apr 2023
+2022_hail.csv (0.8 mb)
+Updated: 25 Apr 2023
+2022_wind.csv (2.0 mb)
+Updated: 25 Apr 2023
+2021_torn.csv (0.2 mb)
+Updated: 11 Jul 2022
+2021_hail.csv (0.7 mb)
+Updated: 11 Jul 2022
+2021_wind.csv (1.9 mb)
+Updated: 11 Jul 2022
+2020_torn.csv (0.1 mb)
+Updated: 15 Mar 2022
+2020_hail.csv (0.9 mb)
+Updated: 26 Jan 2022
+2020_wind.csv (2.3 mb)
+Updated: 26 Jan 2022
+2019_torn.csv (0.2 mb)
+Updated: 04 Jan 2021
+2019_hail.csv (1.0 mb)
+Updated: 04 Jan 2021
+2019_wind.csv (2.2 mb)
+Updated: 04 Jan 2021
+2018_torn.csv (0.1 mb)
+Updated: 30 Sep 2019
+2018_hail.csv (0.8 mb)
+Updated: 30 Sep 2019
+2018_wind.csv (1.7 mb)
+Updated: 30 Sep 2019
+2017_torn.csv (0.2 mb)
+2017_hail.csv (1.2 mb)
+2017_wind.csv (2.0 mb)
+2016_torn.csv (0.1 mb)
+2016_hail.csv (1.1 mb)
+2016_wind.csv (1.9 mb)
+2015_torn.csv (0.1 mb)
+2015_hail.csv (0.9 mb)
+2015_wind.csv (1.5 mb)
+2014_torn.csv (0.1 mb)
+2014_hail.csv (0.9 mb)
+2014_wind.csv (2.8 mb)
+2013_torn.csv (0.1 mb)
+2013_hail.csv (1.0 mb)
+2013_wind.csv (1.5 mb)
+2012_torn.csv (0.1 mb)
+2012_hail.csv (1.4 mb)
+2012_wind.csv (1.7 mb)
+2011_torn.csv (0.2 mb)
+2011_hail.csv (2.0 mb)
+2011_wind.csv (2.5 mb)
+2010_torn.csv (0.1 mb)
+2010_hail.csv (1.1 mb)
+2010_wind.csv (1.6 mb)
+2009_torn.csv (0.1 mb)
+Updated: 31 Dec 2020
+2009_hail.csv (1.4 mb)
+2009_wind.csv (1.5 mb)
+2008_torn.csv (0.1 mb)
+2008_hail.csv (1.7 mb)
+2008_wind.csv (1.7 mb)
+2005-2007_torn.csv (0.3 mb)
+Updated: 30 Sep 2019
+2005-2007_hail.csv (4 mb)
+2005-2007_wind.csv (4 mb)
+2000-2004_torn.csv (0.7 mb)
+2000-2004_hail.csv (6 mb)
+2000-2004_wind.csv (6 mb)
+90-99_torn.csv (1.3 mb)
+90-99_hail.csv (6 mb)
+90-99_wind.csv (8 mb)
+80-89_torn.csv (0.8 mb)
+80-89_hail.csv (2.5 mb)
+Updated: 04 Jan 2021
+80-89_wind.csv (3.5 mb)
+Updated: 04 Jan 2021
+70-79_torn.csv (0.9 mb)
+70-79_hail.csv (1 mb)
+70-79_wind.csv (1.6 mb)
+60-69_torn.csv (0.7 mb)
+Updated: 30 Sep 2019
+60-69_hail.csv (0.67 mb)
+60-69_wind.csv (0.90 mb)
+50-59_torn.csv (0.6 mb)
+55-59_hail.csv (0.20 mb)
+55-59_wind.csv (0.28 mb)
+All torn in one 1.8 mb zip
+file
+.
+All hail in one 6.9 mb zip
+file
+.
+All wind in one 9.7 mb zip
+file
+.
+Map of State FIPS Numbers
+here
+.
+Text list of County FIPS Numbers
+here
+.
+Better list of County FIPS Numbers (as xls file)
+here
+.
+SPC Tropical Cyclone Tornado (TCTOR) Page
+(Click to go to SPC Tropical Cyclone Tornado Page)
+SPC Severe GIS Page
+U.S. map depicting tornado tracks and population density.
+(Click to go to SPC Severe GIS Page.)
+Note: The content below is updated less frequently.
+Cool Season Watch Days and El Niño Southern Oscillation (ENSO) Phase
+With strong El Niño (ENSO warm phase) conditions continuing into the winter months, here's an analysis of how those conditions may influence the number of watch days in December.
+The ENSO phase strength was ranked using the Multivariate ENSO Index, or MEI.
+The years with the 10 warmest (El Niño) and 10 coldest (La Niña) phases for the December to January time frame, back to 1970, were used to select the
+total*
+January watch days within each phase. (*Divide grid cell numbers by 10 to arrive at monthly mean watch days in each phase).
+The top map shows the total watch days in the ten Januarys corresponding to the most pronounced El Niño conditions during December-January.
+The middle map shows the total watch days for the ten Januarys with most pronounced La Niña conditions during December-January.
+The bottom map shows the difference in total watch days between the strongest El Niño months and the strongest La Niña months.
+The total watch day summary maps for
+December
+,
+January
+,
+February
+,
+April
+, and
+May
+also reveal how ENSO phase can influence severe weather potential during the cool season and early warm season.
+Lastest information on MEI:
+//www.esrl.noaa.gov/psd/enso/mei/
+.
+Lastest on ENSO from CPC:
+//www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/
+.
+Page Content Archive
+2016
+Outlook Forecasts for February 2, 2016
+2015
+Probability of a Tornado Watch during Week of Christmas
+July 17-18, 2015 Radar/Wind Gust Summary
+July 17-18, 2015 Radar/Wind Gust Summary
+July 12-13, 2015 Radar Composite
+A look at May 2015 Watch Anomalies
+April 2013, 2014, 2015 Radar-based hail maps
+March 2013, 2014, 2015 Radar-based hail maps
+No March 2015 Watches through the 23rd
+Longest Spans Between Watches
+JF Watch Counts 1970-2015
+2014
+All storm reports across the continental U.S. in 2014
+2014 Tornadoes and State Departures through October
+Watch counts by month/type (through early September)
+Histogram of tornado counts through April 21
+Spans without (E)F3-rated tornadoes
+A look back at April 3-4, '74 with high resolution model
+Analysis of partial season watch counts (pdf)
+Midwest Derecho Event(s) of June 30, 2014
+ND/MN Derecho of July 21-22, 2014
+U.S. Tornado Counts thru May (1953-3014)
+Daily Tornado Probability Curve
+De-trended U.S. tornado counts through Nov.
+2013
+2013 Tornadoes by EF-scale Map
+Severe Weather Reports Per Year (2003-2012)
+These maps were created by gridding the total number of daily severe weather reports (Midnight to 11:59pm CDT) over the 10-year period from
+2003 through 2012 on a 80km grid. The resulting grid numbers are then divided by 10 and smoothed to arrive at the annual average number of
+days with a report of severe weather based on official NWS Storm Data records. The 80km grid-point value corresponds to the number of events within
+25 miles of a point. While the resulting maps generally match our understanding of severe weather climatology, there are a few exceptions
+that come about as a result of how the severe weather event is quantified. Even through the data are smoothed, severe weather reports cluster
+around population centers. This can be seen on the "any" or "all" severe weather map in the upper left. Maximum values show up around Charlotte,
+NC, Huntsville, AL, Jackson, MS, Springfield, MO, and Dallas, TX. These are locations where more severe weather is reported because more people
+live in those areas. The hail reports used to generate the hail frequency map are from reports of hail 1 inch or greater in diameter. Large hail
+reports are most common from Rapid City, SD to Denver, CO, Dodge City, KS, and Springfield, MO. The wind report map perhaps poses the greatest
+challenge in terms of representing where a greater severe thunderstorm wind threat may exist. The majority of severe thunderstorm wind reports
+are verified by falling trees *not* by
+observed
+wind gusts of 50 knots or greater. Thus, there is a distinct tendency for severe
+thunderstorm winds to be reported in areas with more trees. Recent peer-reviewed studies have compared the severe weather reports used to make
+these maps with automated observations (for wind), and radar data (for hail). These studies have found that greater concentrations/frequencies
+of severe hail (based on radar) and 50kt or greater severe thunderstorm wind gusts (based on automated observations) are more likely to occur
+over parts of the Great Plains and Midwest than what might be indicated in the maps shown here. (Click each map for full resolution version.)
+References:
+An Objective High-Resolution Hail Climatology of the Contiguous United States
+John L. Cintineo, Travis M. Smith, Valliappa Lakshmanan, Harold E. Brooks, Kiel L. Ortega
+Weather and Forecasting
+Volume 27, Issue 5 (October 2012) pp. 1235-1248
+Measured Severe Convective Wind Climatology and Associated Convective Modes of Thunderstorms in the Contiguous United States, 2003-09
+Bryan T. Smith, Tomas E. Castellanos, Andrew C. Winters, Corey M. Mead, Andrew R. Dean, Richard L. Thompson
+Weather and Forecasting
+(Also
+here
+.)
+Volume 28, Issue 1 (February 2013) pp. 229-236
+Annual Tornado Maps (1952-2011)
+(Click on the maps to go to the Annual Tornado Maps page.)
+U.S. Monthly Tornado Counts, 1950-2010
+Monthly tornado sums (excluding (E)F0 tornadoes) for each month, 1950-2010.
+(Click to go to calendar page.)
+Top
+/
+Forecast Products
+/
+Home
+Weather Topics:
+Watches
+,
+Mesoscale Discussions
+,
+Outlooks
+,
+Fire Weather
+,
+All Products
+,
+Contact Us
+NOAA
+/
+National Weather Service
+National Centers for Environmental Prediction
+Storm Prediction Center
+120 David L. Boren Blvd.
+Norman, OK 73072 U.S.A.
+spc.feedback@noaa.gov
+Page last modified:
+
+
+March 09, 2016
+Disclaimer
+Information Quality
+Help
+Glossary
+Privacy Policy
+Freedom of Information Act (FOIA)
+About Us
+Career Opportunities

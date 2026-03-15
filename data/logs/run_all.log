@@ -1,0 +1,50 @@
+2026-03-07 21:20:53,194 INFO Starting full pipeline run: 20260308T022053Z
+2026-03-07 21:20:53,194 INFO Running 00_check_environment.py
+2026-03-07 21:20:53,344 INFO 00_check_environment.py finished with code=0 in 0.150s
+2026-03-07 21:20:53,345 INFO Running 01_download_spc_tornado.py
+2026-03-07 21:20:55,613 INFO 01_download_spc_tornado.py finished with code=0 in 2.268s
+2026-03-07 21:20:55,613 INFO Running 02_download_ncei_storm_events.py
+2026-03-07 21:22:45,536 INFO 02_download_ncei_storm_events.py finished with code=0 in 109.898s
+2026-03-07 21:22:45,579 INFO Running 03_download_omni.py
+2026-03-07 21:23:45,320 INFO 03_download_omni.py finished with code=0 in 59.739s
+2026-03-07 21:23:45,321 INFO Running 04_download_icme.py
+2026-03-07 21:23:49,298 INFO 04_download_icme.py finished with code=0 in 3.975s
+2026-03-07 21:23:49,298 INFO Running 05_get_hcs_catalog.py
+2026-03-07 21:23:51,884 INFO 05_get_hcs_catalog.py finished with code=0 in 2.586s
+2026-03-07 21:23:51,885 INFO Running 06_get_green_corona.py
+2026-03-07 21:23:54,236 INFO 06_get_green_corona.py finished with code=0 in 2.350s
+2026-03-07 21:23:54,237 INFO Running 07_prepare_era5_requests.py
+2026-03-07 21:23:55,739 INFO 07_prepare_era5_requests.py finished with code=0 in 1.501s
+2026-03-07 21:23:55,740 INFO Running 08_get_spc_outlooks.py
+2026-03-07 21:28:54,033 INFO 08_get_spc_outlooks.py finished with code=0 in 298.291s
+2026-03-07 21:28:54,038 INFO Running 09_validate_downloads.py
+2026-03-07 21:28:54,617 INFO 09_validate_downloads.py finished with code=0 in 0.578s
+2026-03-07 21:28:54,618 INFO Running 10_build_master_manifest.py
+2026-03-07 21:28:55,047 INFO 10_build_master_manifest.py finished with code=0 in 0.429s
+2026-03-07 21:28:55,098 INFO Run report written: /home/owner/dev/reanalysis/data/processed/pipeline_run_20260308T022053Z.json
+2026-03-07 21:28:55,101 INFO Updated latest report: /home/owner/dev/reanalysis/data/processed/pipeline_run_latest.json
+2026-03-08 16:31:47,614 INFO Starting full pipeline run: 20260308T203147Z
+2026-03-08 16:31:47,615 INFO Running 00_check_environment.py
+2026-03-08 16:31:47,778 INFO 00_check_environment.py finished with code=0 in 0.163s
+2026-03-08 16:31:47,778 INFO Running 01_download_spc_tornado.py
+2026-03-08 16:31:49,504 INFO 01_download_spc_tornado.py finished with code=0 in 1.725s
+2026-03-08 16:31:49,504 INFO Running 02_download_ncei_storm_events.py
+2026-03-08 16:32:53,687 INFO 02_download_ncei_storm_events.py finished with code=0 in 64.182s
+2026-03-08 16:32:53,688 INFO Running 03_download_omni.py
+2026-03-08 16:33:22,865 INFO 03_download_omni.py finished with code=0 in 29.177s
+2026-03-08 16:33:22,866 INFO Running 04_download_icme.py
+2026-03-08 16:33:24,487 INFO 04_download_icme.py finished with code=0 in 1.621s
+2026-03-08 16:33:24,488 INFO Running 05_get_hcs_catalog.py
+2026-03-08 16:33:25,489 INFO 05_get_hcs_catalog.py finished with code=0 in 1.001s
+2026-03-08 16:33:25,489 INFO Running 06_get_green_corona.py
+2026-03-08 16:33:26,538 INFO 06_get_green_corona.py finished with code=0 in 1.048s
+2026-03-08 16:33:26,539 INFO Running 07_prepare_era5_requests.py
+2026-03-08 16:33:26,979 INFO 07_prepare_era5_requests.py finished with code=0 in 0.440s
+2026-03-08 16:33:26,980 INFO Running 08_get_spc_outlooks.py
+2026-03-08 16:38:33,757 INFO 08_get_spc_outlooks.py finished with code=0 in 306.768s
+2026-03-08 16:38:33,768 INFO Running 09_validate_downloads.py
+2026-03-08 16:38:34,004 INFO 09_validate_downloads.py finished with code=0 in 0.234s
+2026-03-08 16:38:34,004 INFO Running 10_build_master_manifest.py
+2026-03-08 16:38:34,113 INFO 10_build_master_manifest.py finished with code=0 in 0.108s
+2026-03-08 16:38:34,135 INFO Run report written: /home/owner/dev/reanalysis/data/processed/pipeline_run_20260308T203147Z.json
+2026-03-08 16:38:34,141 INFO Updated latest report: /home/owner/dev/reanalysis/data/processed/pipeline_run_latest.json

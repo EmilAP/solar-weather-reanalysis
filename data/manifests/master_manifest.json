@@ -1,0 +1,66 @@
+{
+  "manifests": [
+    {
+      "name": "00_check_environment",
+      "path": "data/manifests/00_check_environment.json",
+      "ok": true,
+      "generated_at": "2026-03-08T20:31:47.758954+00:00"
+    },
+    {
+      "name": "01_download_spc_tornado",
+      "path": "data/manifests/01_download_spc_tornado.json",
+      "ok": true,
+      "generated_at": "2026-03-08T20:31:49.475105+00:00"
+    },
+    {
+      "name": "02_download_ncei_storm_events",
+      "path": "data/manifests/02_download_ncei_storm_events.json",
+      "ok": true,
+      "generated_at": "2026-03-08T20:32:53.652983+00:00"
+    },
+    {
+      "name": "03_download_omni",
+      "path": "data/manifests/03_download_omni.json",
+      "ok": true,
+      "generated_at": "2026-03-08T20:33:22.815910+00:00"
+    },
+    {
+      "name": "04_download_icme",
+      "path": "data/manifests/04_download_icme.json",
+      "ok": true,
+      "generated_at": "2026-03-08T20:33:24.439290+00:00"
+    },
+    {
+      "name": "05_get_hcs_catalog",
+      "path": "data/manifests/05_get_hcs_catalog.json",
+      "ok": true,
+      "generated_at": "2026-03-08T20:33:25.433003+00:00"
+    },
+    {
+      "name": "06_get_green_corona",
+      "path": "data/manifests/06_get_green_corona.json",
+      "ok": true,
+      "generated_at": "2026-03-08T20:33:26.474322+00:00"
+    },
+    {
+      "name": "07_prepare_era5_requests",
+      "path": "data/manifests/07_prepare_era5_requests.json",
+      "ok": true,
+      "generated_at": "2026-03-08T20:33:26.912292+00:00"
+    },
+    {
+      "name": "08_get_spc_outlooks",
+      "path": "data/manifests/08_get_spc_outlooks.json",
+      "ok": true,
+      "generated_at": "2026-03-08T20:38:33.609962+00:00"
+    },
+    {
+      "name": "09_validate_downloads",
+      "path": "data/manifests/09_validate_downloads.json",
+      "ok": true,
+      "generated_at": "2026-03-08T20:38:33.989834+00:00"
+    }
+  ],
+  "ok_count": 10,
+  "fail_count": 0
+}

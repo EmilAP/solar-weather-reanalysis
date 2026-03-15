@@ -1,0 +1,2 @@
+data/raw/omni/omni2_all_years.dat filter=lfs diff=lfs merge=lfs -text
+data/derived/daily/omni_hourly_clean.csv filter=lfs diff=lfs merge=lfs -text

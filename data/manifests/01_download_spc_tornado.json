@@ -1,0 +1,32 @@
+{
+  "downloads": [
+    {
+      "error": null,
+      "ok": true,
+      "path": "data/raw/spc_tornado/spc_wcm_index.html",
+      "row_count": null,
+      "sha256": "c2a18682e452df0b77b76d0a6903dd8baf8a8aaf2b4f58a36d0d8ecd4f24bd80",
+      "size_bytes": 63961,
+      "status_code": 200,
+      "url": "https://www.spc.noaa.gov/wcm/"
+    },
+    {
+      "error": null,
+      "ok": true,
+      "path": "data/raw/spc_tornado/spc_actual_tornadoes_1950_2023.csv",
+      "row_count": null,
+      "sha256": "fa616e2f829c553acc7b60f5130a3ac498198e0b9d69e37a0e1289df71dc5fcc",
+      "size_bytes": 7792330,
+      "status_code": 200,
+      "url": "https://www.spc.noaa.gov/wcm/data/1950-2023_actual_tornadoes.csv"
+    }
+  ],
+  "generated_at": "2026-03-08T20:31:49.475105+00:00",
+  "ok": true,
+  "row_count": 70022,
+  "script": "01_download_spc_tornado.py",
+  "year_validation": {
+    "message": "Observed range 1950-2023",
+    "ok": true
+  }
+}

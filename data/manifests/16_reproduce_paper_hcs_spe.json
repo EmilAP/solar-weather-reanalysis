@@ -1,0 +1,33 @@
+{
+  "assumptions": [
+    "Paper-style branch uses cumulative curves for comparability, alongside daily-rate versions for interpretation."
+  ],
+  "generated_at": "2026-03-14T22:40:52.127749+00:00",
+  "inputs": [
+    "data/derived/daily/analysis_daily.csv",
+    "data/derived/catalogs/author_hcs_catalog.csv"
+  ],
+  "metrics": {
+    "event_count": 1793,
+    "monte_carlo_iterations": 0,
+    "run_null": false,
+    "runtime_seconds": 60.283,
+    "window_days": 30
+  },
+  "ok": true,
+  "outputs": {
+    "daily_rate_figure": {
+      "png": "data/derived/figures/paper_style_author_hcs_daily_rates.png",
+      "svg": "data/derived/figures/paper_style_author_hcs_daily_rates.svg"
+    },
+    "observed": {
+      "csv": "data/derived/spe/paper_author_hcs_observed.csv",
+      "parquet": "data/derived/spe/paper_author_hcs_observed.parquet"
+    },
+    "paper_style_figure": {
+      "png": "data/derived/figures/paper_style_author_hcs_cumulative.png",
+      "svg": "data/derived/figures/paper_style_author_hcs_cumulative.svg"
+    }
+  },
+  "script": "16_reproduce_paper_hcs_spe.py"
+}

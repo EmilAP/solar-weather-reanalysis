@@ -1,0 +1,8 @@
+2026-03-07 21:02:42,597 INFO Downloading https://www.ngdc.noaa.gov/stp/solar/green.html -> /home/owner/dev/reanalysis/data/raw/green_corona/candidate_1.html
+2026-03-07 21:02:44,075 INFO Downloading https://www.swpc.noaa.gov/products/solar-cycle-progression -> /home/owner/dev/reanalysis/data/raw/green_corona/candidate_2.html
+2026-03-07 21:16:02,783 INFO Downloading https://www.ngdc.noaa.gov/stp/solar/green.html -> /home/owner/dev/reanalysis/data/raw/green_corona/candidate_1.html
+2026-03-07 21:16:03,237 INFO Downloading https://www.swpc.noaa.gov/products/solar-cycle-progression -> /home/owner/dev/reanalysis/data/raw/green_corona/candidate_2.html
+2026-03-07 21:23:52,804 INFO Downloading https://www.ngdc.noaa.gov/stp/solar/green.html -> /home/owner/dev/reanalysis/data/raw/green_corona/candidate_1.html
+2026-03-07 21:23:53,552 INFO Downloading https://www.swpc.noaa.gov/products/solar-cycle-progression -> /home/owner/dev/reanalysis/data/raw/green_corona/candidate_2.html
+2026-03-08 16:33:25,770 INFO Downloading https://www.ngdc.noaa.gov/stp/solar/green.html -> /home/owner/dev/reanalysis/data/raw/green_corona/candidate_1.html
+2026-03-08 16:33:26,120 INFO Downloading https://www.swpc.noaa.gov/products/solar-cycle-progression -> /home/owner/dev/reanalysis/data/raw/green_corona/candidate_2.html

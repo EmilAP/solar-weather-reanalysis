@@ -1,0 +1,53 @@
+analysis_period:
+  start_date: "1963-01-01"
+  end_date: "2023-12-31"
+
+file_search:
+  author_hcs_patterns:
+    - "**/SBCtorlist1963-2024.txt"
+    - "**/SBCtorlist*.txt"
+    - "**/*SBC*1963*2024*.txt"
+    - "**/*torlist*.txt"
+  tornado_patterns:
+    - "**/spc_actual_tornadoes_1950_2023.csv"
+    - "**/*actual_tornadoes*.csv"
+  omni_patterns:
+    - "**/omni2_all_years.dat"
+  icme_patterns:
+    - "**/icmetable2.csv"
+    - "**/icmetable2.html"
+
+tornado:
+  strong_rating_threshold: 3
+  outbreak_day_threshold: 10
+  utc_assumption: "Daily analyses use the catalog local calendar date; no UTC conversion is applied because SPC timezone codes are not safely invertible here."
+  fscale_harmonization: "Treat mag >= 3 as strong tornadoes across F and EF eras."
+
+spe:
+  window_days: 30
+  monte_carlo_iterations: 1000
+  strict_permutations: 1000
+  season_match_window_days: 15
+  exclusion_buffer_days: 7
+
+independent_hcs:
+  rolling_hours: 9
+  min_persist_hours: 6
+  min_gap_hours: 48
+  polarity_rule: "Use the sign of -(Bx_GSE * By_GSE) as a transparent Parker-spiral sector proxy; crossings occur when the smoothed sign flips and persists."
+
+cir_hss:
+  hss_speed_threshold: 500.0
+  hss_speed_jump_threshold: 80.0
+  cir_density_threshold: 8.0
+  cir_bmag_threshold: 8.0
+  cir_pressure_threshold: 2.5
+
+models:
+  event_indicator_window_days: 1
+  cv_holdout_years_per_fold: 5
+  predictors:
+    - near_author_hcs
+    - near_reconstructed_hcs
+    - near_cir
+    - near_hss

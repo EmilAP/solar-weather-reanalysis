@@ -1,0 +1,9 @@
+beautifulsoup4==4.13.3
+matplotlib==3.10.1
+numpy==2.2.4
+pandas==2.2.3
+pyarrow==19.0.1
+PyYAML==6.0.2
+requests==2.32.3
+scipy==1.15.2
+statsmodels==0.14.4

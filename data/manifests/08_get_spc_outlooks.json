@@ -1,0 +1,29 @@
+{
+  "downloads": [
+    {
+      "error": null,
+      "ok": true,
+      "path": "data/raw/spc_outlooks/archive_1.html",
+      "row_count": null,
+      "sha256": "7a1421a3a03c346990198a228292fc46b6767cc9ea3775ec9128996e9b9a05dc",
+      "size_bytes": 5281,
+      "status_code": 200,
+      "url": "https://www.spc.noaa.gov/products/outlook/archive/"
+    },
+    {
+      "error": "HTTP 504",
+      "ok": false,
+      "path": "data/raw/spc_outlooks/archive_2.html",
+      "row_count": null,
+      "sha256": null,
+      "size_bytes": null,
+      "status_code": 504,
+      "url": "https://www.spc.noaa.gov/products/outlook/archive/2021/"
+    }
+  ],
+  "extracted_links_csv": "data/raw/spc_outlooks/archive_links.csv",
+  "generated_at": "2026-03-08T20:38:33.609962+00:00",
+  "link_count": 29,
+  "ok": true,
+  "script": "08_get_spc_outlooks.py"
+}

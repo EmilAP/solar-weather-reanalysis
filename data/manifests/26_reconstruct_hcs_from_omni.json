@@ -1,0 +1,28 @@
+{
+  "assumptions": [
+    "Polarity is defined as sign(Bx) using the preferred available daily OMNI Bx-like component.",
+    "Crossing date is set to the later of two consecutive daily observations because a midpoint is not a clean daily date."
+  ],
+  "generated_at": "2026-03-14T22:39:13.816426+00:00",
+  "inputs": [
+    "data/derived/daily/omni_daily.csv"
+  ],
+  "metrics": {
+    "bx_column_used": "bx_gse_mean",
+    "bx_threshold": 0.3,
+    "candidate_crossings_before_spacing": 2067,
+    "date_max": "2026-02-14",
+    "date_min": "1963-12-03",
+    "min_spacing_days": 2,
+    "retained_crossings": 1865
+  },
+  "ok": true,
+  "outputs": {
+    "catalog": {
+      "csv": "data/derived/catalogs/hcs_from_omni.csv",
+      "parquet": "data/derived/catalogs/hcs_from_omni.parquet"
+    },
+    "year_summary": "data/derived/tables/hcs_from_omni_summary.csv"
+  },
+  "script": "26_reconstruct_hcs_from_omni.py"
+}

@@ -1,0 +1,20 @@
+{
+  "assumptions": [],
+  "generated_at": "2026-03-14T16:04:55.577220+00:00",
+  "inputs": [
+    "data/derived/daily/tornado_daily.csv",
+    "data/derived/daily/omni_daily.csv"
+  ],
+  "metrics": {
+    "max_date": "2023-12-31",
+    "min_date": "1963-01-01",
+    "outbreak_days": 1802,
+    "row_count": 22280
+  },
+  "ok": true,
+  "outputs": {
+    "csv": "data/derived/daily/analysis_daily.csv",
+    "parquet": "data/derived/daily/analysis_daily.parquet"
+  },
+  "script": "15_build_daily_tornado_series.py"
+}

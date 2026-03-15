@@ -1,0 +1,33 @@
+{
+  "converted_csv": "data/raw/icme/icmetable2.csv",
+  "downloads": [
+    {
+      "error": null,
+      "ok": true,
+      "path": "data/raw/icme/icmetable2.html",
+      "row_count": null,
+      "sha256": "7cf9d9ddb2a5104401a0b0e12b889f8354a0ed45899d2e3737f4d581cbaefb7b",
+      "size_bytes": 264419,
+      "status_code": 200,
+      "url": "https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.htm"
+    },
+    {
+      "error": "HTTP 404",
+      "ok": false,
+      "path": "data/raw/icme/icmetable2.txt",
+      "row_count": null,
+      "sha256": null,
+      "size_bytes": null,
+      "status_code": 404,
+      "url": "https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.txt"
+    }
+  ],
+  "generated_at": "2026-03-08T20:33:24.439290+00:00",
+  "ok": true,
+  "row_count": 648,
+  "script": "04_download_icme.py",
+  "year_validation": {
+    "message": "Observed range 1996-2025, expected coverage 1963-2023",
+    "ok": false
+  }
+}

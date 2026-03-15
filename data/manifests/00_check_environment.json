@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-03-08T20:31:47.758954+00:00",
+  "imports": {
+    "json": true,
+    "logging": true,
+    "urllib.request": true
+  },
+  "missing_dirs": [],
+  "ok": true,
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python_version": "3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0]",
+  "script": "00_check_environment.py"
+}

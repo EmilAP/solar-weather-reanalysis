@@ -1,0 +1,29 @@
+{
+  "downloads": [
+    {
+      "error": null,
+      "ok": true,
+      "path": "data/raw/hcs/candidate_1.html",
+      "row_count": null,
+      "sha256": "988a723ac7a071edf0ef253f2ae64b21e850b91728e16d9f3bfbb26e236ec523",
+      "size_bytes": 2070,
+      "status_code": 200,
+      "url": "http://wso.stanford.edu/SB/SB.html"
+    },
+    {
+      "error": null,
+      "ok": true,
+      "path": "data/raw/hcs/candidate_2.html",
+      "row_count": null,
+      "sha256": "55ee840b96c63244bc6a8764813fa6653d1410d12016dedce3fdc7a2f1526cd7",
+      "size_bytes": 41319,
+      "status_code": 200,
+      "url": "http://wso.stanford.edu/Tilts.html"
+    }
+  ],
+  "gap_note": null,
+  "generated_at": "2026-03-08T20:33:25.433003+00:00",
+  "manual_required": false,
+  "ok": true,
+  "script": "05_get_hcs_catalog.py"
+}

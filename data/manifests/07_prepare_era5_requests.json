@@ -1,0 +1,12 @@
+{
+  "docs_url": "https://cds.climate.copernicus.eu/api-how-to",
+  "generated_at": "2026-03-08T20:33:26.912292+00:00",
+  "manual_required": true,
+  "ok": true,
+  "outputs": [
+    "data/raw/era5/era5_request_template.json",
+    "data/raw/era5/.cdsapirc.template",
+    "data/raw/era5/download_era5_template.py"
+  ],
+  "script": "07_prepare_era5_requests.py"
+}

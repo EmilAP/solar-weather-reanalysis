@@ -1,0 +1,29 @@
+{
+  "downloads": [
+    {
+      "error": "HTTP 404",
+      "ok": false,
+      "path": "data/raw/green_corona/candidate_1.html",
+      "row_count": null,
+      "sha256": null,
+      "size_bytes": null,
+      "status_code": 404,
+      "url": "https://www.ngdc.noaa.gov/stp/solar/green.html"
+    },
+    {
+      "error": null,
+      "ok": true,
+      "path": "data/raw/green_corona/candidate_2.html",
+      "row_count": null,
+      "sha256": "de82d6a2d393cf8e1d8a0cd37cd6cc44209962483d5bb4c30b166cbc3b0e84f3",
+      "size_bytes": 75479,
+      "status_code": 200,
+      "url": "https://www.swpc.noaa.gov/products/solar-cycle-progression"
+    }
+  ],
+  "generated_at": "2026-03-08T20:33:26.474322+00:00",
+  "manual_note": null,
+  "manual_required": false,
+  "ok": true,
+  "script": "06_get_green_corona.py"
+}

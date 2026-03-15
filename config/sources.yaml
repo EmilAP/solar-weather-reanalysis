@@ -1,0 +1,40 @@
+spc_tornado:
+  tornado_csv_url: "https://www.spc.noaa.gov/wcm/data/1950-2023_actual_tornadoes.csv"
+  metadata_page: "https://www.spc.noaa.gov/wcm/"
+
+ncei_storm_events:
+  index_url: "https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/"
+  file_pattern: "StormEvents_details-ftp_v1.0_d"
+  year_start: 1963
+  year_end: 2023
+
+omni:
+  base_url: "https://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/"
+  files:
+    - "omni2_all_years.dat"
+  expected_start_year: 1963
+  expected_end_year: 2023
+
+icme:
+  richardson_cane_html: "https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.htm"
+  richardson_cane_txt: "https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.txt"
+
+hcs:
+  candidate_urls:
+    - "http://wso.stanford.edu/SB/SB.html"
+    - "http://wso.stanford.edu/Tilts.html"
+
+green_corona:
+  candidate_urls:
+    - "https://www.ngdc.noaa.gov/stp/solar/green.html"
+    - "https://www.swpc.noaa.gov/products/solar-cycle-progression"
+
+era5:
+  cds_api_docs: "https://cds.climate.copernicus.eu/api-how-to"
+  dataset: "reanalysis-era5-single-levels"
+  years: [2021, 2022, 2023]
+
+spc_outlooks:
+  archive_urls:
+    - "https://www.spc.noaa.gov/products/outlook/archive/"
+    - "https://www.spc.noaa.gov/products/outlook/archive/2021/"

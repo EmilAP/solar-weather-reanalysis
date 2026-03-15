@@ -1,0 +1,110 @@
+{
+  "run_id": "20260308T022053Z",
+  "generated_at": "2026-03-08T02:28:55.048964+00:00",
+  "workspace": "/home/owner/dev/reanalysis",
+  "all_ok": true,
+  "step_count": 11,
+  "ok_count": 11,
+  "fail_count": 0,
+  "results": [
+    {
+      "script": "00_check_environment.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/00_check_environment.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 0.15,
+      "stdout_tail": "{\n  \"script\": \"00_check_environment.py\",\n  \"python_version\": \"3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0]\",\n  \"platform\": \"Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39\",\n  \"missing_dirs\": [],\n  \"imports\": {\n    \"urllib.request\": true,\n    \"json\": true,\n    \"logging\": true\n  },\n  \"ok\": true\n}\n",
+      "stderr_tail": "2026-03-07 21:20:53,315 INFO Checking project environment\n"
+    },
+    {
+      "script": "01_download_spc_tornado.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/01_download_spc_tornado.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 2.268,
+      "stdout_tail": "",
+      "stderr_tail": "2026-03-07 21:20:53,532 INFO Downloading https://www.spc.noaa.gov/wcm/ -> /home/owner/dev/reanalysis/data/raw/spc_tornado/spc_wcm_index.html\n2026-03-07 21:20:53,930 INFO Downloading https://www.spc.noaa.gov/wcm/data/1950-2023_actual_tornadoes.csv -> /home/owner/dev/reanalysis/data/raw/spc_tornado/spc_actual_tornadoes_1950_2023.csv\n2026-03-07 21:20:55,581 INFO Rows: 70022; Observed range 1950-2023\n"
+    },
+    {
+      "script": "02_download_ncei_storm_events.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/02_download_ncei_storm_events.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 109.898,
+      "stdout_tail": "",
+      "stderr_tail": "/www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2009_c20250520.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2009_c20250520.csv.gz\n2026-03-07 21:21:37,562 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2010_c20250520.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2010_c20250520.csv.gz\n2026-03-07 21:21:47,354 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2011_c20250520.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2011_c20250520.csv.gz\n2026-03-07 21:22:01,910 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2012_c20250520.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2012_c20250520.csv.gz\n2026-03-07 21:22:06,188 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2013_c20250520.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2013_c20250520.csv.gz\n2026-03-07 21:22:08,789 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2014_c20250520.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2014_c20250520.csv.gz\n2026-03-07 21:22:13,541 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2015_c20251118.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2015_c20251118.csv.gz\n2026-03-07 21:22:17,956 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2016_c20250818.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2016_c20250818.csv.gz\n2026-03-07 21:22:23,566 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2017_c20260116.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2017_c20260116.csv.gz\n2026-03-07 21:22:25,499 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2018_c20260224.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2018_c20260224.csv.gz\n2026-03-07 21:22:27,692 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2019_c20260116.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2019_c20260116.csv.gz\n2026-03-07 21:22:29,265 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2020_c20260116.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2020_c20260116.csv.gz\n2026-03-07 21:22:30,509 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2021_c20250520.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2021_c20250520.csv.gz\n2026-03-07 21:22:34,646 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2022_c20250721.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2022_c20250721.csv.gz\n2026-03-07 21:22:36,822 INFO Downloading https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2023_c20260116.csv.gz -> /home/owner/dev/reanalysis/data/raw/ncei_storm_events/StormEvents_details-ftp_v1.0_d2023_c20260116.csv.gz\n2026-03-07 21:22:45,142 INFO Requested files: 61\n2026-03-07 21:22:45,144 INFO Observed range 1963-2023\n"
+    },
+    {
+      "script": "03_download_omni.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/03_download_omni.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 59.739,
+      "stdout_tail": "",
+      "stderr_tail": "2026-03-07 21:22:46,966 INFO Downloading https://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/omni2_all_years.dat -> /home/owner/dev/reanalysis/data/raw/omni/omni2_all_years.dat\n2026-03-07 21:23:44,617 INFO Observed range 1963-2026\n"
+    },
+    {
+      "script": "04_download_icme.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/04_download_icme.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 3.975,
+      "stdout_tail": "",
+      "stderr_tail": "2026-03-07 21:23:46,258 INFO Downloading https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.htm -> /home/owner/dev/reanalysis/data/raw/icme/icmetable2.html\n2026-03-07 21:23:48,537 INFO Downloading https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.txt -> /home/owner/dev/reanalysis/data/raw/icme/icmetable2.txt\n2026-03-07 21:23:49,160 INFO ICME rows: 648\n2026-03-07 21:23:49,161 INFO Observed range 1996-2025, expected coverage 1963-2023\n"
+    },
+    {
+      "script": "05_get_hcs_catalog.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/05_get_hcs_catalog.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 2.586,
+      "stdout_tail": "",
+      "stderr_tail": "2026-03-07 21:23:50,268 INFO Downloading http://wso.stanford.edu/SB/SB.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_1.html\n2026-03-07 21:23:51,171 INFO Downloading http://wso.stanford.edu/Tilts.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_2.html\n"
+    },
+    {
+      "script": "06_get_green_corona.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/06_get_green_corona.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 2.35,
+      "stdout_tail": "",
+      "stderr_tail": "2026-03-07 21:23:52,804 INFO Downloading https://www.ngdc.noaa.gov/stp/solar/green.html -> /home/owner/dev/reanalysis/data/raw/green_corona/candidate_1.html\n2026-03-07 21:23:53,552 INFO Downloading https://www.swpc.noaa.gov/products/solar-cycle-progression -> /home/owner/dev/reanalysis/data/raw/green_corona/candidate_2.html\n"
+    },
+    {
+      "script": "07_prepare_era5_requests.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/07_prepare_era5_requests.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 1.501,
+      "stdout_tail": "",
+      "stderr_tail": "2026-03-07 21:23:55,632 INFO Prepared ERA5 request templates only; no download executed\n"
+    },
+    {
+      "script": "08_get_spc_outlooks.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/08_get_spc_outlooks.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 298.291,
+      "stdout_tail": "",
+      "stderr_tail": "2026-03-07 21:23:56,636 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/ -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_1.html\n2026-03-07 21:23:58,129 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/2021/ -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_2.html\n"
+    },
+    {
+      "script": "09_validate_downloads.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/09_validate_downloads.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 0.578,
+      "stdout_tail": "",
+      "stderr_tail": "2026-03-07 21:28:54,540 INFO Validation overall_ok=True\n"
+    },
+    {
+      "script": "10_build_master_manifest.py",
+      "command": "/usr/bin/python3 /home/owner/dev/reanalysis/scripts/10_build_master_manifest.py",
+      "return_code": 0,
+      "ok": true,
+      "elapsed_seconds": 0.429,
+      "stdout_tail": "",
+      "stderr_tail": "2026-03-07 21:28:54,972 INFO Master manifest written: /home/owner/dev/reanalysis/data/manifests/master_manifest.json\n"
+    }
+  ]
+}

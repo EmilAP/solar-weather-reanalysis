@@ -1,0 +1,10 @@
+2026-03-07 21:02:54,819 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/2021/day1otlk_2021.html -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_1.html
+2026-03-07 21:02:55,646 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/2021/day2otlk_2021.html -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_2.html
+2026-03-07 21:02:58,082 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/2021/day3otlk_2021.html -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_3.html
+2026-03-07 21:02:58,748 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/2021/day4-8otlk_2021.html -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_4.html
+2026-03-07 21:07:38,973 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/ -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_1.html
+2026-03-07 21:08:07,800 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/2021/ -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_2.html
+2026-03-07 21:23:56,636 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/ -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_1.html
+2026-03-07 21:23:58,129 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/2021/ -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_2.html
+2026-03-08 16:33:27,431 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/ -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_1.html
+2026-03-08 16:33:37,881 INFO Downloading https://www.spc.noaa.gov/products/outlook/archive/2021/ -> /home/owner/dev/reanalysis/data/raw/spc_outlooks/archive_2.html

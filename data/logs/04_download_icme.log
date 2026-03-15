@@ -1,0 +1,16 @@
+2026-03-07 21:01:34,809 INFO Downloading https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.htm -> /home/owner/dev/reanalysis/data/raw/icme/icmetable2.html
+2026-03-07 21:01:35,903 INFO Downloading https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.txt -> /home/owner/dev/reanalysis/data/raw/icme/icmetable2.txt
+2026-03-07 21:01:36,267 INFO ICME rows: 0
+2026-03-07 21:01:36,267 INFO No years found
+2026-03-07 21:07:37,451 INFO Downloading https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.htm -> /home/owner/dev/reanalysis/data/raw/icme/icmetable2.html
+2026-03-07 21:07:38,359 INFO Downloading https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.txt -> /home/owner/dev/reanalysis/data/raw/icme/icmetable2.txt
+2026-03-07 21:07:38,755 INFO ICME rows: 648
+2026-03-07 21:07:38,756 INFO Observed range 1996-2025, expected coverage 1963-2023
+2026-03-07 21:23:46,258 INFO Downloading https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.htm -> /home/owner/dev/reanalysis/data/raw/icme/icmetable2.html
+2026-03-07 21:23:48,537 INFO Downloading https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.txt -> /home/owner/dev/reanalysis/data/raw/icme/icmetable2.txt
+2026-03-07 21:23:49,160 INFO ICME rows: 648
+2026-03-07 21:23:49,161 INFO Observed range 1996-2025, expected coverage 1963-2023
+2026-03-08 16:33:23,137 INFO Downloading https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.htm -> /home/owner/dev/reanalysis/data/raw/icme/icmetable2.html
+2026-03-08 16:33:24,074 INFO Downloading https://izw1.caltech.edu/ACE/ASC/DATA/level3/icmetable2.txt -> /home/owner/dev/reanalysis/data/raw/icme/icmetable2.txt
+2026-03-08 16:33:24,439 INFO ICME rows: 648
+2026-03-08 16:33:24,440 INFO Observed range 1996-2025, expected coverage 1963-2023

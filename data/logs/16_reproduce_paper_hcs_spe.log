@@ -1,0 +1,13 @@
+2026-03-14 15:47:49,822 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-03-14 15:47:49,849 INFO Built paper-style author-HCS SPE with 1793 events in 100.056s (run_null=False)
+2026-03-14 16:29:14,556 INFO Monte Carlo progress: 10/20 iterations
+2026-03-14 16:40:00,106 INFO Monte Carlo progress: 20/20 iterations
+2026-03-14 16:40:00,517 INFO Built paper-style author-HCS SPE with 1793 events in 1639.249s (run_null=True)
+2026-03-14 16:52:59,529 INFO Monte Carlo progress: 10/50 iterations
+2026-03-14 16:58:48,310 INFO Monte Carlo progress: 20/50 iterations
+2026-03-14 17:03:50,172 INFO Monte Carlo progress: 30/50 iterations
+2026-03-14 17:08:47,492 INFO Monte Carlo progress: 40/50 iterations
+2026-03-14 17:15:14,564 INFO Monte Carlo progress: 50/50 iterations
+2026-03-14 17:15:14,711 INFO Built paper-style author-HCS SPE with 1793 events in 2105.303s (run_null=True)
+2026-03-14 18:40:52,125 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-03-14 18:40:52,129 INFO Built paper-style author-HCS SPE with 1793 events in 60.283s (run_null=False)

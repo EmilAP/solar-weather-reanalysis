@@ -1,0 +1,49 @@
+{
+  "assumptions": [
+    "Observed composite uses the reconstructed daily HCS crossings with a symmetric +/-30 day window."
+  ],
+  "generated_at": "2026-03-14T22:39:37.694137+00:00",
+  "inputs": [
+    "data/derived/catalogs/hcs_from_omni.csv",
+    "data/derived/daily/analysis_daily.csv"
+  ],
+  "metrics": {
+    "crossings_used": 1783,
+    "lag0_null_mean": 2.84760403813797,
+    "lag0_null_q025": 2.548499719573752,
+    "lag0_null_q975": 3.1520330902972518,
+    "lag0_observed_daily_mean": 3.061132922041503,
+    "lag0_outside_95_band": false,
+    "null_iterations": 500,
+    "window_days": 30
+  },
+  "ok": true,
+  "outputs": {
+    "anomaly_figure": {
+      "png": "data/derived/figures/reconstructed_hcs_anomalies.png",
+      "svg": "data/derived/figures/reconstructed_hcs_anomalies.svg"
+    },
+    "cumulative_figure": {
+      "png": "data/derived/figures/reconstructed_hcs_cumulative.png",
+      "svg": "data/derived/figures/reconstructed_hcs_cumulative.svg"
+    },
+    "daily_rate_figure": {
+      "png": "data/derived/figures/reconstructed_hcs_daily_rates.png",
+      "svg": "data/derived/figures/reconstructed_hcs_daily_rates.svg"
+    },
+    "diagnostics": "data/derived/tables/reconstructed_hcs_event_study_diagnostics.csv",
+    "fast_null": {
+      "csv": "data/derived/spe/reconstructed_hcs_fast_null_all_tornadoes.csv",
+      "parquet": "data/derived/spe/reconstructed_hcs_fast_null_all_tornadoes.parquet"
+    },
+    "fast_null_figure": {
+      "png": "data/derived/figures/reconstructed_hcs_fast_null_all_tornadoes.png",
+      "svg": "data/derived/figures/reconstructed_hcs_fast_null_all_tornadoes.svg"
+    },
+    "observed": {
+      "csv": "data/derived/spe/reconstructed_hcs_observed.csv",
+      "parquet": "data/derived/spe/reconstructed_hcs_observed.parquet"
+    }
+  },
+  "script": "27_event_study_reconstructed_hcs.py"
+}

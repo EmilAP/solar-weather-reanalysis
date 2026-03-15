@@ -1,0 +1,12 @@
+2026-03-07 21:01:37,057 INFO Downloading https://wso.stanford.edu/SB/SB.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_1.html
+2026-03-07 21:02:02,415 ERROR Download failed for https://wso.stanford.edu/SB/SB.html after 5 attempts: <urlopen error [SSL: UNSUPPORTED_PROTOCOL] unsupported protocol (_ssl.c:1000)>
+2026-03-07 21:02:02,426 INFO Downloading https://wso.stanford.edu/Tilts.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_2.html
+2026-03-07 21:02:27,461 ERROR Download failed for https://wso.stanford.edu/Tilts.html after 5 attempts: <urlopen error [SSL: UNSUPPORTED_PROTOCOL] unsupported protocol (_ssl.c:1000)>
+2026-03-07 21:14:00,272 INFO Downloading http://wso.stanford.edu/SB/SB.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_1.html
+2026-03-07 21:14:00,465 INFO Downloading http://wso.stanford.edu/Tilts.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_2.html
+2026-03-07 21:16:01,750 INFO Downloading http://wso.stanford.edu/SB/SB.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_1.html
+2026-03-07 21:16:02,013 INFO Downloading http://wso.stanford.edu/Tilts.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_2.html
+2026-03-07 21:23:50,268 INFO Downloading http://wso.stanford.edu/SB/SB.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_1.html
+2026-03-07 21:23:51,171 INFO Downloading http://wso.stanford.edu/Tilts.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_2.html
+2026-03-08 16:33:24,680 INFO Downloading http://wso.stanford.edu/SB/SB.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_1.html
+2026-03-08 16:33:24,972 INFO Downloading http://wso.stanford.edu/Tilts.html -> /home/owner/dev/reanalysis/data/raw/hcs/candidate_2.html

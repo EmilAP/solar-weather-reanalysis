@@ -1,0 +1,44 @@
+{
+  "script": "09_validate_downloads.py",
+  "missing_manifests": [],
+  "checks": [
+    {
+      "dataset": "00_check_environment",
+      "ok": true
+    },
+    {
+      "dataset": "01_download_spc_tornado",
+      "ok": true
+    },
+    {
+      "dataset": "02_download_ncei_storm_events",
+      "ok": true
+    },
+    {
+      "dataset": "03_download_omni",
+      "ok": true
+    },
+    {
+      "dataset": "04_download_icme",
+      "ok": true
+    },
+    {
+      "dataset": "05_get_hcs_catalog",
+      "ok": true
+    },
+    {
+      "dataset": "06_get_green_corona",
+      "ok": true
+    },
+    {
+      "dataset": "07_prepare_era5_requests",
+      "ok": true
+    },
+    {
+      "dataset": "08_get_spc_outlooks",
+      "ok": true
+    }
+  ],
+  "overall_ok": true,
+  "datasets_checked": 9
+}

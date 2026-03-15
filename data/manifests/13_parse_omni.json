@@ -1,0 +1,55 @@
+{
+  "assumptions": [
+    "OMNI fields parsed using the public OMNI2 hourly format definition from OMNIWeb documentation."
+  ],
+  "generated_at": "2026-03-14T16:01:02.770575+00:00",
+  "inputs": [
+    "data/raw/omni/omni2_all_years.dat"
+  ],
+  "metrics": {
+    "missingness": {
+      "ae": 0.0,
+      "ap": 0.013,
+      "b_mag": 0.2343,
+      "bx_gse": 0.2343,
+      "by_gse": 0.2343,
+      "by_gsm": 0.2343,
+      "bz_gse": 0.2343,
+      "bz_gsm": 0.2343,
+      "date": 0.0,
+      "datetime_utc": 0.0,
+      "doy": 0.0,
+      "dst": 0.0129,
+      "electric_field": 0.2841,
+      "f107": 0.0138,
+      "f_scalar": 0.2343,
+      "flow_pressure": 0.2707,
+      "hour": 0.0,
+      "plasma_beta": 0.3289,
+      "proton_density": 0.2707,
+      "sigma_bz": 0.2353,
+      "speed": 0.2416,
+      "year": 0.0
+    },
+    "row_count_daily": 23376,
+    "row_count_hourly": 561024,
+    "year_end": 2026,
+    "year_start": 1963
+  },
+  "ok": true,
+  "outputs": {
+    "counts_per_year": {
+      "csv": "data/derived/tables/omni_counts_per_year.csv",
+      "parquet": "data/derived/tables/omni_counts_per_year.parquet"
+    },
+    "daily": {
+      "csv": "data/derived/daily/omni_daily.csv",
+      "parquet": "data/derived/daily/omni_daily.parquet"
+    },
+    "hourly": {
+      "csv": "data/derived/daily/omni_hourly_clean.csv",
+      "parquet": "data/derived/daily/omni_hourly_clean.parquet"
+    }
+  },
+  "script": "13_parse_omni.py"
+}

@@ -1,0 +1,22 @@
+{
+  "downloads": [
+    {
+      "error": null,
+      "ok": true,
+      "path": "data/raw/omni/omni2_all_years.dat",
+      "row_count": null,
+      "sha256": "5e18e8cdc52e1fc8ede19b68ce5ca7b1f7b9b71b187f0e1879278ec5373f926f",
+      "size_bytes": 184015872,
+      "status_code": 200,
+      "url": "https://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/omni2_all_years.dat"
+    }
+  ],
+  "generated_at": "2026-03-08T20:33:22.815910+00:00",
+  "ok": true,
+  "row_count": 561024,
+  "script": "03_download_omni.py",
+  "year_validation": {
+    "message": "Observed range 1963-2026",
+    "ok": true
+  }
+}

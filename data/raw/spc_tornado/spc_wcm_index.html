@@ -1,0 +1,1227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNE5GEVT4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VNE5GEVT4X');
+</script>
+
+  <title>Storm Prediction Center Maps, Graphics, and Data Page</title>
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <meta content="NCEP/SPC Web Team" name="GENERATOR">
+  <link href="/misc/spccwi.css" type="text/css" rel="STYLESHEET">
+  <link href="/nwscwi/main.css" type="text/css" rel="STYLESHEET">
+
+  <script type="text/javascript" src="/misc/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/misc/js/nwsexit-spc.js"></script>
+
+<style>
+.SPCWeatherHeadlinesBoxMdt {
+        border: 2px solid #d20011;
+        background-color:#eb7e82;
+        width: 99%;
+        margin: 5px auto 5px auto;
+        padding: 2px;
+        border-radius: 6px
+}
+.SPCWeatherHeadlinesMdt {
+        color:#d20011;
+        text-align: center;
+        font: bold 14pt Arial;
+        text-shadow: 1px 1px #aaa;
+}
+.SPCWeatherHeadlinesBody {
+        color: #000000;
+        padding-left: 15px;
+        padding-right: 15px;
+        font: 10pt Arial;
+}
+.SPCWeatherHeadlinesBody a {
+	color: #004a82;
+}
+
+.SPCWeatherHeadlinesBody a:hover {
+	color: #4ba3e3;
+}
+</style>
+
+  <script type="text/javascript" src="/new/js/SPCindex-shutdown.js"></script>
+  <meta name="description"
+   content="Severe weather, tornado, thunderstorm, fire weather,
+   storm report, tornado watch, severe thunderstorm watch,
+   mesoscale discussion, convective outlook products from the Storm
+   Prediction Center.">
+  <meta name="keywords"
+   content="severe weather, wx, tornado, thunderstorm, fire weather,
+   mesoscale discussion, tornado watch, severe thunderstorm watch,
+   convective outlook, storm report, tornado research, severe weather
+   research, tornadogenesis, severe thunderstorm, lightning, hail damage,
+   winter weather, wind damage, flash flood, flooding, radar, satellite,
+   GOES, damaging downbursts, damaging winds, microbursts, natural hazard,
+   climatology, NWS, NCEP, SPC, Storm Prediction Center">
+
+   <script language="JavaScript" type="text/JavaScript">
+   function showtab(val)
+   {
+   if (val == 1) { g1 = "ustormaps/1995-2024-stateavgtornadoes.png"; }
+   if (val == 2) { g1 = "ustormaps/2005-2024-stateavgtornadoes.png"; }
+   if (val == 3) { g1 = "ustormaps/2015-2024-stateavgtornadoes.png"; }
+   document.map1.src=g1;
+   }
+   </script>
+
+   <script language="JavaScript" type="text/JavaScript">
+   function showtab3(val)
+   {
+   if (val == 4) { b1 = "ustormaps/1995-2024-stateavgfatals.png"; }
+   if (val == 5) { b1 = "ustormaps/2005-2024-stateavgfatals.png"; }
+   if (val == 6) { b1 = "ustormaps/2015-2024-stateavgfatals.png"; }
+   document.map3.src=b1;
+   }
+   </script>
+
+   <script language="JavaScript" type="text/JavaScript">
+   function showtab4(val)
+   {
+   if (val == 1) { c1 = "ustormaps/2005-2024-tornadoes-per10k-perstate.png"; }
+   if (val == 2) { c1 = "ustormaps/tornadoes-by-county.png"; }
+   if (val == 3) { c1 = "ustormaps/2015-2024-fatals.png"; }
+   document.map4.src=c1;
+   }
+   </script>
+
+   <script language="JavaScript" type="text/JavaScript">
+   function showtab2(val)
+   {
+   if (val == 4) { g2 = "ptorngraph.png"; g5 = "newimgs/torn-counts.png";}
+   if (val == 5) { g2 = "phailgraph.png"; g5 = "newimgs/hail-counts.png";}
+   if (val == 6) { g2 = "pwindgraph.png"; g5 = "newimgs/wind-counts.png";}
+   document.map2.src=g2;
+   document.map5.src=g5;
+   }
+   </script>
+</head>
+<a name="top"></a>
+<body leftmargin="0" background="/nwscwi/1024_navbar.gif"
+      topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+
+<!-- Header here-->
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/topbanner.jpg" border="0">
+  <tr>
+    <td align="right" height="19">
+      <a href="#contents"><img height="1" alt="Skip Navigation Links"
+         src="/nwscwi/skipgraphic.gif" width="1" border="0"></a>
+      <a href="//www.weather.gov/" target="_blank"><span class="nwslink">weather.gov</span></a>&nbsp;</td>
+  </tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+  <tr>
+    <td rowspan="2"><a href="//www.noaa.gov/" target="_blank"><img src="/nwscwi/noaaleft.jpg" alt="NOAA logo-Select to go to the NOAA homepage" width="85" height="78" border="0" /></a></td>
+    <td><img src="/nwscwi/noaa_nws_title.jpg" width="500" height="20" border="0" alt="NOAA's National Weather Service"></td>
+    <td rowspan="2" width="100%" background="/nwscwi/ncep_bkgrnd.jpg">&nbsp;</td>
+    <td rowspan="2" align="right"><a href="//www.weather.gov/" target="_blank"><img src="/nwscwi/nwsright.jpg" alt="Select to go to the NWS homepage" width="85" height="78" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td><a href="/"><img height="58" alt="Storm Prediction Center" src="/nwscwi/spc.jpg" width="500" border="0"></td>
+  </tr>
+</table>
+
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/navbkgrnd.gif" border="0">
+  <tr>
+    <td align="left" valign="top" width="94"><img height="23" alt="navigation bar left" src="/nwscwi/navbarleft.jpg" width="94" border="0"></td>
+    <td class="nav" id="menuitem" align="center" width="15%">
+      <a href="/sitemap.html">Site Map</a></td>
+    <td class="nav" id="menuitem" align="right" width="15%">
+      <a href="//www.weather.gov/pa/">News</a></td>
+    <td class="nav" id="menuitem" align="right" width="20%">
+      <a href="//www.weather.gov/organization.php">Organization</a></td>
+    <td width="20%">&nbsp;</td>
+    <td align="left" class="searchinput" width="20%" nowrap="nowrap"><!-- Begin search code -->
+      <form method="get" action="//search.usa.gov/search">
+        <input type="hidden" name="v:project" value="firstgov" />
+        <label for="query" span class="yellow">Search for:&nbsp;&nbsp;</label>
+        <input type="text" name="query" id="query" size="10"/>
+        <input type="radio" name="affiliate" checked="checked" value="spc"" id="spc" />
+        <label class="yellow" for="spc">SPC</label>
+        <input type="radio" name="affiliate" value="ncep.noaa.gov"" id="ncep" />
+        <label class="yellow" for="ncep">NCEP</label>
+        <input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+        <label class="yellow" for="noaa">All NOAA</label>
+        <input type="submit" value="Go"  /></label>
+      </form>
+    </td><!-- End search code -->
+    <td width="10%">&nbsp;</td>
+    <td align="right" valign="bottom" width="24"><img src="/nwscwi/navbarendcap.jpg" alt="navigation bar end cap" width="24" height="23" border="0" /></td>
+  </tr>
+
+</table>
+
+
+<table cellspacing="0" cellpadding="0" width="870" border="0">
+  <tr valign="top">
+    <td width="130" bgcolor="#0a2390"><br />
+
+<!-- Left menu here-->
+<table cellspacing="0" cellpadding="2" width="130" border="0">
+        <tr valign="top">
+          <td class="searchinput" align="left">
+            <form method="post" action="//forecast.weather.gov/zipcity.php">
+              <div ID="Layer2" STYLE="position:absolute; width:200px;  height:115px; z-index:2; visibility: hidden">Search by city or zip code. Press enter or select the go button to submit request</div>
+              <span class="yellow"><label for="city_state">Local&nbsp;forecast&nbsp;by<br />&quot;City,&nbsp;St&quot;&nbsp;or&nbsp;&quot;ZIP&quot;</label></span><br />
+              <input type="text" id="city_state" name="inputstring" size="10" value="City, St" onfocus="this.value='';" />&nbsp;
+              <input type="submit" name="Go2" value="Go" />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td class="white" id="menuitem">
+            <hr width="90%"/>
+            <div style="text-align:center;">
+              <span><a href="//www.nws.noaa.gov/cgi-bin/nwsexit.pl?url=https://www.facebook.com/NWSSPC" target="SPC_Facebook" title="NOAA NWS Storm Prediction Center Facebook"><img src="/misc/facebook_logo.gif" style="border: 0px;" /><br />SPC on Facebook</a></span>
+              <hr width="80%"/>
+              <span><a href="//www.nws.noaa.gov/cgi-bin/nwsexit.pl?url=https://twitter.com/NWSSPC" target="_blank" title="NOAA NWS Storm Prediction Center Twitter"><img src="/misc/twitter-bird-light-bgs.png" style="border: 0px;height: 40px;width: 40px;vertical-align: middle;" />@NWSSPC</a></span>
+              <hr width="80%"/>
+              <span class="yellow"><a href="//www.ncep.noaa.gov/newsletter/" target="NCEP_Newsletter">NCEP Quarterly Newsletter</a></span>
+            </div>
+            <hr width="90%"/>
+            <a href="/"><span class="yellow">Home</span></a>&nbsp;(<a href="/classic.html" target="_blank"><span class="yellow">Classic</span></a>)<br />
+            <span class="yellow">SPC&nbsp;Products</span><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/">All&nbsp;SPC&nbsp;Forecasts</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/watch/">Current&nbsp;Watches</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/md/">Meso.&nbsp;Discussions</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/outlook/">Conv.&nbsp;Outlooks</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/exper/enhtstm/">Tstm.&nbsp;Outlooks</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/fire_wx/overview.html">Fire&nbsp;Wx&nbsp;Outlooks</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/spcrss.xml"><img src="/nwscwi/xml2.gif" alt="XML logo" border="0" height="13" width="13"></a>&nbsp;<a href="/aboutrss.html">RSS&nbsp;Feeds</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="//www.nws.noaa.gov/emailupdates/">E-Mail Alerts</a><br />
+
+	    <span class="yellow">Weather&nbsp;Information</span><br />
+	    &nbsp;&nbsp;&nbsp;<a href="/climo/online/">Storm&nbsp;Reports</a><br />
+	    &nbsp;&nbsp;&nbsp;<a href="/exper/reports/">Storm&nbsp;Reports&nbsp;Dev.</a><br />
+	    &nbsp;&nbsp;&nbsp;<a href="//www.weather.gov/largemap.php" target="NWS_Hazards">NWS&nbsp;Hazards&nbsp;Map</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/wwa/">Watch/Warning&nbsp;Map</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="//www.nws.noaa.gov/radar_tab.php" target="radar_window">National&nbsp;RADAR</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/archive/">Product&nbsp;Archive</a><br />
+            &nbsp;&nbsp;&nbsp;<A href="//www.weather.gov/nwr/" target="NWR_window">NOAA&nbsp;Weather&nbsp;Radio</a><br />
+
+            <span class="yellow">Research</span><br />
+            &nbsp;&nbsp;&nbsp;<a href="/products/exper/">Non-op.&nbsp;Products</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/exper/">Forecast&nbsp;Tools</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/exper/archive/events/">Svr.&nbsp;Tstm.&nbsp;Events</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/publications/">SPC&nbsp;Publications</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="//hwt.nssl.noaa.gov/" target="NOAA_HWT">SPC-NSSL&nbsp;HWT</a><br />
+
+            <span class="yellow">Education&nbsp;&&nbsp;Outreach</span><br />
+            &nbsp;&nbsp;&nbsp;<a href="/misc/aboutus.html">About&nbsp;the&nbsp;SPC</a><br />
+	    &nbsp;&nbsp;&nbsp;<a href="/faq/">SPC&nbsp;FAQ</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/faq/tornado/">About&nbsp;Tornadoes</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/misc/AbtDerechos/derechofacts.htm">About&nbsp;Derechos</a><br />
+	    &nbsp;&nbsp;&nbsp;<a href="/wcm/">WCM&nbsp;Page</a><br />
+	    &nbsp;&nbsp;&nbsp;<a href="/efscale/">Enh.&nbsp;Fujita&nbsp;Page</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="/history/early.html">Our&nbsp;History</a><br />
+            &nbsp;&nbsp;&nbsp;<a href="//nwc.ou.edu/tours/" target="_blank">Public&nbsp;Tours</a><br />
+
+            <span class="yellow">Misc.</span><br />
+            &nbsp;&nbsp;&nbsp;<a href="/staff/">Staff</a><br />
+            <!-- &nbsp;&nbsp;&nbsp;<a href="/misc/links.html">Links</a><br /> -->
+
+            <span class="yellow">Contact&nbsp;Us</span><br />
+            &nbsp;&nbsp;&nbsp;<a href="/misc/feedback.html">SPC&nbsp;Feedback</a><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><a href="//www.USA.gov/"><img src="/misc/usagov_logo_color_110w_30h.gif" alt="USA.gov is the U.S. Government's official Web portal to all Federal, state and local government Web resources and services." width="110" height="30" border="0"></a></td>
+        </tr>
+      </table>
+
+
+</td>
+
+<td valign="top" align="center" width="810"><a name="contents"></a><br />
+<table cellspacing="5" cellpadding="0" width="825" border="0">
+<tr align="center" nowrap><b><font size=+1>Severe Weather Maps, Graphics, and Data Page</font></b></tr>
+<br>
+<tr align="center" nowrap><b><em><font size=-1.5>Last Update: 13 May 2025 - <a href="changelog.txt">Change Log</a></font></em></b></tr>
+<!--
+  <body>
+    <div id='headlineContainer-shutdown'>
+      <div class='full_width'>
+        <div class='SPCWeatherHeadlinesBoxMdt'>
+          <div class='SPCWeatherHeadlinesMdt'>
+            NOTICE
+          </div>
+          <div class='SPCWeatherHeadlinesBody'>
+             <strong>
+               Parts of the U.S. Government are closed. Because the information on the WCM Page is not necessary to protect life and property, it will not be updated and maintained during the Federal Government shutdown. For critical weather information, please visit <a href="https://www.weather.gov/" target="_BLANK">www.weather.gov</a>. To learn more, see <a href="https://www.commerce.gov/" target="_BLANK">www.commerce.gov</a>.
+             </strong ><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src='/new/js/jquery-expander.js'></script>
+    <script type='text/javascript' src='/new/js/custom.js'></script>
+  </body>
+-->
+
+<tr>
+<td align="center" valign="top"><a href="#intro">Intro</a>&nbsp;|&nbsp;<a href="#torclim">State Summaries</a>&nbsp;|&nbsp;<a href="#ATP">U.S. Annual Tornado Maps</a>&nbsp;|&nbsp;<a href="#torgraph">2024 Preliminary Reports to Date</a>
+<br><a href="#jmc">Monthly Tornadoes Since 1950</a>&nbsp;|&nbsp;<a href="#enso">Bi-monthly Tornadoes by ENSO Phase Strength</a>
+<br><a href="#watchfreq">Watch Frequency Maps</a>&nbsp;|&nbsp;<a href="#20yavg">20y Annual Average Watches by County</a>&nbsp;|&nbsp;<a href="#30yrclimo">30-year Severe Climatology</a>
+<br><a href="#stats">SPC AWIPS Products</a>&nbsp;|&nbsp;<a href="#data">Data</a>&nbsp;|&nbsp;<a href="#tctor">Tropical Cyclone Tornadoes</a>&nbsp;|&nbsp;<a href="#gis">SVR GIS</a></td>
+</tr>
+
+
+<tr>
+<td>
+<br />This page has charts of the latest preliminary severe storm reports, annual summaries, and links to comma-separated-value (csv) data files from the SPC severe weather database back to 1950. <br>
+<br>
+
+<table width="810">
+
+<tr><th align="center"><a name="2024-reports"></a>2024 Total Severe Weather Reports</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<a href="2024/2024_allsvr.png"><img src="2024/2024_allsvr.png" width="810" alt=""></a><br>
+<p>
+A map of all tornado (red), hail (green), and thunderstorm wind gust (blue) reports from NWS offices in 2024.
+</p>
+
+
+</tr>
+</table>
+
+</table>
+
+<tr><th align="center"><a name="ATP"></a>Monthly Tornadoes by State</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a href="permonth_by_state/"><img src="maps.png" width="810" alt="Maps of Average State Tornadoes per Month"></a><br>
+
+</b> (Click on the maps to go to the maps page.)</center>
+<br>
+</tr>
+</table>
+
+
+<tr><th align="center"><a name="torclim"></a>Annual Averages: Tornadoes by State</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+
+<td bgcolor="#000066" align="center"><font size="2" face="Arial, Helvetica, sans-serif"><strong><font color="#FFFF00">
+<font color="yellow">Mouse over or click for full image --->&nbsp;&nbsp;&nbsp;</font>
+<a href="ustormaps/1995-2024-stateavgtornadoes.png" OnMouseOver="showtab('1')"><font color="yellow">30y Average</font></a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="ustormaps/2005-2024-stateavgtornadoes.png" OnMouseOver="showtab('2')"><font color="yellow">20y Average</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="ustormaps/2015-2024-stateavgtornadoes.png" OnMouseOver="showtab('3')"><font color="yellow">10y Average</font></a>
+</tr>
+
+<tr>
+<td colspan="4"><img src="ustormaps/1995-2024-stateavgtornadoes.png" name="map1" width="810" height="397" border="1" id="map1">
+</td>
+</tr>
+
+</table>
+
+<tr><th align="center"><a name="torfat"></a>Annual Averages: Tornado Fatalities by State</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+
+<td bgcolor="#000066" align="center"><font size="2" face="Arial, Helvetica, sans-serif"><strong><font color="#FFFF00">
+<font color="yellow">Mouse over or click for full image --->&nbsp;&nbsp;&nbsp;</font>
+<a href="ustormaps/1995-2024-stateavgfatals.png" OnMouseOver="showtab3('4')"><font color="yellow">30y Average</font></a>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="ustormaps/2005-2024-stateavgfatals.png" OnMouseOver="showtab3('5')"><font color="yellow">20y Average</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="ustormaps/2015-2024-stateavgfatals.png" OnMouseOver="showtab3('6')"><font color="yellow">10y Average</font></a>
+</tr>
+
+<tr>
+<td colspan="4"><img src="ustormaps/1995-2024-stateavgfatals.png" name="map3" width="810" height="397" border="1" id="map3">
+</td>
+</tr>
+
+</table>
+
+<tr><th align="center"><a name="amc"></a>Other U.S. Tornado Summaries</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+
+<td bgcolor="#000066" align="center"><a name="torclim"><font size="2" face="Arial, Helvetica, sans-serif"><strong><font color="#FFFF00">
+<font color="yellow">Mouse over or click for full image --->&nbsp;&nbsp;&nbsp;</font>
+<a href="ustormaps/2005-2024-tornadoes-per10k-perstate.png" OnMouseOver="showtab4('1')"><font color="yellow">By State Area</font></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="ustormaps/tornadoes-by-county.png" OnMouseOver="showtab4('2')"><font color="yellow">By County</font></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="ustormaps/2015-2024-fatals.png" OnMouseOver="showtab4('3')"><font color="yellow">Total Fatalities</font></a>
+</tr>
+
+<tr>
+<td colspan="4"><img src="ustormaps/2005-2024-tornadoes-per10k-perstate.png" name="map4" width="810" height="397" border="1" id="map4">
+</td>
+</tr>
+
+</table>
+
+
+<tr><th align="center"><a name="torgraph"></a>Daily Counts and Annual Running Trend (Updated Frequently)</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+
+<td bgcolor="#000066" align="center"><font size="2" face="Arial, Helvetica, sans-serif"><strong><font color="#FFFF00">
+<font color="yellow">Mouse over or click for full image --->&nbsp;&nbsp;&nbsp;</font>
+<a href="ptorngraph-big.png" OnMouseOver="showtab2('4')"><font color="yellow">Tornado Reports</font></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="phailgraph-big.png" OnMouseOver="showtab2('5')"><font color="yellow">Hail Reports</font></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="pwindgraph-big.png" OnMouseOver="showtab2('6')"><font color="yellow">Wind Reports</font></a>
+
+<tr>
+<td colspan="4"><img src="ptorngraph-big.png" name="map2" width="810" border="1" id="map2">
+</td>
+</tr>
+
+<tr>
+<td>
+End of year charts for 2025: <a href="2025/ptorngraph-big.png"> Tornadoes</a>, <a href="2025/phailgraph-big.png"> Hail</a>, and <a href="2025/pwindgraph-big.png">Wind</a>,<br>
+End of year charts for 2024: <a href="2024/ptorngraph-big.png"> Tornadoes</a>, <a href="2024/phailgraph-big.png"> Hail</a>, and <a href="2024/pwindgraph-big.png">Wind</a>,<br>
+End of year charts for 2023: <a href="2023/ptorngraph-big.png"> Tornadoes</a>, <a href="2023/phailgraph-big.png"> Hail</a>, and <a href="2023/pwindgraph-big.png">Wind</a>,<br>
+End of year charts for 2022: <a href="2022/ptorngraph-big.png"> Tornadoes</a>, <a href="2022/phailgraph-big.png"> Hail</a>, and <a href="2022/pwindgraph-big.png">Wind</a>,<br>
+End of year charts for 2021: <a href="2021/ptorngraph-big.png"> Tornadoes</a>, <a href="2021/phailgraph-big.png"> Hail</a>, and <a href="2021/pwindgraph-big.png">Wind</a>,<br>
+End of year charts for 2020: <a href="2020/ptorngraph-big.png"> Tornadoes</a>, <a href="2020/phailgraph-big.png"> Hail</a>, and <a href="2020/pwindgraph-big.png">Wind</a>,<br>
+End of year charts for 2019: <a href="2019/ptorngraph-big.png"> Tornadoes</a>, <a href="2019/phailgraph-big.png"> Hail</a>, and <a href="2019/pwindgraph-big.png">Wind</a>,<br>
+End of year charts for 2018: <a href="2018/ptorngraph-big.png"> Tornadoes</a>, <a href="2018/phailgraph-big.png"> Hail</a>, and <a href="2018/pwindgraph-big.png">Wind</a>,<br>
+End of year charts for 2017: <a href="2017/ptorngraph-big.png"> Tornadoes</a>, <a href="2017/phailgraph-big.png"> Hail</a>, and <a href="2017/pwindgraph-big.png">Wind</a>,<br>
+End of year charts for 2016: <a href="2016/ptorngraph-big.png"> Tornadoes</a>, <a href="2016/phailgraph-big.png"> Hail</a>, and <a href="2016/pwindgraph-big.png">Wind</a>.<br>
+End of year charts for 2015: <a href="2015/ptorngraph-big.png"> Tornadoes</a>, <a href="2015/phailgraph-big.png"> Hail</a>, and <a href="2015/pwindgraph-big.png">Wind</a>.<br>
+End of year charts for 2014: <a href="2014/ptorngraph-big.png"> Tornadoes</a>, <a href="2014/phailgraph-big.png"> Hail</a>, and <a href="2014/pwindgraph-big.png">Wind</a>.<br>
+End of year charts for 2013: <a href="2013/ptorngraph-big.png"> Tornadoes</a>, <a href="2013/phailgraph-big.png"> Hail</a>, and <a href="2013/pwindgraph-big.png">Wind</a>.<br>
+End of year charts for 2012: <a href="2012/ptorngraph-big.png"> Tornadoes</a>, <a href="2012/phailgraph-big.png"> Hail</a>, and <a href="2012/pwindgraph-big.png">Wind</a>.<br>
+End of year charts for 2011: <a href="2011/ptorngraph-big11.png"> Tornadoes</a>, <a href="2011/phailgraph-big11.png"> Hail</a>, and <a href="2011/pwindgraph-big11.png">Wind</a>.<br>
+</td>
+</tr>
+
+<tr></tr>
+<td bgcolor="#000066" align="center"><font size="2" face="Arial, Helvetica, sans-serif"><strong><font color="#FFFF00">
+  <font color="yellow">Mouse over or click for full image --->&nbsp;&nbsp;&nbsp;</font>
+  <a href="newimgs/torn-counts.png" OnMouseOver="showtab2('4')"><font color="yellow">Tornado Reports</font></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="newimgs/hail-counts.png" OnMouseOver="showtab2('5')"><font color="yellow">Hail Reports</font></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="newimgs/wind-counts.png" OnMouseOver="showtab2('6')"><font color="yellow">Wind Reports</font></a>
+  </tr>
+
+  <tr>
+  <td colspan="4"><img src="newimgs/torn-counts.png" name="map5" width="810" border="1" id="map5">
+  </td>
+  </tr>
+</td>
+
+<tr>
+<td>
+  End of year charts for 2025: <a href="newimgs/2025-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2025-hail-counts.png"> Hail</a>, and <a href="newimgs/2025-wind-counts.png">Wind</a>,<br>
+  End of year charts for 2024: <a href="newimgs/2024-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2024-hail-counts.png"> Hail</a>, and <a href="newimgs/2024-wind-counts.png">Wind</a>,<br>
+  End of year charts for 2023: <a href="newimgs/2023-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2023-hail-counts.png"> Hail</a>, and <a href="newimgs/2023-wind-counts.png">Wind</a>,<br>
+  End of year charts for 2022: <a href="newimgs/2022-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2022-hail-counts.png"> Hail</a>, and <a href="newimgs/2022-wind-counts.png">Wind</a>,<br>
+  End of year charts for 2021: <a href="newimgs/2021-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2021-hail-counts.png"> Hail</a>, and <a href="newimgs/2021-wind-counts.png">Wind</a>,<br>
+  End of year charts for 2020: <a href="newimgs/2020-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2020-hail-counts.png"> Hail</a>, and <a href="newimgs/2020-wind-counts.png">Wind</a>,<br>
+  End of year charts for 2019: <a href="newimgs/2019-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2019-hail-counts.png"> Hail</a>, and <a href="newimgs/2019-wind-counts.png">Wind</a>,<br>
+  End of year charts for 2018: <a href="newimgs/2018-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2018-hail-counts.png"> Hail</a>, and <a href="newimgs/2018-wind-counts.png">Wind</a>,<br>
+  End of year charts for 2017: <a href="newimgs/2017-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2017-hail-counts.png"> Hail</a>, and <a href="newimgs/2017-wind-counts.png">Wind</a>,<br>
+  End of year charts for 2016: <a href="newimgs/2016-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2016-hail-counts.png"> Hail</a>, and <a href="newimgs/2016-wind-counts.png">Wind</a>.<br>
+  End of year charts for 2015: <a href="newimgs/2015-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2015-hail-counts.png"> Hail</a>, and <a href="newimgs/2015-wind-counts.png">Wind</a>.<br>
+  End of year charts for 2014: <a href="newimgs/2014-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2014-hail-counts.png"> Hail</a>, and <a href="newimgs/2014-wind-counts.png">Wind</a>.<br>
+  End of year charts for 2013: <a href="newimgs/2013-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2013-hail-counts.png"> Hail</a>, and <a href="newimgs/2013-wind-counts.png">Wind</a>.<br>
+  End of year charts for 2012: <a href="newimgs/2012-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2012-hail-counts.png"> Hail</a>, and <a href="newimgs/2012-wind-counts.png">Wind</a>.<br>
+  End of year charts for 2011: <a href="newimgs/2011-torn-counts.png"> Tornadoes</a>, <a href="newimgs/2011-hail-counts.png"> Hail</a>, and <a href="newimgs/2011-wind-counts.png">Wind</a>.<br>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="adj.html"><img src="torgraph-big.png" width="810" alt="Annual Tornado Running Totals"></a>
+<center><b>Plot of the annual running total of tornado reports compared to inflation adjusted values.</b><br> (Click on graph for a full description.)</center><br>
+<a href="2025/torgraph-big.png">End of year chart for 2025</a><br>
+<a href="2024/torgraph-big.png">End of year chart for 2024</a><br>
+<a href="2023/torgraph-big.png">End of year chart for 2023</a><br>
+<a href="2022/torgraph-big.png">End of year chart for 2022</a><br>
+<a href="2021/torgraph-big.png">End of year chart for 2021</a><br>
+<a href="2020/torgraph-big.png">End of year chart for 2020</a><br>
+<a href="2019/torgraph-big.png">End of year chart for 2019</a><br>
+<a href="2018/torgraph-big.png">End of year chart for 2018</a><br>
+<a href="2017/torgraph-big.png">End of year chart for 2017</a><br>
+<a href="2016/torgraph-big.png">End of year chart for 2016</a><br>
+<a href="2015/torgraph-big.png">End of year chart for 2015</a><br>
+<a href="2014/torgraph-big.png">End of year chart for 2014</a><br>
+<a href="2013/torgraph-big.png">End of year chart for 2013</a><br>
+<a href="2012/torgraph-big.png">End of year chart for 2012</a><br>
+<a href="2011/torgraph-big11.png">End of year chart for 2011</a>
+</td>
+</tr>
+</table>
+
+<tr><th align="center"><a name="enso"></a><a href="enso/">ENSO Strength and Bi-monthly U.S. Tornadoes since 1950</a><br>(Click link above to go to ENSO page.)</th></tr>
+
+<tr>
+<td>
+
+<tr><th align="center"><a name="watchfreq"></a>2024 SPC Watch Frequency Maps</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a name="2024-wbc-anoms" href="2024-wbc-anoms.png"><img src="2024-wbc-anoms.png" width="810" alt="2024 Watches and Anomalies"></a><br>
+
+<center><b>2024 Tornado and Severe Watch Count by County and Anomaly
+
+</b>(Click for full-resolution version.)</center>
+<br>
+</tr>
+</table>
+
+<tr><th align="center"><a name="watchfreq"></a>2023 SPC Watch Frequency Maps</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a name="2023-wbc-anoms" href="2023-wbc-anoms.png"><img src="2023-wbc-anoms.png" width="810" alt="2023 Watches and Anomalies"></a><br>
+
+<center><b>2023 Tornado and Severe Watch Count by County and Anomaly
+
+</b>(Click for full-resolution version.)</center>
+<br>
+</tr>
+</table>
+
+<tr><th align="center"><a name="watchfreq"></a>2022 SPC Watch Frequency Maps</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a name="2022-wbc-anoms" href="2022-wbc-anoms.png"><img src="2022-wbc-anoms.png" width="810" alt="2022 Watches and Anomalies"></a><br>
+
+<center><b>2022 Tornado and Severe Watch Count by County and Anomaly
+
+</b>(Click for full-resolution version.)</center>
+<br>
+</tr>
+</table>
+
+<tr><th align="center"><a name="watchfreq"></a>2015 SPC Watch Frequency Maps</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a name="2015-wbc-anoms" href="2015-wbc-anoms.png"><img src="2015-wbc-anoms.png" width="810" alt="2015 Watches and Anomalies"></a><br>
+
+<center><b>2015 Tornado and Severe Watch Count by County and Anomaly
+
+</b>(Click for full-resolution version.)</center>
+<br>
+</tr>
+</table>
+
+
+<tr><th align="center"></a>2014 SPC Watch Frequency Maps</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a href="2014-wbc-anoms.png"><img src="2014-wbc-anoms.png" width="810" alt="2014 Watches and Anomalies"></a><br>
+
+<center><b>2014 Tornado and Severe Watch Count by County and Anomaly
+
+</b>(Click for full-resolution version.)</center>
+<br>
+</tr>
+</table>
+
+
+<tr><th align="center"><a name="watchfreq"></a>2013 SPC Watch Frequency Maps</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a href="2013-wbc-anoms.png"><img src="2013-wbc-anoms.png" width="810" alt="2013 Watches and Anomalies"></a><br>
+
+<center><b>2013 Tornado and Severe Watch Count by County and Anomaly
+
+</b>(Click for full-resolution version.)</center>
+<br>
+</tr>
+</table>
+
+<tr><th align="center">2012 SPC Watch Frequency Maps</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a href="2012-wbc-anoms.png"><img src="2012-wbc-anoms.png" width="810" alt="2012 Watches and Anomalies"></a><br>
+
+<center><b>2012 Tornado and Severe Watch Count by County and Anomaly
+
+</b>(Click for full-resolution version.)</center>
+<br>
+</tr>
+</table>
+
+<tr><th align="center">2011 SPC Watch Frequency Maps</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a href="2011-wbc-anoms.png"><img src="2011-wbc-anoms.png" width="810" alt="2011 Watches and Anomalies"></a><br>
+
+<center><b>2011 Tornado and Severe Watch Count by County and Anomaly
+
+</b>(Click for full-resolution version.)</center>
+<br>
+</tr>
+</table>
+
+<tr><th align="center"></a>2010 SPC Watch Frequency Maps</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a href="2010-wbc-anoms.png"><img src="2010-wbc-anoms.png" width="810" alt="2010 Watches and Anomalies"></a><br>
+
+<center><b>2010 Tornado and Severe Watch Count by County and Anomaly
+
+</b>(Click for full-resolution version.)</center>
+<br>
+</tr>
+</table>
+
+<tr><th align="center"><a name="20yavg">20y SPC Watch Climatology</a></th></tr>
+
+
+<tr>
+<td>
+
+<table>
+<tr>
+<td>
+<a href="20ywatcha.png"><img src="20ywatcha.png" alt="All Watches" width = "810"></a><br>
+
+<center><b>Average number of severe weather watches per year (2004-2024).
+
+</b> (Click for full-resolution version.)</center>
+</td>
+
+</table>
+
+<table>
+<tr>
+<td>
+<a href="20ytora.png"><img src="20ytora.png" alt="Tornado Watches" width = "400"></a><br>
+
+<center><b>Average number of tornado watches per year (2004-2024).
+
+</b> (Click for full-resolution version.)</center>
+</td>
+
+<td>
+<a href="20ysvra.png"><img src="20ysvra.png" alt="Severe Thunderstorm Watches" width = "400"></a><br>
+
+<center><b>Average number of severe thunderstorm watches per year (2004-2024).
+
+</b> (Click for full-resolution version.)</center>
+</td>
+</tr>
+<tr> <td>Grab Data: <a href="data/watches_fips_2005-2024.zip">watches_fips_2005-2024.zip</a> </td></tr>
+</table>
+
+<tr><th align="center"><a name="30yrclimo">30-year Severe Weather Climatology</th></tr>
+  <tr><td>
+    <table style="border-spacing: 0 10px; padding-bottom: 10px;">
+      <tr align="center">
+        <td>
+          <a href="climo/alltorn.png"><img src="climo/alltorn.png" width="100%"></a><br>
+          <b>Tornado Climatology -- All Tornadoes</b><br>
+          Click Image for Full Resolution<br>
+          <a href="climo/alltorn.nc">Click Here to Download Gridded netCDF Data</a>
+        </td>
+        <td>
+          <a href="climo/ef1torn.png"><img src="climo/ef1torn.png" width="100%"></a><br>
+          <b>Tornado Climatology -- EF1 or Stronger Tornadoes</b><br>
+          Click Image for Full Resolution<br>
+          <a href="climo/ef1torn.nc">Click Here to Download Gridded netCDF Data</a>
+        </td>
+      </tr>
+      <tr align="center">
+        <td>
+          <a href="climo/sigtorn.png"><img src="climo/sigtorn.png" width="100%"></a><br>
+          <b>Tornado Climatology -- EF2 or Stronger Tornadoes</b><br>
+          Click Image for Full Resolution<br>
+          <a href="climo/sigtorn.nc">Click Here to Download Gridded netCDF Data</a>
+        </td>
+        <td>
+          <a href="climo/viotorn.png"><img src="climo/viotorn.png" width="100%"></a><br>
+          <b>Tornado Climatology -- EF4 of Stronger Tornadoes</b><br>
+          Click Image for Full Resolution<br>
+          <a href="climo/viotorn.nc">Click Here to Download Gridded netCDF Data</a>
+        </td>
+      </tr>
+      <tr></tr>
+      <tr align="center">
+        <td>
+          <a href="climo/nonsigwind.png"><img src="climo/nonsigwind.png" width="100%"></a><br>
+          <b>Wind Climatology -- Greater than 50-knots & Less than 64-knots</b><br>
+          Click Image for Full Resolution<br>
+          <a href="climo/nonsigwind.nc">Click Here to Download Gridded netCDF Data</a>
+        </td>
+        <td>
+          <a href="climo/allsigwind.png"><img src="climo/allsigwind.png" width="100%"></a><br>
+          <b>Wind Climatology -- Greater than 64-knots</b><br>
+          Click Image for Full Resolution<br>
+          <a href="climo/allsigwind.nc">Click Here to Download Gridded netCDF Data</a>
+        </td>
+      </tr>
+      <tr align="center">
+        <td colspan="2">
+          <a href="climo/allwind.png"><img src="climo/allwind.png" width="50%"></a><br>
+          <b>Wind Climatology -- All Wind Greater Than 50-knots</b><br>
+          Click Image for Full Resolution<br>
+          <a href="climo/allwind.nc">Click Here to Download Gridded netCDF Data</a>
+        </td>
+      </tr>
+      <tr></tr>
+      <tr align="center">
+        <td>
+          <a href="climo/oldhail.png"><img src="climo/oldhail.png" width="100%"></a><br>
+          <b>Hail Climatology -- Old Severe Hail (Greater Than 0.75")</b><br>
+          Click Image for Full Resolution<br>
+          <a href="climo/oldhail.nc">Click Here to Download Gridded netCDF Data</a>
+        </td>
+        <td>
+          <a href="climo/newhail.png"><img src="climo/newhail.png" width="100%"></a><br>
+          <b>Hail Climatology -- New Severe Hail (Greater Than 1.00")</b><br>
+          Click Image for Full Resolution<br>
+          <a href="climo/newhail.nc">Click Here to Download Gridded netCDF Data</a>
+        </td>
+      </tr>
+      <tr align="center">
+        <td colspan="2">
+          <a href="climo/sighail.png"><img src="climo/sighail.png" width="50%"></a><br>
+          <b>Hail Climatology -- Significant Hail (Greater Than 2.00")</b><br>
+          Click Image for Full Resolution<br>
+          <a href="climo/sighail.nc">Click Here to Download Gridded netCDF Data</a>
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+
+
+
+<tr><th colspan="2" align="center"><a name="stats"></a>SPC Tornado and Severe Weather Statistical Products on AWIPS</th></tr>
+<tr>
+<td colspan="2">
+
+<table>
+<tr>
+<td>
+
+<a href="/climo/online/monthly/newm.html">Monthly Tornado Statistics</a> are maintained in the AWIPS product STAMTS. Use this product to
+find out how many tornadoes have occured so far this year and how
+this year compares to past years.
+<br>
+<br>
+<a href="/climo/torn/fataltorn.html">Killer Tornado Statistics</a> are listed in the AWIPS product STATIJ. Use this product for
+information about killer tornadoes this year and in the past.
+</p>
+<br>
+</td>
+</tr>
+
+<tr><th align="center"><a name="data"></a>Severe Weather Database Files (1950-2024)</th></tr>
+
+<tr>
+<td>
+<br><br>
+The tables below provide the links to comma separated value (.csv) files for tornadoes, hail, and damaging wind, as compiled from <i>NWS Storm Data</i>. Tornado reports exist back to 1950 while hail and damaging wind events date from 1955. The full hail and wind datasets are very large. To facilitate quicker downloads these data have been parsed by decade (1950s through 1990s), and half-decade, or less (from 2000 to the present). Tornado data are provided in raw csv file format below. Actual tornado tracks only (not including individual state segments) are provided in the "Actual_tornadoes.csv" file. Again, please read the format specification for the tornado data.
+<br><br>
+Please read this <a href="data/SPC_severe_database_description.pdf">document</a><img src="pdf_tiny.gif"> carefully as it describes the format of the .csv files (especially important for tornadoes!). <b>Note 1</b>: The NWS changed criteria for severe hail from 0.75 inch minimum to 1.00 inch minimum in 2010. For legacy purposes, 0.75 inch hail reports will continue to be included in the annual hail csv files. Download the files and sort accordingly if needed. <em><b>Note 2: See last two pages of the database specification document about the addition of the estimated F-scale column "fc", added to tornado.csv data in 2015.</b></em>
+
+<br>
+<br>
+<em><b>*** Changes made to the database in 2016 for the 1950-2015 U.S. tornado records ***</b></em><br />
+<br>
+Estimated F-scale ratings were calculated for over 1800 tornadoes in the database previously rated with an F-scale entry of -9 (unknown). The scheme used to modify unknown F-scale to estimated F-scale is described in this document:
+<br><br>
+<a href="../wcm/OneTor_F-scale-modifications.pdf">www.spc.noaa.gov/wcm/OneTor_F-scale-modifications.pdf</a><img src="pdf_tiny.gif">
+<br><br>
+For all tornadoes modified in the database, a new information field was added to the database in 2016. The "fc" field (29th column of information in OneTor). "fc" is set to 1 for any tornado with a prior F-scale rating of -9. Thus, it is easy to filter previously unknown ratings, if desired. Please note! Tornadoes were likely underreported prior to 1953. Many tornado statistics are derived from 1953 (or later) to the present. Also, keep in mind that off-CONUS tornadoes are included in the latest version of the 1950-2024 tornado data. These events, while small in total count, include tornadoes in AK, HI, PR, and DC. It is best to filter results carefully when making queries on the tornado database.
+<br><br>
+It should also be noted that these data are used by the NWS for verification purposes and may not accurately reflect all storm events. Monetary loss information is highly suspect and should be used with caution, if at all. <a href="data/2008bams.pdf">This article</a><img src="pdf_tiny.gif"> provides a good overview about the shortcomings in the NWS severe weather data provided here.<br>
+<br><br>
+<b>
+    <center>!!! IMPORTANT INFORMATION REGARDING THE SPC SEVERE WEATHER DATABASE !!!</center>
+    <ul>
+        <li>Read the new <a href="data/changelog.txt">change log</a> for latest information/updates.</li>
+        <li>Read <a href="https://www.spc.noaa.gov/publications/edwards/oddities.pdf">this paper</a> for a discussion of errors and artifacts in tornado data.</li>
+    </ul>
+</b>
+</center>
+</td>
+</tr>
+</table>
+
+<table border="1" cellpadding="2" cellspacing="2" align="center">
+<br>
+<tbody>
+    <tr><td style="vertical-align: top; text-align: center;">
+        <b>
+            U.S. TORNADOES* (1950-2024) <a href="data/SPC_severe_database_description.pdf">*Read format decscription document!</a><br><br>
+            <font color="red">
+            <a href="data/changelog.txt">Change Log</a><br>
+            Last Update: 13 May 2025
+            </font>
+        </b><br>
+    </td></tr>
+    <tr><td style="vertical-align: top; text-align: center;"><a href="data/1950-2024_all_tornadoes.csv">1950-2024_all_tornadoes.csv (7.9 mb)</a> Raw database dump includes all state and continuing county segments.<br></td></tr>
+    <tr><td style="vertical-align: top; text-align: center;"><a href="data/1950-2024_actual_tornadoes.csv">1950-2024_actual_tornadoes.csv (7.7 mb)</a> Single tracks. No state segments or continuing county info (e.g. sg="1").<br></td></tr>
+</tbody>
+</table>
+
+<br>
+
+<table border="1" cellpadding="2" cellspacing="2" align="center">
+<br>
+<tbody>
+
+<tr>
+    <td style="vertical-align: top; text-align: center;"><b>TORNADO</b></td>
+    <td style="vertical-align: top; text-align: center;"><b>HAIL</b><br></td>
+    <td style="vertical-align: top; text-align: center;"><b>DAMAGING WIND</b><br></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2024_torn.csv">2024_torn.csv (0.2 mb)<br></a><b>Updated: 13 May 2024</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2024_hail.csv">2024_hail.csv (1.0 mb)<br></a><b>Updated: 13 May 2024</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2024_wind.csv">2024_wind.csv (2.4 mb)<br></a><b>Updated: 13 May 2024</b></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2023_torn.csv">2023_torn.csv (0.2 mb)<br></a><b>Updated: 17 Jul 2024</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2023_hail.csv">2023_hail.csv (1.3 mb)<br></a><b>Updated: 17 Jul 2024</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2023_wind.csv">2023_wind.csv (2.5 mb)<br></a><b>Updated: 17 Jul 2024</b></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2022_torn.csv">2022_torn.csv (0.1 mb)<br></a><b>Updated: 25 Apr 2023</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2022_hail.csv">2022_hail.csv (0.8 mb)<br></a><b>Updated: 25 Apr 2023</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2022_wind.csv">2022_wind.csv (2.0 mb)<br></a><b>Updated: 25 Apr 2023</b></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2021_torn.csv">2021_torn.csv (0.2 mb)<br></a><b>Updated: 11 Jul 2022</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2021_hail.csv">2021_hail.csv (0.7 mb)<br></a><b>Updated: 11 Jul 2022</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2021_wind.csv">2021_wind.csv (1.9 mb)<br></a><b>Updated: 11 Jul 2022</b></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2020_torn.csv">2020_torn.csv (0.1 mb)<br></a><b>Updated: 15 Mar 2022</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2020_hail.csv">2020_hail.csv (0.9 mb)<br></a><b>Updated: 26 Jan 2022</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2020_wind.csv">2020_wind.csv (2.3 mb)<br></a><b>Updated: 26 Jan 2022</b></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2019_torn.csv">2019_torn.csv (0.2 mb)<br></a><b>Updated: 04 Jan 2021</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2019_hail.csv">2019_hail.csv (1.0 mb)<br></a><b>Updated: 04 Jan 2021</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2019_wind.csv">2019_wind.csv (2.2 mb)<br></a><b>Updated: 04 Jan 2021</b></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2018_torn.csv">2018_torn.csv (0.1 mb)<br></a><b>Updated: 30 Sep 2019</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2018_hail.csv">2018_hail.csv (0.8 mb)<br></a><b>Updated: 30 Sep 2019</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2018_wind.csv">2018_wind.csv (1.7 mb)<br></a><b>Updated: 30 Sep 2019</b></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2017_torn.csv">2017_torn.csv (0.2 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2017_hail.csv">2017_hail.csv (1.2 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2017_wind.csv">2017_wind.csv (2.0 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2016_torn.csv">2016_torn.csv (0.1 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2016_hail.csv">2016_hail.csv (1.1 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2016_wind.csv">2016_wind.csv (1.9 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2015_torn.csv">2015_torn.csv (0.1 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2015_hail.csv">2015_hail.csv (0.9 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2015_wind.csv">2015_wind.csv (1.5 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2014_torn.csv">2014_torn.csv (0.1 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2014_hail.csv">2014_hail.csv (0.9 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2014_wind.csv">2014_wind.csv (2.8 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2013_torn.csv">2013_torn.csv (0.1 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2013_hail.csv">2013_hail.csv (1.0 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2013_wind.csv">2013_wind.csv (1.5 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2012_torn.csv">2012_torn.csv (0.1 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2012_hail.csv">2012_hail.csv (1.4 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2012_wind.csv">2012_wind.csv (1.7 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2011_torn.csv">2011_torn.csv (0.2 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2011_hail.csv">2011_hail.csv (2.0 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2011_wind.csv">2011_wind.csv (2.5 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2010_torn.csv">2010_torn.csv (0.1 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2010_hail.csv">2010_hail.csv (1.1 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2010_wind.csv">2010_wind.csv (1.6 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2009_torn.csv">2009_torn.csv (0.1 mb)</a><br><b>Updated: 31 Dec 2020</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2009_hail.csv">2009_hail.csv (1.4 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2009_wind.csv">2009_wind.csv (1.5 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2008_torn.csv">2008_torn.csv (0.1 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2008_hail.csv">2008_hail.csv (1.7 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2008_wind.csv">2008_wind.csv (1.7 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2005-2007_torn.csv">2005-2007_torn.csv (0.3 mb)</a><br><b>Updated: 30 Sep 2019</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2005-2007_hail.csv">2005-2007_hail.csv (4 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2005-2007_wind.csv">2005-2007_wind.csv (4 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2000-2004_torn.csv">2000-2004_torn.csv (0.7 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2000-2004_hail.csv">2000-2004_hail.csv (6 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/2000-2004_wind.csv">2000-2004_wind.csv (6 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/90-99_torn.csv">90-99_torn.csv (1.3 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/90-99_hail.csv">90-99_hail.csv (6 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/90-99_wind.csv">90-99_wind.csv (8 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/80-89_torn.csv">80-89_torn.csv (0.8 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/80-89_hail.csv">80-89_hail.csv (2.5 mb)</a><br><b>Updated: 04 Jan 2021</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/80-89_wind.csv">80-89_wind.csv (3.5 mb)</a><br><b>Updated: 04 Jan 2021</b></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/70-79_torn.csv">70-79_torn.csv (0.9 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/70-79_hail.csv">70-79_hail.csv (1 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/70-79_wind.csv">70-79_wind.csv (1.6 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/60-69_torn.csv">60-69_torn.csv (0.7 mb)</a><br><b>Updated: 30 Sep 2019</b></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/60-69_hail.csv">60-69_hail.csv (0.67 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/60-69_wind.csv">60-69_wind.csv (0.90 mb)</a></td>
+</tr>
+<tr>
+    <td style="vertical-align: top; text-align: center;"><a href="data/50-59_torn.csv">50-59_torn.csv (0.6 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/55-59_hail.csv">55-59_hail.csv (0.20 mb)</a></td>
+    <td style="vertical-align: top; text-align: center;"><a href="data/55-59_wind.csv">55-59_wind.csv (0.28 mb)</a></td>
+</tr>
+</tbody>
+</table>
+
+<br />
+All torn in one 1.8 mb zip <a href="data/1950-2024_torn.csv.zip">file</a>.<br />
+All hail in one 6.9 mb zip <a href="data/1955-2024_hail.csv.zip">file</a>.<br />
+All wind in one 9.7 mb zip <a href="data/1955-2024_wind.csv.zip">file</a>.<br />
+<br />
+Map of State FIPS Numbers <a href="fips_usa.gif">here</a>.
+<br />
+Text list of County FIPS Numbers <a href="stnindex_all.txt">here</a>.<br>
+Better list of County FIPS Numbers (as xls file) <a href="//www.schooldata.com/pdfs/US_FIPS_Codes.xls">here</a>.
+<br/>
+<br>
+<tr><th align="center"><a name="tctor"></a>SPC Tropical Cyclone Tornado (TCTOR) Page</th></tr>
+<br>
+<tr>
+<td>
+<center><a href="https://www.spc.noaa.gov/exper/tctor/"><img src="tc_tor.png" alt="Tropical Cyclone Tornadoes"></a><br>
+<center>(Click to go to SPC Tropical Cyclone Tornado Page)</center>
+<br>
+</td>
+</tr>
+<tr><th align="center"><a name="gis"></a>SPC Severe GIS Page</th></tr>
+
+<tr>
+<td>
+<center><a href="/gis/svrgis/"><img src="tornadoes_population_sm.png" alt="Tornado Tracks"></a><br>
+<center><b>U.S. map depicting tornado tracks and population density.
+</b> (Click to go to SPC Severe GIS Page.)</center>
+<br>
+<br>
+<br>
+<h1 style="background-color:#EECDCD">Note: The content below is updated less frequently. </h1>
+</td>
+</tr>
+
+<tr><th align="center"><a name="2015-enso"></a>Cool Season Watch Days and El Ni&ntilde;o Southern Oscillation (ENSO) Phase</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<a href="2015/mar.png"><img src="2015/mar.png" width="810" alt=""></a><br>
+
+<p>
+With strong El Ni&ntilde;o (ENSO warm phase) conditions continuing into the winter months, here's an analysis of how those conditions may influence the number of watch days in December.
+The ENSO phase strength was ranked using the Multivariate ENSO Index, or MEI.
+The years with the 10 warmest (El Ni&ntilde;o) and 10 coldest (La Ni&ntilde;a) phases for the December to January time frame, back to 1970, were used to select the <b>total*</b> January watch days within each phase. (*Divide grid cell numbers by 10 to arrive at monthly mean watch days in each phase).
+</p>
+<p>
+The top map shows the total watch days in the ten Januarys corresponding to the most pronounced El Ni&ntilde;o conditions during December-January.
+</p>
+<p>
+The middle map shows the total watch days for the ten Januarys with most pronounced La Ni&ntilde;a conditions during December-January.
+</p>
+<p>
+The bottom map shows the difference in total watch days between the strongest El Ni&ntilde;o months and the strongest La Ni&ntilde;a months.
+</p>
+<p>
+The total watch day summary maps for <a href="2015/dec.png">December</a>, <a href="2015/jan.png">January</a>, <a href="2015/feb.png">February</a>, <a href="2015/april.png">April</a>, and <a href="2015/may.png">May</a> also reveal how ENSO phase can influence severe weather potential during the cool season and early warm season.
+</p>
+<p>
+Lastest information on MEI: <a href="//www.esrl.noaa.gov/psd/enso/mei/" target="_BLANK">//www.esrl.noaa.gov/psd/enso/mei/</a>.<br>
+Lastest on ENSO from CPC: <a href="//www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/" target="_BLANK">//www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/</a>.<br>
+</p>
+
+<br>
+
+</tr>
+</table>
+
+<tr><th align="center"><a name="2014"></a>Page Content Archive</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<b>2016</b><br>
+<a href="2016/feb2otlks.png">Outlook Forecasts for February 2, 2016</a><br>
+<b>2015</b><br>
+<a href="2015/xmaswatches.png">Probability of a Tornado Watch during Week of Christmas</a><br>
+<a href="2015/18jul2015_loop.gif">July 17-18, 2015 Radar/Wind Gust Summary</a><br>
+<a href="2015/18jul2015_loop.gif">July 17-18, 2015 Radar/Wind Gust Summary</a><br>
+<a href="2015/20150713-summary1.png">July 12-13, 2015 Radar Composite</a><br>
+<a href="2015/MayWW.png">A look at May 2015 Watch Anomalies</a><br>
+<a href="2015/April_MRMS_hail.png">April 2013, 2014, 2015 Radar-based hail maps</a><br>
+<a href="2015/March_MRMS_hail.png">March 2013, 2014, 2015 Radar-based hail maps</a><br>
+<a href="2015/wwinfo.html">No March 2015 Watches through the 23rd</a><br>
+<a href="2015/spans-update.png">Longest Spans Between Watches</a><br>
+<a href="2015/JF-watches-by-day.png">JF Watch Counts 1970-2015</a><br>
+<b>2014</b><br>
+<a href="2014/2014-severe-reports-map.png">All storm reports across the continental U.S. in 2014</a><br>
+<a href="2014/2014-tornadoes.png">2014 Tornadoes and State Departures through October</a><br>
+<a href="2014/ww_by_month-type-2006-2014.png">Watch counts by month/type (through early September)</a><br>
+<a href="2014/EF1upcountsthroughApril21.png">Histogram of tornado counts through April 21</a><br>
+<a href="2014/F3_Spans.png">Spans without (E)F3-rated tornadoes</a><br>
+<a href="2014/Superoutbreak-stormscale.png">A look back at April 3-4, '74 with high resolution model</a><br>
+<a href="2014/Watch_Counts.pdf">Analysis of partial season watch counts (pdf)</a><br>
+<a href="2014/20140630d.png">Midwest Derecho Event(s) of June 30, 2014</a><br>
+<a href="2014/20140721_Derecho.png">ND/MN Derecho of July 21-22, 2014</a><br>
+<a href="2014/torthrumay.png">U.S. Tornado Counts thru May (1953-3014)</a><br>
+<a href="2014/us-tor-probs.png">Daily Tornado Probability Curve</a><br>
+<a href="2014/1953-2014-detrend-thru-nov.png">De-trended U.S. tornado counts through Nov.</a><br>
+<b>2013</b><br>
+<a href="2013/2013_sm.png">2013 Tornadoes by EF-scale Map</a><br>
+
+</tr>
+</table>
+<br>
+<table width="810">
+
+
+
+<tr><th align="center"><a name="svrdays"></a>Severe Weather Reports Per Year (2003-2012)</th></tr>
+</table>
+
+<table border="0" bordercolor="#003399" style="background-color:#FFFFCC" width="810" cellpadding="1" cellspacing="0">
+
+        <tr>
+                <td><a href="2013/ANY.png"><img src="2013/ANY.png" width="305" alt="Any severe weather days per year."></a></td>
+                <td><a href="2013/TORN.png"><img src="2013/TORN.png" width="305" alt="Tornado days per year."></a></td>
+        </tr>
+        <tr>
+                <td><a href="2013/HAIL.png"><img src="2013/HAIL.png" width="305" alt="Severe hail days per year."></a></td>
+                <td><a href="2013/WIND.png"><img src="2013/WIND.png" width="305" alt="Thunderstorm wind days per year."></a></td>
+        </tr>
+</table>
+<table>
+<tr>
+These maps were created by gridding the total number of daily severe weather reports (Midnight to 11:59pm CDT) over the 10-year period from
+2003 through 2012 on a 80km grid. The resulting grid numbers are then divided by 10 and smoothed to arrive at the annual average number of
+days with a report of severe weather based on official NWS Storm Data records. The 80km grid-point value corresponds to the number of events within
+25 miles of a point. While the resulting maps generally match our understanding of severe weather climatology, there are a few exceptions
+that come about as a result of how the severe weather event is quantified. Even through the data are smoothed, severe weather reports cluster
+around population centers. This can be seen on the "any" or "all" severe weather map in the upper left. Maximum values show up around Charlotte,
+NC, Huntsville, AL, Jackson, MS, Springfield, MO, and Dallas, TX. These are locations where more severe weather is reported because more people
+live in those areas. The hail reports used to generate the hail frequency map are from reports of hail 1 inch or greater in diameter. Large hail
+reports are most common from Rapid City, SD to Denver, CO, Dodge City, KS, and Springfield, MO. The wind report map perhaps poses the greatest
+challenge in terms of representing where a greater severe thunderstorm wind threat may exist. The majority of severe thunderstorm wind reports
+are verified by falling trees *not* by <b>observed</b> wind gusts of 50 knots or greater. Thus, there is a distinct tendency for severe
+thunderstorm winds to be reported in areas with more trees. Recent peer-reviewed studies have compared the severe weather reports used to make
+these maps with automated observations (for wind), and radar data (for hail). These studies have found that greater concentrations/frequencies
+of severe hail (based on radar) and 50kt or greater severe thunderstorm wind gusts (based on automated observations) are more likely to occur
+over parts of the Great Plains and Midwest than what might be indicated in the maps shown here. (Click each map for full resolution version.)<br>
+<br>
+References:<br>
+<br>
+<b>An Objective High-Resolution Hail Climatology of the Contiguous United States</b><br>
+John L. Cintineo, Travis M. Smith, Valliappa Lakshmanan, Harold E. Brooks, Kiel L. Ortega<br>
+<em>Weather and Forecasting</em><br>
+Volume 27, Issue 5 (October 2012) pp. 1235-1248<br>
+<br>
+<b>Measured Severe Convective Wind Climatology and Associated Convective Modes of Thunderstorms in the Contiguous United States, 2003-09</b><br>
+Bryan T. Smith, Tomas E. Castellanos, Andrew C. Winters, Corey M. Mead, Andrew R. Dean, Richard L. Thompson<br>
+<em>Weather and Forecasting</em> (Also <a href="//www.spc.noaa.gov/publications/smith/waf-wind.pdf">here</a>.)<br>
+Volume 28, Issue 1 (February 2013) pp. 229-236<br>
+<br>
+</tr>
+</table>
+
+<tr><th align="center"><a name="ATP"></a>Annual Tornado Maps (1952-2011)</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a href="annualtornadomaps/"><img src="annualt.png" width="810" alt="Maps of Annual Tornadoes from 1952 to 2011"></a><br>
+
+</b> (Click on the maps to go to the Annual Tornado Maps page.)</center>
+<br>
+</tr>
+</table>
+
+
+<tr><th align="center"><a name="jmc"></a>U.S. Monthly Tornado Counts, 1950-2010</th></tr>
+
+<tr>
+<td>
+
+<table>
+<tr>
+<center><a href="monthlytorcharts/"><img src="monthlytorcharts/calendar.png" width="810" alt="MoCounts"></a><br>
+
+<center><b>Monthly tornado sums (excluding (E)F0 tornadoes) for each month, 1950-2010.<br>
+
+</b>(Click to go to calendar page.)</center>
+</tr>
+</table>
+
+<tr>
+<td align="center">
+<font size="-1">
+<br>
+<br>
+<a href="#top">Top</a>/<a href="/products">Forecast Products</a>/<a href="/">Home</a>
+
+</font>
+</td>
+</tr>
+</table>
+<!-- End of main body -->
+<!-- Footers begin here-->
+<center>
+  <table cellspacing="2" cellpadding="2" border="0">
+    <tr align="center">
+    <td>Weather Topics:<br />
+      <a href="/products/watch/">Watches</a>,
+      <a href="/products/md/">Mesoscale Discussions</a>,
+      <a href="/products/outlook/">Outlooks</a>,
+      <a href="/products/fire_wx/">Fire Weather</a>,
+      <a href="/products/">All Products</a>,
+      <a href="/misc/feedback.html">Contact Us</a></td>
+    </tr>
+  </table>
+  <table cellspacing="6" cellpadding="0" width="98%" border="0">
+    <tr>
+      <td colSpan="3"><hr></td>
+    </tr>
+    <tr valign="top" align="left">
+      <td class="gray">
+        <a href="//www.noaa.gov/"><span class="gray">NOAA</span></a>&nbsp;/
+        <a href="//www.nws.noaa.gov/"><span class="gray">National Weather Service</span></a><br />
+        <a href="//www.ncep.noaa.gov/"><span class="gray">National Centers for Environmental Prediction</span></a><br />
+        <a href="/"><span class="gray">Storm Prediction Center</span></a><br />
+        120 David L. Boren Blvd.<br />
+        Norman, OK 73072 U.S.A.<br />
+        <a href="mailto:spc.feedback@noaa.gov?subject=[SPC web feedback]"><span class="gray">spc.feedback@noaa.gov</span></a><br />
+
+
+Page last modified:
+
+
+March 09, 2016</td>
+
+      <td align="left">
+        <a href="//www.weather.gov/disclaimer">
+          <span class="gray">Disclaimer</span></a><br />
+        <a href="//www.cio.noaa.gov/services_programs/info_quality.html">
+          <span class="gray">Information Quality</span></a><br />
+        <a href="//www.weather.gov/help">
+          <span class="gray">Help</span></a><br />
+        <a href="//www.weather.gov/glossary">
+          <span class="gray">Glossary</span></a>
+      </td>
+      <td align="right">
+        <a href="//www.weather.gov/privacy">
+          <span class="gray">Privacy Policy</span></a><br />
+        <a href="//www.rdc.noaa.gov/%7Efoia/">
+          <span class="gray">Freedom of Information Act (FOIA)</span></a><br />
+        <a href="//www.weather.gov/about">
+          <span class="gray">About Us</span></a><br />
+        <a href="//www.weather.gov/careers">
+          <span class="gray">Career Opportunities</span></a>
+      </td>
+    </tr>
+  </table>
+  <script id="_fed_an_js_tag" type="text/javascript" src="/misc/GA/Federated-Analytics.js?agency=DOC&sub�agency=NOAA&pua=UA-52727918-1"></script>
+
+</center>
+<!-- Footers end here-->
+
+
+</td>
+</tr>
+</table>
+</table>
+</body>
+</html>

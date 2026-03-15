@@ -1,0 +1,27 @@
+Wilcox Solar Observatory - Sector Boundaries
+Sector Boundaries in the Solar Wind
+The solar wind in the ecliptic plane is organized in such a way that it
+generally has 2 or 4 sectors per solar rotation (27 days) within which
+the magnetic field is pointed generally toward or away from the Sun.
+The surface separating the polarities is called the
+Heliospheric Current Sheet
+.
+Sector boundaries are the times observed at Earth when the polarity of 
+the interplanetary magnetic field (IMF) reverses.
+Well defined sector boundaries are those boundaries for which there
+is good data, the reversal takes place cleanly, and intervals on either
+side of the boundary have a uniform field direction for ~4 days.
+Over the years a number of sector boundary lists have been compiled.
+They depend on interplanetary magnetic field polarities inferred from
+geomagnetic observations and observed by spacecraft.
+Each of the following 4 lists is different and you are strongly 
+encouraged to read the accompanying notes to understand the differences.
+The data used to determine these boundaries come from a wide variety
+of sources and we are sincerely grateful to those whose dedicated efforts
+and willingness to share their observations have aided this work.
+Sector Boundaries 1947-1982
+Sector Boundaries 1982-1988
+Sector Boundaries 1988-1993
+L. Svalgaard's list 1926-present
+Return to
+WSO home page

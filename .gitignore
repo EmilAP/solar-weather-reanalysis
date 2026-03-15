@@ -1,3 +1,16 @@
 .venv/
 __pycache__/
 *.pyc
+.DS_Store
+
+# Large/raw data
+data/raw/
+data/derived/daily/
+data/derived/spe/
+data/derived/models/
+data/derived/catalogs/
+data/derived/tables/
+
+# Keep lightweight docs/figures if desired
+!data/derived/figures/
+!data/derived/reports/

@@ -5,6 +5,18 @@ This workspace now contains both:
 - a reproducible acquisition/staging layer for the public raw inputs
 - a full reanalysis pipeline intended to reproduce and stress-test the paper's HCS-keyed tornado results
 
+Note: Raw datasets are not stored in this repository.
+
+Required data sources:
+
+OMNI solar wind data
+https://omniweb.gsfc.nasa.gov/
+
+NOAA SPC tornado database
+https://www.spc.noaa.gov/wcm/
+
+Data ingestion scripts in /scripts reproduce all derived datasets.
+
 ## Project Structure
 
 - `config/sources.yaml`: source URLs and acquisition settings

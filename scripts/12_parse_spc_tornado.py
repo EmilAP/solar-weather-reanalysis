@@ -11,6 +11,10 @@ def main() -> int:
     path = find_one(cfg["file_search"]["tornado_patterns"])
 
     df = pd.read_csv(path)
+    duplicate_count = int(df.duplicated().sum())
+    df = df.drop_duplicates().copy()
+    if duplicate_count:
+        logger.warning("Removed %d exact duplicate SPC rows; repeated identifiers with distinct records are retained.", duplicate_count)
 
     numeric_cols = ["yr", "mo", "dy", "mag", "inj", "fat", "slat", "slon", "elat", "elon", "len", "wid"]
     for column in numeric_cols:
@@ -29,16 +33,13 @@ def main() -> int:
 
     # Normalize time field into HH:MM where possible
     if "time" in df.columns:
-        time_str = (
-            df["time"]
-            .fillna("")
-            .astype(str)
-            .str.replace(r"\.0$", "", regex=True)
-            .str.zfill(4)
-        )
+        time_str = df["time"].fillna("").astype(str).str.strip()
+        numeric_time = time_str.str.fullmatch(r"\d{1,4}(?:\.0)?")
+        digits = time_str.str.replace(r"\.0$", "", regex=True).str.zfill(4)
+        time_str = time_str.where(~numeric_time, digits.str[:2] + ":" + digits.str[2:4])
         df["event_datetime_local"] = pd.to_datetime(
-            df["date"].dt.strftime("%Y-%m-%d") + " " + time_str.str[:2] + ":" + time_str.str[2:4],
-            errors="coerce",
+            df["date"].dt.strftime("%Y-%m-%d") + " " + time_str,
+            errors="coerce", format="mixed",
         )
     else:
         df["event_datetime_local"] = pd.NaT
@@ -54,6 +55,7 @@ def main() -> int:
         "om",
         "date",
         "event_datetime_local",
+        "tz",
         "year",
         "st",
         "stf",
@@ -101,6 +103,8 @@ def main() -> int:
     }
     metrics = {
         "row_count": int(len(event_df)),
+        "exact_duplicates_removed": duplicate_count,
+        "duplicate_year_identifiers_retained": int(df.duplicated(["yr", "om"]).sum()),
         "daily_rows": int(len(daily)),
         "min_date": str(daily["date"].min().date()),
         "max_date": str(daily["date"].max().date()),

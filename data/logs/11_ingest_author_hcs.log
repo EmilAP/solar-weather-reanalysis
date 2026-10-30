@@ -2,3 +2,18 @@
 2026-03-14 11:44:09,127 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
 2026-03-14 11:53:33,320 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
 2026-03-14 11:59:54,334 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-29 16:34:55,478 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-29 17:25:12,960 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-29 17:38:21,938 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-30 10:07:13,711 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-30 10:19:10,939 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-30 10:32:46,244 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-30 10:41:16,281 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-30 15:44:14,154 WARNING Reconciled 1 invalid author dates from agreeing redundant fields: source lines [848].
+2026-10-30 15:44:14,193 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-30 16:03:46,664 WARNING Reconciled 1 invalid author dates from agreeing redundant fields: source lines [848].
+2026-10-30 16:03:46,728 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-30 16:14:39,034 WARNING Reconciled 1 invalid author dates from agreeing redundant fields: source lines [848].
+2026-10-30 16:14:39,086 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt
+2026-10-30 16:49:24,973 WARNING Reconciled 1 invalid author dates from agreeing redundant fields: source lines [848].
+2026-10-30 16:49:25,050 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt

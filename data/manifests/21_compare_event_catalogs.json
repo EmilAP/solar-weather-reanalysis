@@ -1,0 +1,49 @@
+{
+  "assumptions": [],
+  "generated_at": "2026-10-30T20:55:10.031012+00:00",
+  "inputs": [
+    "data/derived/catalogs/author_hcs_catalog.csv",
+    "data/derived/catalogs/hcs_from_omni.csv",
+    "data/derived/catalogs/cir_proxy_catalog.csv",
+    "data/derived/catalogs/hss_onset_catalog.csv"
+  ],
+  "metrics": {
+    "comparisons": 6
+  },
+  "ok": true,
+  "outputs": {
+    "author_hcs_vs_cir_proxy": {
+      "csv": "data/derived/catalogs/author_hcs_vs_cir_proxy_nearest.csv",
+      "parquet": "data/derived/catalogs/author_hcs_vs_cir_proxy_nearest.parquet"
+    },
+    "author_hcs_vs_hss_onset": {
+      "csv": "data/derived/catalogs/author_hcs_vs_hss_onset_nearest.csv",
+      "parquet": "data/derived/catalogs/author_hcs_vs_hss_onset_nearest.parquet"
+    },
+    "author_hcs_vs_reconstructed_hcs": {
+      "csv": "data/derived/catalogs/author_hcs_vs_reconstructed_hcs_nearest.csv",
+      "parquet": "data/derived/catalogs/author_hcs_vs_reconstructed_hcs_nearest.parquet"
+    },
+    "cir_proxy_vs_hss_onset": {
+      "csv": "data/derived/catalogs/cir_proxy_vs_hss_onset_nearest.csv",
+      "parquet": "data/derived/catalogs/cir_proxy_vs_hss_onset_nearest.parquet"
+    },
+    "cir_proxy_vs_reconstructed_hcs": {
+      "csv": "data/derived/catalogs/cir_proxy_vs_reconstructed_hcs_nearest.csv",
+      "parquet": "data/derived/catalogs/cir_proxy_vs_reconstructed_hcs_nearest.parquet"
+    },
+    "comparison_plot": {
+      "png": "data/derived/figures/event_catalog_timing_differences.png",
+      "svg": "data/derived/figures/event_catalog_timing_differences.svg"
+    },
+    "hss_onset_vs_reconstructed_hcs": {
+      "csv": "data/derived/catalogs/hss_onset_vs_reconstructed_hcs_nearest.csv",
+      "parquet": "data/derived/catalogs/hss_onset_vs_reconstructed_hcs_nearest.parquet"
+    },
+    "summary": {
+      "csv": "data/derived/tables/event_catalog_overlap_summary.csv",
+      "parquet": "data/derived/tables/event_catalog_overlap_summary.parquet"
+    }
+  },
+  "script": "21_compare_event_catalogs.py"
+}

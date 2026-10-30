@@ -1,0 +1,18 @@
+{
+  "assumptions": [],
+  "generated_at": "2026-10-30T20:55:14.932111+00:00",
+  "inputs": [
+    "data/derived/spe/strict_event_study_summary.csv",
+    "data/derived/models/model_coefficients.csv",
+    "data/derived/tables/event_catalog_overlap_summary.csv",
+    "data/derived/spe/paper_author_hcs_observed.csv"
+  ],
+  "metrics": {
+    "line_count": 39
+  },
+  "ok": true,
+  "outputs": {
+    "report": "data/derived/reports/analysis_summary.md"
+  },
+  "script": "23_write_summary_report.py"
+}

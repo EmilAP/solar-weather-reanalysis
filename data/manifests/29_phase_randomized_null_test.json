@@ -1,0 +1,24 @@
+{
+  "assumptions": [
+    "Phase-randomized surrogates preserve Fourier amplitudes while randomizing phase, maintaining broad autocorrelation structure."
+  ],
+  "generated_at": "2026-10-30T20:55:43.835967+00:00",
+  "inputs": [
+    "data/derived/daily/analysis_daily.csv",
+    "data/derived/catalogs/author_hcs_catalog.csv"
+  ],
+  "metrics": {
+    "event_count_used": 1788,
+    "iterations": 200,
+    "lag0_outside_band": false,
+    "outside_band_lag_count": 9
+  },
+  "ok": true,
+  "outputs": {
+    "figure_png": "data/derived/figures/phase_randomized_author_hcs_all_tornadoes.png",
+    "spe_csv": "data/derived/spe/phase_randomized_author_hcs_all_tornadoes.csv",
+    "summary_csv": "data/derived/tables/phase_randomized_author_hcs_summary.csv",
+    "summary_md": "data/derived/reports/phase_randomized_author_hcs_summary.md"
+  },
+  "script": "29_phase_randomized_null_test.py"
+}

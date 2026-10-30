@@ -1,3 +1,39 @@
 2026-03-14 18:39:13,818 INFO Bx column used: bx_gse_mean
 2026-03-14 18:39:13,818 INFO Candidate crossings before spacing filter: 2067
 2026-03-14 18:39:13,818 INFO Retained crossings: 1865
+2026-10-29 17:00:59,023 INFO Bx column used: bx_gse_mean
+2026-10-29 17:00:59,023 INFO Candidate crossings before spacing filter: 2067
+2026-10-29 17:00:59,024 INFO Retained crossings: 1865
+2026-10-29 17:28:34,027 INFO Bx column used: bx_gse_mean
+2026-10-29 17:28:34,027 INFO Candidate crossings before spacing filter: 2067
+2026-10-29 17:28:34,027 INFO Retained crossings: 1865
+2026-10-29 17:41:44,778 INFO Bx column used: bx_gse_mean
+2026-10-29 17:41:44,778 INFO Candidate crossings before spacing filter: 2067
+2026-10-29 17:41:44,778 INFO Retained crossings: 1865
+2026-10-30 10:16:01,902 INFO Bx column used: bx_gse_mean
+2026-10-30 10:16:01,902 INFO Candidate crossings before spacing filter: 2067
+2026-10-30 10:16:01,903 INFO Retained crossings: 1865
+2026-10-30 10:19:28,665 INFO Bx column used: bx_gse_mean
+2026-10-30 10:19:28,665 INFO Candidate crossings before spacing filter: 2067
+2026-10-30 10:19:28,665 INFO Retained crossings: 1865
+2026-10-30 10:21:30,361 INFO Bx column used: bx_gse_mean
+2026-10-30 10:21:30,361 INFO Candidate crossings before spacing filter: 2067
+2026-10-30 10:21:30,361 INFO Retained crossings: 1865
+2026-10-30 10:33:02,255 INFO Bx column used: bx_gse_mean
+2026-10-30 10:33:02,256 INFO Candidate crossings before spacing filter: 2067
+2026-10-30 10:33:02,256 INFO Retained crossings: 1865
+2026-10-30 10:41:32,731 INFO Bx column used: bx_gse_mean
+2026-10-30 10:41:32,731 INFO Candidate crossings before spacing filter: 2067
+2026-10-30 10:41:32,731 INFO Retained crossings: 1865
+2026-10-30 15:44:29,650 INFO Bx column used: bx_gse_mean
+2026-10-30 15:44:29,650 INFO Candidate crossings before spacing filter: 2067
+2026-10-30 15:44:29,650 INFO Retained crossings: 1865
+2026-10-30 16:04:10,659 INFO Bx column used: bx_gse_mean
+2026-10-30 16:04:10,660 INFO Candidate crossings before spacing filter: 2067
+2026-10-30 16:04:10,660 INFO Retained crossings: 1865
+2026-10-30 16:15:03,533 INFO Bx column used: bx_gse_mean
+2026-10-30 16:15:03,534 INFO Candidate crossings before spacing filter: 2067
+2026-10-30 16:15:03,534 INFO Retained crossings: 1865
+2026-10-30 16:50:37,837 INFO Bx column used: bx_gse_mean
+2026-10-30 16:50:37,837 INFO Candidate crossings before spacing filter: 2067
+2026-10-30 16:50:37,838 INFO Retained crossings: 1865

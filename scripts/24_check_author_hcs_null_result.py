@@ -69,6 +69,13 @@ def load_inputs() -> tuple[pd.DataFrame, pd.DataFrame]:
 
     if "lag" not in observed.columns or "lag" not in null_df.columns:
         raise ValueError("Both observed and null summary files must contain a 'lag' column.")
+    for frame in (observed, null_df):
+        if "statistic" not in frame or not frame["statistic"].eq("across_event_total").all():
+            raise ValueError("Stale or incompatible paper-style statistics; rerun script 16 with --run-null.")
+    if "event_count" not in observed or "event_count" not in null_df:
+        raise ValueError("Missing paper-style event counts; rerun script 16 with --run-null.")
+    if observed["event_count"].nunique() != 1 or not null_df["event_count"].eq(observed["event_count"].iloc[0]).all():
+        raise ValueError("Observed and null paper-style event populations differ; rerun script 16 with --run-null.")
 
     observed = observed.sort_values("lag").reset_index(drop=True)
     null_df = null_df.sort_values("lag").reset_index(drop=True)
@@ -153,11 +160,11 @@ def make_cumulative_overlay_figure(observed: pd.DataFrame, null_df: pd.DataFrame
         ax.axvline(0, color="0.5", linestyle="--", linewidth=1)
         ax.set_title(metric.replace("_", " "))
         ax.set_xlabel("Days from HCS crossing")
-        ax.set_ylabel("Cumulative mean")
+        ax.set_ylabel("Total across events at each epoch day")
 
     handles, labels = axes.flat[0].get_legend_handles_labels()
     fig.legend(handles, labels, loc="upper center", ncol=3, frameon=False)
-    fig.suptitle("Author HCS replication: cumulative observed vs null envelope", y=0.98)
+    fig.suptitle("Author HCS replication: across-event totals vs null envelope", y=0.98)
     fig.tight_layout(rect=(0, 0, 1, 0.95))
 
     out_path = FIG_DIR / "author_hcs_cumulative_vs_null.png"
@@ -246,8 +253,8 @@ def main() -> int:
     print(lag0_summary.to_string(index=False))
 
     print("\nInterpretation guide:")
-    print("- If observed lag-0 cumulative values are inside the null 95% band, there is no obvious day-0 excess.")
-    print("- The anomaly plots are more informative than cumulative plots.")
+    print("- A lag-0 total inside the pointwise null band does not establish equivalence or exclude an effect.")
+    print("- Across-event totals and means have identical shapes with a fixed event population.")
     print("- Approx z-scores here are only rough because they are derived from quantiles, not raw null draws.")
 
     return 0

@@ -12,14 +12,17 @@ def answer_from_summary(summary: pd.DataFrame, source: str, metric: str = "all_t
     if subset.empty:
         return "Not evaluated in this run."
     row = subset.sort_values("empirical_p_max").iloc[0]
-    if row["empirical_p_max"] <= 0.05:
-        return f"Yes, at least one lag shows a max-statistic-adjusted signal (empirical p={row['empirical_p_max']:.3f})."
-    return f"No robust signal under the strict null (empirical p={row['empirical_p_max']:.3f})."
+    return (
+        f"Maximum raw daily mean: {row['observed_max_abs_daily_effect']:.3f} at lag {int(row['lag_of_max_abs_effect'])}; "
+        f"lag-scan Monte Carlo p={row['empirical_p_max']:.4f}, Holm p={row['p_value_holm']:.4f} "
+        "across the 16 source/outcome tests. Exploratory, not causal evidence."
+    )
 
 
 def main() -> int:
     logger = make_logger("23_write_summary_report")
     report_path = REPORT_DIR / "analysis_summary.md"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
     strict_path = Path("data/derived/spe/strict_event_study_summary.csv")
     model_path = Path("data/derived/models/model_coefficients.csv")
     compare_path = Path("data/derived/tables/event_catalog_overlap_summary.csv")
@@ -38,8 +41,8 @@ def main() -> int:
         "",
         "## Validation Questions",
         "",
-        f"1. Can the main paper result be reproduced using the author-provided HCS list? {answer_from_summary(strict, 'author_hcs') if not strict.empty else 'Not yet evaluated.'}",
-        f"2. Does the signal remain when using daily rates instead of cumulative counts? {answer_from_summary(strict, 'author_hcs') if not strict.empty else 'Not yet evaluated.'}",
+        "1. Exact replication of the source article has not been established; event/date conventions remain distinct.",
+        "2. Across-event totals and daily means have identical shapes with a fixed event population; neither is an across-lag running sum.",
         f"3. Does it remain under stricter season-matched permutation nulls? {answer_from_summary(strict, 'author_hcs') if not strict.empty else 'Not yet evaluated.'}",
         f"4. Does it remain using independently reconstructed HCS events? {answer_from_summary(strict, 'reconstructed_hcs') if not strict.empty else 'Not yet evaluated.'}",
         f"5. Does it appear stronger for HCS, CIR, or HSS proxy events? {strict.sort_values('empirical_p_max').head(3).to_dict(orient='records') if not strict.empty else 'Not yet evaluated.'}",
@@ -52,12 +55,12 @@ def main() -> int:
         "",
         "## What Does Not Hold Up Automatically",
         "",
-        "- Signals seen only in cumulative curves may be visually amplified and should not be treated as robust without daily-rate confirmation.",
+        "- Visual peaks require an explicit lag-scanning and analysis-family reference distribution.",
         "- Reconstructed HCS and CIR/HSS proxies must be treated as separate hypotheses, not interchangeable proofs of the same mechanism.",
         "",
         "## Likely Methodological Traps",
         "",
-        "- Cumulative-count inflation and visual exaggeration.",
+        "- Confusing totals across events with running sums across lags.",
         "- Overlapping windows and non-independence of event-centered samples.",
         "- Weak null models based on unconstrained random dates.",
         "- Multiple-comparison risk across lags, metrics, and event definitions.",

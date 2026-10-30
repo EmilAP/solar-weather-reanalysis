@@ -89,6 +89,7 @@ python3 scripts/12_parse_spc_tornado.py
 python3 scripts/13_parse_omni.py
 python3 scripts/14_parse_icme.py
 python3 scripts/15_build_daily_tornado_series.py
+python3 scripts/26_reconstruct_hcs_from_omni.py
 python3 scripts/16_reproduce_paper_hcs_spe.py
 python3 scripts/17_build_independent_hcs_from_omni.py
 python3 scripts/18_detect_cir_hss_events.py
@@ -107,6 +108,32 @@ Primary reanalysis outputs:
 - model outputs in `data/derived/models/`
 - figures and tables in `data/derived/figures/` and `data/derived/tables/`
 - final report in `data/derived/reports/analysis_summary.md`
+
+## Publication Workflow
+
+The full journal-style manuscript is in [`docs/manuscript.md`](docs/manuscript.md), including results tables, linked figures, references, an evidence map, and a submission checklist. It is a scientific-review draft, not a claim of causal validation or submission readiness. The [methodology](docs/methodology.md) records computational repairs, including consistent event populations and HCS definitions, empirical p-values, estimated count dispersion, and 50,000-replicate outbreak nulls with Monte Carlo uncertainty.
+
+The publication workflow assumes acquisition inputs are already present locally. It does not download data or request credentials.
+
+```bash
+python3 scripts/run_publication.py
+```
+
+The runner executes the core reanalysis, null and robustness analyses, supplement extraction/preparation, outbreak analyses, manuscript tables, metadata, figure index, and canonical results export in dependency order. It stops at the first failed step and writes a detailed report to `data/processed/publication_run_latest.json`.
+
+Source-date repairs preserve original records: the author crossing with invalid day zero is reconciled from two agreeing redundant date fields, and cross-month outbreak ranges retain their starts. The literal 31 May-24 June 1996 interval and inferred 2011 year were accepted by the project author; their accepted audit status remains in `data/derived/catalogs/supplement_table_s1_source_date_review.csv`. Neither entry is excluded.
+
+Regression checks:
+
+```bash
+python3 -m unittest discover -s tests -q
+```
+
+The publication workflow now includes `scripts/46_observation_sensitivity.py`: minimum daily Bx coverage (1/12/18/24 hours with hard gaps), paired documented-SPC timezone conversion, and one-day timing shifts. It produces 22 daily scenarios (44 separately Holm-adjusted endpoints) and 30 exact outbreak sensitivity tests. The [sensitivity results](data/derived/reports/observation_sensitivity.md) and [manuscript](docs/manuscript.md#45-coverage-and-daily-timing-sensitivity-results) report the alignment-sensitive outbreak finding rather than claiming blanket robustness.
+
+The [manuscript verification record](docs/manuscript.md#appendix-c-evidence-and-reproduction-map) distinguishes the earlier cache-free 37-step baseline reproduction from the expanded 38-step workflow and its sensitivity tests. Verification uses the installed virtual environment, not a fresh dependency installation.
+
+To acquire or validate raw inputs first, use the acquisition steps above or `python3 scripts/run_all.py`. The paper-style cumulative Monte Carlo check (`scripts/16_reproduce_paper_hcs_spe.py --run-null`) is separate from the primary daily-rate publication workflow and should be run explicitly when that replication output is required.
 
 ## Notes
 
@@ -132,16 +159,4 @@ Acquisition status from the earlier pipeline is complete and validated.
 - ERA5: request templates and credentials scaffold created only (no bulk download launched)
 - SPC outlook archive/index: archive root captured; 2021 directory intermittently returned `504`; extracted archive links saved to `data/raw/spc_outlooks/archive_links.csv` (`link_count: 29`)
 
-Reanalysis status in the current workspace build:
-
-- The full analysis code path is implemented under `scripts/11_*` through `scripts/23_*`.
-- `config/analysis_config.yaml` defines the main windows, thresholds, and predictor settings.
-- The author HCS/SBC ingestion script is implemented to locate `SBCtorlist1963-2024.txt` automatically anywhere inside this workspace.
-- At the time of this update, that exact author file is not currently detectable under the workspace tree, so the full reanalysis pipeline has not been executed here.
-- The new scripts compile cleanly with `python3 -m compileall scripts`.
-
-Once the author file is present in this workspace and the scientific Python dependencies are installed, run:
-
-```bash
-python3 scripts/run_analysis.py
-```
+The repository includes core analyses through script 23, publication analyses through script 45, and a sequential publication runner. The manuscript-facing reports distinguish the project-designated primary lag-0 daily-rate endpoint from post-hoc outbreak analyses and list outstanding limitations. Check `data/processed/publication_run_latest.json` for the status of the most recent complete publication run.

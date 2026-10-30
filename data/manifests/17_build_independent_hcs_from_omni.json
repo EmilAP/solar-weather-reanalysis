@@ -1,0 +1,21 @@
+{
+  "assumptions": [
+    "Compatibility export of the canonical daily-Bx reconstruction from script 26.",
+    "The former sign(-Bx*By) proxy is retired because it is invariant under simultaneous sector reversal."
+  ],
+  "generated_at": "2026-10-30T20:51:24.777304+00:00",
+  "inputs": [
+    "data/derived/catalogs/hcs_from_omni.csv"
+  ],
+  "metrics": {
+    "event_count": 1865
+  },
+  "ok": true,
+  "outputs": {
+    "catalog": {
+      "csv": "data/derived/catalogs/independent_hcs_catalog.csv",
+      "parquet": "data/derived/catalogs/independent_hcs_catalog.parquet"
+    }
+  },
+  "script": "17_build_independent_hcs_from_omni.py"
+}

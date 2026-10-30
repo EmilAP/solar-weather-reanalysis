@@ -1,17 +1,19 @@
 {
   "assumptions": [
-    "Daily analyses use the catalog local calendar date; no UTC conversion is applied because SPC timezone codes are not safely invertible here.",
+    "Primary daily analyses retain SPC catalog calendar dates. Script 46 compares documented timezone codes 3=CST (fixed UTC-6) and 0=GMT on paired catalog-date/UTC populations; other codes remain unresolved.",
     "Treat mag >= 3 as strong tornadoes across F and EF eras."
   ],
-  "generated_at": "2026-03-14T16:00:06.041524+00:00",
+  "generated_at": "2026-10-30T20:49:27.923202+00:00",
   "inputs": [
     "data/raw/spc_tornado/spc_actual_tornadoes_1950_2023.csv"
   ],
   "metrics": {
     "daily_rows": 12639,
+    "duplicate_year_identifiers_retained": 4,
+    "exact_duplicates_removed": 1,
     "max_date": "2023-12-19",
     "min_date": "1950-01-03",
-    "row_count": 70022,
+    "row_count": 70021,
     "strong_count": 3231
   },
   "ok": true,

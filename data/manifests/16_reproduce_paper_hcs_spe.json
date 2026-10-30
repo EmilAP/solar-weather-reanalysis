@@ -1,17 +1,17 @@
 {
   "assumptions": [
-    "Paper-style branch uses cumulative curves for comparability, alongside daily-rate versions for interpretation."
+    "Cumulative counts mean totals across events at each epoch day, not running sums over lags. Unique complete-window event dates are used; exact source-data replication is not claimed."
   ],
-  "generated_at": "2026-03-14T22:40:52.127749+00:00",
+  "generated_at": "2026-10-30T20:51:22.988571+00:00",
   "inputs": [
     "data/derived/daily/analysis_daily.csv",
     "data/derived/catalogs/author_hcs_catalog.csv"
   ],
   "metrics": {
-    "event_count": 1793,
+    "event_count": 1788,
     "monte_carlo_iterations": 0,
     "run_null": false,
-    "runtime_seconds": 60.283,
+    "runtime_seconds": 44.122,
     "window_days": 30
   },
   "ok": true,

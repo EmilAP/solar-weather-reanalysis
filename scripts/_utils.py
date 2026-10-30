@@ -2,9 +2,10 @@ from __future__ import annotations
 
 import json
 import math
+import re
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any, Iterable, Sequence
+from typing import Any, Callable, Iterable, Sequence
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -23,6 +24,254 @@ MODEL_DIR = DERIVED_DIR / "models"
 FIGURE_DIR = DERIVED_DIR / "figures"
 TABLE_DIR = DERIVED_DIR / "tables"
 REPORT_DIR = DERIVED_DIR / "reports"
+
+SUPPLEMENT_MONTH_RE = r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
+SUPPLEMENT_DATE_RANGE_PATTERNS = (
+    re.compile(rf"(?P<start_day>\d{{1,2}})\s*-\s*(?P<end_day>\d{{1,2}})\s+(?P<month>{SUPPLEMENT_MONTH_RE})\.?\s*,?\s*(?P<year>\d{{4}})", re.IGNORECASE),
+    re.compile(rf"(?P<month>{SUPPLEMENT_MONTH_RE})\.?\s+(?P<start_day>\d{{1,2}})\s*-\s*(?P<end_day>\d{{1,2}})\s*,?\s*(?P<year>\d{{4}})", re.IGNORECASE),
+    re.compile(rf"(?P<start_day>\d{{1,2}})\s+(?P<start_month>{SUPPLEMENT_MONTH_RE})\.?\s*-\s*(?P<end_day>\d{{1,2}})\s+(?P<end_month>{SUPPLEMENT_MONTH_RE})\.?\s*,?\s*(?P<year>\d{{4}})", re.IGNORECASE),
+    re.compile(rf"(?P<start_month>{SUPPLEMENT_MONTH_RE})\.?\s+(?P<start_day>\d{{1,2}})\s*-\s*(?P<end_month>{SUPPLEMENT_MONTH_RE})\.?\s+(?P<end_day>\d{{1,2}})\s*,?\s*(?P<year>\d{{4}})", re.IGNORECASE),
+)
+SUPPLEMENT_SINGLE_DATE_PATTERNS = (
+    re.compile(rf"(?P<month>{SUPPLEMENT_MONTH_RE})\.?\s+(?P<day>\d{{1,2}}),?\s+(?P<year>\d{{4}})", re.IGNORECASE),
+    re.compile(rf"(?P<day>\d{{1,2}})\s+(?P<month>{SUPPLEMENT_MONTH_RE})\.?\s*,?\s*(?P<year>\d{{4}})", re.IGNORECASE),
+)
+
+
+def _supplement_date(day: str, month: str, year: str) -> pd.Timestamp | pd.NaT:
+    try:
+        month_number = int(pd.to_datetime(month[:3], format="%b").month)
+        return pd.Timestamp(year=int(year), month=month_number, day=int(day))
+    except (TypeError, ValueError):
+        return pd.NaT
+
+
+def parse_supplement_date_range(value: object) -> tuple[pd.Timestamp | pd.NaT, pd.Timestamp | pd.NaT]:
+    if pd.isna(value):
+        return pd.NaT, pd.NaT
+
+    text = re.sub(r"\s+", " ", str(value)).strip().replace("–", "-").replace("—", "-")
+    if not text:
+        return pd.NaT, pd.NaT
+
+    for pattern in SUPPLEMENT_DATE_RANGE_PATTERNS:
+        match = pattern.fullmatch(text)
+        if match is None:
+            continue
+
+        values = match.groupdict()
+        year = values["year"]
+        start_month = values.get("start_month") or values.get("month")
+        end_month = values.get("end_month") or values.get("month")
+        start = _supplement_date(values["start_day"], start_month, year)
+        end = _supplement_date(values["end_day"], end_month, year)
+        if pd.isna(start) or pd.isna(end):
+            return pd.NaT, pd.NaT
+        if end < start and start.month > end.month:
+            start = _supplement_date(values["start_day"], start_month, str(int(year) - 1))
+        if end < start:
+            return pd.NaT, pd.NaT
+        return start, end
+
+    for pattern in SUPPLEMENT_SINGLE_DATE_PATTERNS:
+        match = pattern.fullmatch(text)
+        if match is not None:
+            values = match.groupdict()
+            date = _supplement_date(values["day"], values["month"], values["year"])
+            return date, date
+
+    iso_match = re.fullmatch(r"(?P<year>\d{4})-(?P<month>\d{1,2})-(?P<day>\d{1,2})", text)
+    if iso_match is not None:
+        try:
+            date = pd.Timestamp(year=int(iso_match["year"]), month=int(iso_match["month"]), day=int(iso_match["day"]))
+            return date, date
+        except ValueError:
+            return pd.NaT, pd.NaT
+
+    return pd.NaT, pd.NaT
+
+
+def year_month_matched_dates(
+    observed_dates: Sequence[pd.Timestamp],
+    valid_dates: Sequence[pd.Timestamp],
+    rng: np.random.Generator,
+) -> pd.Series:
+    return year_month_matched_sampler(observed_dates, valid_dates)(rng)
+
+
+def year_month_matched_sampler(
+    observed_dates: Sequence[pd.Timestamp],
+    valid_dates: Sequence[pd.Timestamp],
+) -> Callable[[np.random.Generator], pd.Series]:
+    observed = pd.DatetimeIndex(pd.to_datetime(observed_dates, errors="coerce")).dropna().normalize()
+    available = pd.DatetimeIndex(pd.to_datetime(valid_dates, errors="coerce")).dropna().normalize().unique()
+    available_by_stratum: dict[tuple[int, int], list[np.datetime64]] = {}
+    observed_indices_by_stratum: dict[tuple[int, int], list[int]] = {}
+    for date in available:
+        available_by_stratum.setdefault((date.year, date.month), []).append(date.to_datetime64())
+    for index, date in enumerate(observed):
+        observed_indices_by_stratum.setdefault((date.year, date.month), []).append(index)
+
+    strata: list[tuple[np.ndarray, np.ndarray]] = []
+    for stratum, indices in observed_indices_by_stratum.items():
+        choices = available_by_stratum.get(stratum)
+        if not choices:
+            raise ValueError(f"No valid null dates available for year-month stratum {stratum}.")
+        strata.append(
+            (
+                np.asarray(indices, dtype=int),
+                np.asarray(choices, dtype="datetime64[ns]"),
+            )
+        )
+
+    def sample(rng: np.random.Generator) -> pd.Series:
+        sampled = np.empty(len(observed), dtype="datetime64[ns]")
+        for indices, choices in strata:
+            sampled[indices] = rng.choice(choices, size=len(indices), replace=len(indices) > len(choices))
+        return pd.Series(sampled)
+
+    return sample
+
+
+def year_month_cluster_shift_dates(
+    observed_dates: Sequence[pd.Timestamp],
+    valid_dates: Sequence[pd.Timestamp],
+    rng: np.random.Generator,
+) -> pd.Series:
+    return year_month_cluster_shift_sampler(observed_dates, valid_dates)(rng)
+
+
+def year_month_cluster_shift_sampler(
+    observed_dates: Sequence[pd.Timestamp],
+    valid_dates: Sequence[pd.Timestamp],
+) -> Callable[[np.random.Generator], pd.Series]:
+    observed = pd.DatetimeIndex(pd.to_datetime(observed_dates, errors="coerce")).dropna().normalize()
+    available_days_by_stratum: dict[tuple[int, int], set[int]] = {}
+    indices_by_stratum: dict[tuple[int, int], list[int]] = {}
+    offsets_by_stratum: dict[tuple[int, int], list[int]] = {}
+    for date in pd.DatetimeIndex(pd.to_datetime(valid_dates, errors="coerce")).dropna().normalize():
+        available_days_by_stratum.setdefault((date.year, date.month), set()).add(date.day)
+    for index, date in enumerate(observed):
+        stratum = (date.year, date.month)
+        indices_by_stratum.setdefault(stratum, []).append(index)
+        offsets_by_stratum.setdefault(stratum, []).append(date.day - 1)
+
+    stratum_keys = list(indices_by_stratum)
+    stratum_ids = np.empty(len(observed), dtype=int)
+    day_offsets = np.empty(len(observed), dtype=int)
+    stratum_days_in_month = np.empty(len(stratum_keys), dtype=int)
+    stratum_month_starts = np.empty(len(stratum_keys), dtype="datetime64[D]")
+    eligible_by_stratum: list[np.ndarray] = []
+
+    for stratum_id, (year, month) in enumerate(stratum_keys):
+        indices = indices_by_stratum[(year, month)]
+        days_in_month = pd.Timestamp(year=year, month=month, day=1).days_in_month
+        offsets = np.asarray(offsets_by_stratum[(year, month)], dtype=int)
+        available_days = available_days_by_stratum.get((year, month), set())
+        eligible_shifts = [
+            shift
+            for shift in range(days_in_month)
+            if all(int(day) in available_days for day in (offsets + shift) % days_in_month + 1)
+        ]
+        if not eligible_shifts:
+            raise ValueError(f"No cluster-preserving shifts available for year-month stratum {(year, month)}.")
+        indices_array = np.asarray(indices, dtype=int)
+        stratum_ids[indices_array] = stratum_id
+        day_offsets[indices_array] = offsets
+        stratum_days_in_month[stratum_id] = days_in_month
+        stratum_month_starts[stratum_id] = np.datetime64(f"{year:04d}-{month:02d}-01", "D")
+        eligible_by_stratum.append(np.asarray(eligible_shifts, dtype=int))
+
+    max_eligible = max(len(shifts) for shifts in eligible_by_stratum)
+    eligible_matrix = np.zeros((len(eligible_by_stratum), max_eligible), dtype=int)
+    eligible_lengths = np.empty(len(eligible_by_stratum), dtype=int)
+    for index, shifts in enumerate(eligible_by_stratum):
+        eligible_lengths[index] = len(shifts)
+        eligible_matrix[index, : len(shifts)] = shifts
+
+    def sample(rng: np.random.Generator) -> pd.Series:
+        choices = np.floor(rng.random(len(eligible_lengths)) * eligible_lengths).astype(int)
+        shifts = eligible_matrix[np.arange(len(eligible_lengths)), choices]
+        shifted_days = (day_offsets + shifts[stratum_ids]) % stratum_days_in_month[stratum_ids]
+        sampled = stratum_month_starts[stratum_ids] + shifted_days.astype("timedelta64[D]")
+        return pd.Series(sampled.astype("datetime64[ns]"))
+
+    return sample
+
+
+def year_season_cluster_shift_sampler(
+    observed_dates: Sequence[pd.Timestamp],
+    valid_dates: Sequence[pd.Timestamp],
+    season_window_days: int,
+) -> Callable[[np.random.Generator], pd.Series]:
+    observed = pd.DatetimeIndex(pd.to_datetime(observed_dates, errors="coerce")).dropna().normalize()
+    available_doys_by_year: dict[int, set[int]] = {}
+    indices_by_year: dict[int, list[int]] = {}
+    doys_by_year: dict[int, list[int]] = {}
+    for date in pd.DatetimeIndex(pd.to_datetime(valid_dates, errors="coerce")).dropna().normalize():
+        available_doys_by_year.setdefault(date.year, set()).add(date.dayofyear)
+    for index, date in enumerate(observed):
+        indices_by_year.setdefault(date.year, []).append(index)
+        doys_by_year.setdefault(date.year, []).append(date.dayofyear)
+
+    years = list(indices_by_year)
+    indices_by_group: list[np.ndarray] = []
+    doys_by_group: list[np.ndarray] = []
+    eligible_by_group: list[np.ndarray] = []
+    year_starts: list[np.datetime64] = []
+    for year in years:
+        indices = np.asarray(indices_by_year[year], dtype=int)
+        doys = np.asarray(doys_by_year[year], dtype=int)
+        days_in_year = pd.Timestamp(year=year, month=12, day=31).dayofyear
+        available_doys = available_doys_by_year.get(year, set())
+        eligible_shifts = [
+            shift
+            for shift in range(-season_window_days, season_window_days + 1)
+            if np.all((doys + shift >= 1) & (doys + shift <= days_in_year))
+            and all(int(day) in available_doys for day in doys + shift)
+        ]
+        if not eligible_shifts:
+            raise ValueError(f"No season-matched cluster shifts available for year {year}.")
+        indices_by_group.append(indices)
+        doys_by_group.append(doys)
+        eligible_by_group.append(np.asarray(eligible_shifts, dtype=int))
+        year_starts.append(np.datetime64(f"{year:04d}-01-01", "D"))
+
+    max_eligible = max(len(shifts) for shifts in eligible_by_group)
+    eligible_matrix = np.zeros((len(eligible_by_group), max_eligible), dtype=int)
+    eligible_lengths = np.empty(len(eligible_by_group), dtype=int)
+    for index, shifts in enumerate(eligible_by_group):
+        eligible_lengths[index] = len(shifts)
+        eligible_matrix[index, : len(shifts)] = shifts
+    year_starts_array = np.asarray(year_starts, dtype="datetime64[D]")
+
+    def sample(rng: np.random.Generator) -> pd.Series:
+        choices = np.floor(rng.random(len(eligible_lengths)) * eligible_lengths).astype(int)
+        shifts = eligible_matrix[np.arange(len(eligible_lengths)), choices]
+        sampled = np.empty(len(observed), dtype="datetime64[D]")
+        for group_index, (indices, doys) in enumerate(zip(indices_by_group, doys_by_group, strict=True)):
+            sampled[indices] = year_starts_array[group_index] + (doys + shifts[group_index] - 1).astype("timedelta64[D]")
+        return pd.Series(sampled.astype("datetime64[ns]"))
+
+    return sample
+
+
+def holm_adjust_pvalues(p_values: Sequence[float]) -> np.ndarray:
+    values = np.asarray(p_values, dtype=float)
+    adjusted = np.full(values.shape, np.nan, dtype=float)
+    valid_indices = np.flatnonzero(np.isfinite(values))
+    if valid_indices.size == 0:
+        return adjusted
+    valid_values = values[valid_indices]
+    if np.any((valid_values < 0.0) | (valid_values > 1.0)):
+        raise ValueError("P-values must be between 0 and 1.")
+
+    order = np.argsort(valid_values)
+    sorted_values = valid_values[order]
+    factors = valid_indices.size - np.arange(valid_indices.size)
+    sorted_adjusted = np.maximum.accumulate(factors * sorted_values).clip(max=1.0)
+    adjusted[valid_indices[order]] = sorted_adjusted
+    return adjusted
 
 OMNI_COLUMN_NAMES = [
     "year",
@@ -219,7 +468,7 @@ def parse_omni_hourly(path: Path) -> pd.DataFrame:
         sep=r"\s+",
         header=None,
         names=OMNI_COLUMN_NAMES,
-        engine="python",
+        engine="c",
     )
     for column, fill_limit in OMNI_FILL_LIMITS.items():
         if column in df.columns:
@@ -276,7 +525,7 @@ def add_cumulative_columns(df: pd.DataFrame, metrics: Sequence[str]) -> pd.DataF
     out = df.copy()
     out = out.sort_values("lag")
     for metric in metrics:
-        out[f"{metric}_cumulative"] = out[metric].cumsum()
+        out[f"{metric}_cumulative"] = out[metric] * out["event_count"]
     return out
 
 
@@ -296,19 +545,51 @@ def season_matched_random_dates(
     season_window_days: int,
     rng: np.random.Generator,
 ) -> list[pd.Timestamp]:
-    available = pd.Series(date_index.normalize())
-    matched: list[pd.Timestamp] = []
-    for event in events:
-        event = pd.Timestamp(event).normalize()
-        same_year = available[available.dt.year == event.year]
-        if same_year.empty:
-            same_year = available
-        distance = (same_year.dt.dayofyear - event.dayofyear).abs()
-        pool = same_year[distance <= season_window_days]
-        if pool.empty:
-            pool = same_year
-        matched.append(pd.Timestamp(pool.iloc[int(rng.integers(0, len(pool)))]))
-    return matched
+    return season_matched_random_sampler(events, date_index, season_window_days)(rng)
+
+
+def season_matched_random_sampler(
+    events: Sequence[pd.Timestamp],
+    date_index: pd.DatetimeIndex,
+    season_window_days: int,
+) -> Callable[[np.random.Generator], list[pd.Timestamp]]:
+    available = pd.DatetimeIndex(date_index.normalize()).sort_values()
+    available_years = available.year.to_numpy(dtype=int)
+    available_doys = available.dayofyear.to_numpy(dtype=int)
+    pool_starts = np.empty(len(events), dtype=int)
+    pool_sizes = np.empty(len(events), dtype=int)
+    irregular_pools: dict[int, np.ndarray] = {}
+
+    for index, value in enumerate(events):
+        event = pd.Timestamp(value).normalize()
+        year_start = int(np.searchsorted(available_years, event.year, side="left"))
+        year_end = int(np.searchsorted(available_years, event.year, side="right"))
+        if year_start < year_end:
+            same_year_doys = available_doys[year_start:year_end]
+            pool_start = year_start + int(np.searchsorted(same_year_doys, event.dayofyear - season_window_days, side="left"))
+            pool_end = year_start + int(np.searchsorted(same_year_doys, event.dayofyear + season_window_days, side="right"))
+            if pool_start == pool_end:
+                pool_start, pool_end = year_start, year_end
+            pool_starts[index] = pool_start
+            pool_sizes[index] = pool_end - pool_start
+        else:
+            pool = np.flatnonzero(np.abs(available_doys - event.dayofyear) <= season_window_days)
+            if pool.size == 0:
+                pool = np.arange(len(available), dtype=int)
+            irregular_pools[index] = pool
+            pool_starts[index] = 0
+            pool_sizes[index] = pool.size
+
+    available_values = available.to_numpy(dtype="datetime64[ns]")
+
+    def sample(rng: np.random.Generator) -> list[pd.Timestamp]:
+        offsets = np.floor(rng.random(len(events)) * pool_sizes).astype(int)
+        indices = pool_starts + offsets
+        for event_index, pool in irregular_pools.items():
+            indices[event_index] = int(rng.choice(pool))
+        return [pd.Timestamp(date) for date in available_values[indices]]
+
+    return sample
 
 
 def empirical_pvalue(observed: float, null_values: Iterable[float]) -> float:
@@ -318,10 +599,51 @@ def empirical_pvalue(observed: float, null_values: Iterable[float]) -> float:
     return float((1 + np.sum(np.abs(arr) >= abs(observed))) / (arr.size + 1))
 
 
+def null_tail_probabilities(observed: np.ndarray, draws: np.ndarray) -> dict[str, np.ndarray]:
+    observed = np.asarray(observed, dtype=float)
+    draws = np.asarray(draws, dtype=float)
+    if draws.ndim != 2 or draws.shape[1:] != observed.shape or not len(draws):
+        raise ValueError("Null draws must have shape (replicates, observed lags).")
+    if not np.isfinite(draws).all() or not np.isfinite(observed).all():
+        raise ValueError("Observed statistics and null draws must be finite.")
+    upper = (1 + (draws >= observed).sum(axis=0)) / (len(draws) + 1)
+    lower = (1 + (draws <= observed).sum(axis=0)) / (len(draws) + 1)
+    return {
+        "p_value_one_sided": upper,
+        "p_value_two_sided": np.minimum(1.0, 2 * np.minimum(upper, lower)),
+        "null_iterations": np.full(observed.shape, len(draws), dtype=int),
+    }
+
+
+def complete_window_dates(
+    events: Sequence[pd.Timestamp], date_index: pd.DatetimeIndex, window_days: int
+) -> list[pd.Timestamp]:
+    dates = pd.DatetimeIndex(date_index).normalize()
+    if dates.has_duplicates or not dates.is_monotonic_increasing:
+        raise ValueError("Daily dates must be unique and increasing.")
+    if len(dates) < 2 * window_days + 1 or not (dates[1:] - dates[:-1] == pd.Timedelta(days=1)).all():
+        raise ValueError("Complete windows require a contiguous daily calendar of sufficient length.")
+    parsed = pd.DatetimeIndex(pd.to_datetime(events, utc=True, errors="coerce", format="mixed")).tz_convert(None)
+    parsed = parsed.dropna().normalize().unique().sort_values()
+    return parsed[(parsed >= dates[window_days]) & (parsed <= dates[-window_days - 1])].tolist()
+
+
 def nearest_event_differences(left: Sequence[pd.Timestamp], right: Sequence[pd.Timestamp]) -> pd.DataFrame:
-    right_ts = pd.to_datetime(pd.Series(right)).sort_values().reset_index(drop=True)
+    right_ts = (
+        pd.to_datetime(pd.Series(right), utc=True, errors="coerce")
+        .dt.tz_convert(None)
+        .dropna()
+        .sort_values()
+        .reset_index(drop=True)
+    )
     rows: list[dict[str, Any]] = []
-    for event in pd.to_datetime(pd.Series(left)).sort_values():
+    left_ts = (
+        pd.to_datetime(pd.Series(left), utc=True, errors="coerce")
+        .dt.tz_convert(None)
+        .dropna()
+        .sort_values()
+    )
+    for event in left_ts:
         if right_ts.empty:
             rows.append({"event": event, "nearest_event": pd.NaT, "delta_days": np.nan})
             continue
@@ -341,8 +663,14 @@ def day_of_year_features(dates: pd.Series) -> pd.DataFrame:
 
 
 def within_days_indicator(index_dates: pd.Series, event_dates: Sequence[pd.Timestamp], days: int) -> pd.Series:
-    event_set = pd.to_datetime(pd.Series(event_dates)).dt.normalize().tolist()
-    index_series = pd.to_datetime(index_dates).dt.normalize()
+    event_set = (
+        pd.to_datetime(pd.Series(event_dates), utc=True, errors="coerce")
+        .dt.tz_convert(None)
+        .dt.normalize()
+        .dropna()
+        .tolist()
+    )
+    index_series = pd.to_datetime(index_dates, errors="coerce", utc=True).dt.tz_convert(None).dt.normalize()
     flags = pd.Series(False, index=index_series.index)
     for event in event_set:
         delta = (index_series - event).dt.days.abs()

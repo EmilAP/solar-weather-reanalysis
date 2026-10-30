@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from _utils import FIGURE_DIR, ROOT, save_figure, write_dataframe, write_script_manifest
+from _utils import FIGURE_DIR, ROOT, null_tail_probabilities, save_figure, write_dataframe, write_script_manifest
 from common import make_logger
 
 
@@ -33,7 +33,7 @@ def build_observed_table(df: pd.DataFrame, event_idx: np.ndarray, lags: np.ndarr
         window = extract_metric_windows(values, event_idx, lags)
         mean_series = window.mean(axis=0)
         out[f"{metric}_daily_mean"] = mean_series
-        out[f"{metric}_cumulative"] = np.cumsum(mean_series)
+        out[f"{metric}_cumulative"] = window.sum(axis=0)
         out[f"{metric}_anomaly"] = mean_series - mean_series.mean()
     out["event_count"] = len(event_idx)
     return out
@@ -90,7 +90,7 @@ def main() -> int:
     outputs: dict[str, object] = {
         "observed": observed_outputs,
         "daily_rate_figure": plot_family(observed, "daily_rates", "Reconstructed HCS daily rates", "daily_mean", "Daily mean", "data/derived/figures/reconstructed_hcs_daily_rates"),
-        "cumulative_figure": plot_family(observed, "cumulative", "Reconstructed HCS cumulative", "cumulative", "Cumulative mean", "data/derived/figures/reconstructed_hcs_cumulative"),
+        "cumulative_figure": plot_family(observed, "cumulative", "Reconstructed HCS across-event totals", "cumulative", "Total across events at each epoch day", "data/derived/figures/reconstructed_hcs_cumulative"),
         "anomaly_figure": plot_family(observed, "anomaly", "Reconstructed HCS anomalies", "anomaly", "Lag anomaly", "data/derived/figures/reconstructed_hcs_anomalies"),
     }
 
@@ -121,6 +121,7 @@ def main() -> int:
             "outside_95_band": (obs_mean < low) | (obs_mean > high),
         }
     )
+    null_df = null_df.assign(**null_tail_probabilities(obs_mean, null_means), event_count=len(event_idx))
     outputs["fast_null"] = write_dataframe(null_df, "data/derived/spe/reconstructed_hcs_fast_null_all_tornadoes")
 
     fig, ax = plt.subplots(figsize=(9, 5))

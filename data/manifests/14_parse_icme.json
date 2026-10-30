@@ -1,0 +1,21 @@
+{
+  "assumptions": [
+    "ICME analysis time defaults to plasma/field start, then disturbance time when missing."
+  ],
+  "generated_at": "2026-10-30T20:50:31.788692+00:00",
+  "inputs": [
+    "data/raw/icme/icmetable2.csv"
+  ],
+  "metrics": {
+    "max_analysis_time": "2025-09-06 17:00:00+00:00",
+    "min_analysis_time": "1996-05-27 15:00:00+00:00",
+    "missing_analysis_time": 0,
+    "row_count": 619
+  },
+  "ok": true,
+  "outputs": {
+    "csv": "data/derived/catalogs/icme_catalog.csv",
+    "parquet": "data/derived/catalogs/icme_catalog.parquet"
+  },
+  "script": "14_parse_icme.py"
+}

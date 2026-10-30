@@ -9,3 +9,124 @@
 2026-03-14 18:39:37,451 INFO Fast null progress: 450/500 iterations
 2026-03-14 18:39:37,464 INFO Fast null progress: 500/500 iterations
 2026-03-14 18:39:37,694 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-29 17:01:02,505 INFO Fast null progress: 50/500 iterations
+2026-10-29 17:01:02,530 INFO Fast null progress: 100/500 iterations
+2026-10-29 17:01:02,546 INFO Fast null progress: 150/500 iterations
+2026-10-29 17:01:02,560 INFO Fast null progress: 200/500 iterations
+2026-10-29 17:01:02,574 INFO Fast null progress: 250/500 iterations
+2026-10-29 17:01:02,588 INFO Fast null progress: 300/500 iterations
+2026-10-29 17:01:02,603 INFO Fast null progress: 350/500 iterations
+2026-10-29 17:01:02,619 INFO Fast null progress: 400/500 iterations
+2026-10-29 17:01:02,642 INFO Fast null progress: 450/500 iterations
+2026-10-29 17:01:02,662 INFO Fast null progress: 500/500 iterations
+2026-10-29 17:01:02,945 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-29 17:28:36,824 INFO Fast null progress: 50/500 iterations
+2026-10-29 17:28:36,836 INFO Fast null progress: 100/500 iterations
+2026-10-29 17:28:36,847 INFO Fast null progress: 150/500 iterations
+2026-10-29 17:28:36,858 INFO Fast null progress: 200/500 iterations
+2026-10-29 17:28:36,870 INFO Fast null progress: 250/500 iterations
+2026-10-29 17:28:36,881 INFO Fast null progress: 300/500 iterations
+2026-10-29 17:28:36,892 INFO Fast null progress: 350/500 iterations
+2026-10-29 17:28:36,903 INFO Fast null progress: 400/500 iterations
+2026-10-29 17:28:36,914 INFO Fast null progress: 450/500 iterations
+2026-10-29 17:28:36,925 INFO Fast null progress: 500/500 iterations
+2026-10-29 17:28:37,180 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-29 17:41:47,636 INFO Fast null progress: 50/500 iterations
+2026-10-29 17:41:47,650 INFO Fast null progress: 100/500 iterations
+2026-10-29 17:41:47,663 INFO Fast null progress: 150/500 iterations
+2026-10-29 17:41:47,675 INFO Fast null progress: 200/500 iterations
+2026-10-29 17:41:47,687 INFO Fast null progress: 250/500 iterations
+2026-10-29 17:41:47,699 INFO Fast null progress: 300/500 iterations
+2026-10-29 17:41:47,711 INFO Fast null progress: 350/500 iterations
+2026-10-29 17:41:47,725 INFO Fast null progress: 400/500 iterations
+2026-10-29 17:41:47,745 INFO Fast null progress: 450/500 iterations
+2026-10-29 17:41:47,764 INFO Fast null progress: 500/500 iterations
+2026-10-29 17:41:48,078 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-30 10:18:23,462 INFO Fast null progress: 50/500 iterations
+2026-10-30 10:18:23,475 INFO Fast null progress: 100/500 iterations
+2026-10-30 10:18:23,488 INFO Fast null progress: 150/500 iterations
+2026-10-30 10:18:23,503 INFO Fast null progress: 200/500 iterations
+2026-10-30 10:18:23,516 INFO Fast null progress: 250/500 iterations
+2026-10-30 10:18:23,529 INFO Fast null progress: 300/500 iterations
+2026-10-30 10:18:23,542 INFO Fast null progress: 350/500 iterations
+2026-10-30 10:18:23,555 INFO Fast null progress: 400/500 iterations
+2026-10-30 10:18:23,569 INFO Fast null progress: 450/500 iterations
+2026-10-30 10:18:23,582 INFO Fast null progress: 500/500 iterations
+2026-10-30 10:18:23,895 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-30 10:21:32,694 INFO Fast null progress: 50/500 iterations
+2026-10-30 10:21:32,705 INFO Fast null progress: 100/500 iterations
+2026-10-30 10:21:32,714 INFO Fast null progress: 150/500 iterations
+2026-10-30 10:21:32,725 INFO Fast null progress: 200/500 iterations
+2026-10-30 10:21:32,736 INFO Fast null progress: 250/500 iterations
+2026-10-30 10:21:32,748 INFO Fast null progress: 300/500 iterations
+2026-10-30 10:21:32,758 INFO Fast null progress: 350/500 iterations
+2026-10-30 10:21:32,767 INFO Fast null progress: 400/500 iterations
+2026-10-30 10:21:32,778 INFO Fast null progress: 450/500 iterations
+2026-10-30 10:21:32,790 INFO Fast null progress: 500/500 iterations
+2026-10-30 10:21:32,997 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-30 10:34:56,889 INFO Fast null progress: 50/500 iterations
+2026-10-30 10:34:56,900 INFO Fast null progress: 100/500 iterations
+2026-10-30 10:34:56,912 INFO Fast null progress: 150/500 iterations
+2026-10-30 10:34:56,922 INFO Fast null progress: 200/500 iterations
+2026-10-30 10:34:56,933 INFO Fast null progress: 250/500 iterations
+2026-10-30 10:34:56,943 INFO Fast null progress: 300/500 iterations
+2026-10-30 10:34:56,953 INFO Fast null progress: 350/500 iterations
+2026-10-30 10:34:56,964 INFO Fast null progress: 400/500 iterations
+2026-10-30 10:34:56,974 INFO Fast null progress: 450/500 iterations
+2026-10-30 10:34:56,984 INFO Fast null progress: 500/500 iterations
+2026-10-30 10:34:57,190 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-30 10:43:28,288 INFO Fast null progress: 50/500 iterations
+2026-10-30 10:43:28,298 INFO Fast null progress: 100/500 iterations
+2026-10-30 10:43:28,308 INFO Fast null progress: 150/500 iterations
+2026-10-30 10:43:28,319 INFO Fast null progress: 200/500 iterations
+2026-10-30 10:43:28,328 INFO Fast null progress: 250/500 iterations
+2026-10-30 10:43:28,338 INFO Fast null progress: 300/500 iterations
+2026-10-30 10:43:28,348 INFO Fast null progress: 350/500 iterations
+2026-10-30 10:43:28,358 INFO Fast null progress: 400/500 iterations
+2026-10-30 10:43:28,368 INFO Fast null progress: 450/500 iterations
+2026-10-30 10:43:28,378 INFO Fast null progress: 500/500 iterations
+2026-10-30 10:43:28,594 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-30 15:46:52,120 INFO Fast null progress: 50/500 iterations
+2026-10-30 15:46:52,136 INFO Fast null progress: 100/500 iterations
+2026-10-30 15:46:52,166 INFO Fast null progress: 150/500 iterations
+2026-10-30 15:46:52,187 INFO Fast null progress: 200/500 iterations
+2026-10-30 15:46:52,209 INFO Fast null progress: 250/500 iterations
+2026-10-30 15:46:52,224 INFO Fast null progress: 300/500 iterations
+2026-10-30 15:46:52,240 INFO Fast null progress: 350/500 iterations
+2026-10-30 15:46:52,260 INFO Fast null progress: 400/500 iterations
+2026-10-30 15:46:52,276 INFO Fast null progress: 450/500 iterations
+2026-10-30 15:46:52,291 INFO Fast null progress: 500/500 iterations
+2026-10-30 15:46:52,580 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-30 16:08:02,650 INFO Fast null progress: 50/500 iterations
+2026-10-30 16:08:02,661 INFO Fast null progress: 100/500 iterations
+2026-10-30 16:08:02,672 INFO Fast null progress: 150/500 iterations
+2026-10-30 16:08:02,685 INFO Fast null progress: 200/500 iterations
+2026-10-30 16:08:02,695 INFO Fast null progress: 250/500 iterations
+2026-10-30 16:08:02,706 INFO Fast null progress: 300/500 iterations
+2026-10-30 16:08:02,717 INFO Fast null progress: 350/500 iterations
+2026-10-30 16:08:02,727 INFO Fast null progress: 400/500 iterations
+2026-10-30 16:08:02,739 INFO Fast null progress: 450/500 iterations
+2026-10-30 16:08:02,750 INFO Fast null progress: 500/500 iterations
+2026-10-30 16:08:03,066 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-30 16:17:58,152 INFO Fast null progress: 50/500 iterations
+2026-10-30 16:17:58,162 INFO Fast null progress: 100/500 iterations
+2026-10-30 16:17:58,175 INFO Fast null progress: 150/500 iterations
+2026-10-30 16:17:58,187 INFO Fast null progress: 200/500 iterations
+2026-10-30 16:17:58,199 INFO Fast null progress: 250/500 iterations
+2026-10-30 16:17:58,210 INFO Fast null progress: 300/500 iterations
+2026-10-30 16:17:58,222 INFO Fast null progress: 350/500 iterations
+2026-10-30 16:17:58,234 INFO Fast null progress: 400/500 iterations
+2026-10-30 16:17:58,245 INFO Fast null progress: 450/500 iterations
+2026-10-30 16:17:58,259 INFO Fast null progress: 500/500 iterations
+2026-10-30 16:17:58,522 INFO Reconstructed HCS event study completed with 1783 crossings
+2026-10-30 16:55:31,040 INFO Fast null progress: 50/500 iterations
+2026-10-30 16:55:31,062 INFO Fast null progress: 100/500 iterations
+2026-10-30 16:55:31,083 INFO Fast null progress: 150/500 iterations
+2026-10-30 16:55:31,108 INFO Fast null progress: 200/500 iterations
+2026-10-30 16:55:31,129 INFO Fast null progress: 250/500 iterations
+2026-10-30 16:55:31,148 INFO Fast null progress: 300/500 iterations
+2026-10-30 16:55:31,163 INFO Fast null progress: 350/500 iterations
+2026-10-30 16:55:31,177 INFO Fast null progress: 400/500 iterations
+2026-10-30 16:55:31,191 INFO Fast null progress: 450/500 iterations
+2026-10-30 16:55:31,210 INFO Fast null progress: 500/500 iterations
+2026-10-30 16:55:31,527 INFO Reconstructed HCS event study completed with 1783 crossings

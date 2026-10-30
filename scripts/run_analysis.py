@@ -15,6 +15,7 @@ SCRIPTS = [
     "13_parse_omni.py",
     "14_parse_icme.py",
     "15_build_daily_tornado_series.py",
+    "26_reconstruct_hcs_from_omni.py",
     "16_reproduce_paper_hcs_spe.py",
     "17_build_independent_hcs_from_omni.py",
     "18_detect_cir_hss_events.py",

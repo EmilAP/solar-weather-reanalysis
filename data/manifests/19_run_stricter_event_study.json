@@ -1,0 +1,72 @@
+{
+  "assumptions": [
+    "Unique complete-window dates; observed and null eligibility identical. Shared annual shifts preserve within-year event spacing and approximate season. Holm adjustment covers 16 source/outcome lag-scan tests."
+  ],
+  "generated_at": "2026-10-30T20:54:58.386612+00:00",
+  "inputs": [
+    "data/derived/daily/analysis_daily.csv",
+    "data/derived/catalogs/author_hcs_catalog.csv",
+    "data/derived/catalogs/hcs_from_omni.csv",
+    "data/derived/catalogs/cir_proxy_catalog.csv",
+    "data/derived/catalogs/hss_onset_catalog.csv"
+  ],
+  "metrics": {
+    "rows": 16
+  },
+  "ok": true,
+  "outputs": {
+    "author_hcs_figure": {
+      "png": "data/derived/figures/author_hcs_strict_daily_rates.png",
+      "svg": "data/derived/figures/author_hcs_strict_daily_rates.svg"
+    },
+    "author_hcs_observed": {
+      "csv": "data/derived/spe/author_hcs_strict_observed.csv",
+      "parquet": "data/derived/spe/author_hcs_strict_observed.parquet"
+    },
+    "author_hcs_permutations": {
+      "csv": "data/derived/spe/author_hcs_strict_permutations.csv",
+      "parquet": "data/derived/spe/author_hcs_strict_permutations.parquet"
+    },
+    "cir_proxy_figure": {
+      "png": "data/derived/figures/cir_proxy_strict_daily_rates.png",
+      "svg": "data/derived/figures/cir_proxy_strict_daily_rates.svg"
+    },
+    "cir_proxy_observed": {
+      "csv": "data/derived/spe/cir_proxy_strict_observed.csv",
+      "parquet": "data/derived/spe/cir_proxy_strict_observed.parquet"
+    },
+    "cir_proxy_permutations": {
+      "csv": "data/derived/spe/cir_proxy_strict_permutations.csv",
+      "parquet": "data/derived/spe/cir_proxy_strict_permutations.parquet"
+    },
+    "hss_onset_figure": {
+      "png": "data/derived/figures/hss_onset_strict_daily_rates.png",
+      "svg": "data/derived/figures/hss_onset_strict_daily_rates.svg"
+    },
+    "hss_onset_observed": {
+      "csv": "data/derived/spe/hss_onset_strict_observed.csv",
+      "parquet": "data/derived/spe/hss_onset_strict_observed.parquet"
+    },
+    "hss_onset_permutations": {
+      "csv": "data/derived/spe/hss_onset_strict_permutations.csv",
+      "parquet": "data/derived/spe/hss_onset_strict_permutations.parquet"
+    },
+    "reconstructed_hcs_figure": {
+      "png": "data/derived/figures/reconstructed_hcs_strict_daily_rates.png",
+      "svg": "data/derived/figures/reconstructed_hcs_strict_daily_rates.svg"
+    },
+    "reconstructed_hcs_observed": {
+      "csv": "data/derived/spe/reconstructed_hcs_strict_observed.csv",
+      "parquet": "data/derived/spe/reconstructed_hcs_strict_observed.parquet"
+    },
+    "reconstructed_hcs_permutations": {
+      "csv": "data/derived/spe/reconstructed_hcs_strict_permutations.csv",
+      "parquet": "data/derived/spe/reconstructed_hcs_strict_permutations.parquet"
+    },
+    "summary": {
+      "csv": "data/derived/spe/strict_event_study_summary.csv",
+      "parquet": "data/derived/spe/strict_event_study_summary.parquet"
+    }
+  },
+  "script": "19_run_stricter_event_study.py"
+}

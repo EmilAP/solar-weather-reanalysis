@@ -1,0 +1,23 @@
+{
+  "assumptions": [
+    "Random null dates are season-restricted and keep event count equal to observed seasonal count."
+  ],
+  "generated_at": "2026-10-30T20:55:41.370873+00:00",
+  "inputs": [
+    "data/derived/daily/analysis_daily.csv",
+    "data/derived/catalogs/author_hcs_catalog.csv",
+    "data/derived/catalogs/hcs_from_omni.csv"
+  ],
+  "metrics": {
+    "checks": 6,
+    "iterations": 500,
+    "lag0_outside_count": 0,
+    "window_days": 30
+  },
+  "ok": true,
+  "outputs": {
+    "summary_report": "data/derived/reports/seasonal_control_summary.md",
+    "summary_table": "data/derived/tables/seasonal_control_summary.csv"
+  },
+  "script": "28_seasonal_control_event_studies.py"
+}

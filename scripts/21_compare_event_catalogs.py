@@ -9,7 +9,7 @@ from _utils import nearest_event_differences, make_logger, save_figure, write_da
 
 CATALOGS = {
     "author_hcs": "data/derived/catalogs/author_hcs_catalog.csv",
-    "reconstructed_hcs": "data/derived/catalogs/independent_hcs_catalog.csv",
+    "reconstructed_hcs": "data/derived/catalogs/hcs_from_omni.csv",
     "cir_proxy": "data/derived/catalogs/cir_proxy_catalog.csv",
     "hss_onset": "data/derived/catalogs/hss_onset_catalog.csv",
 }
@@ -19,7 +19,8 @@ def load_dates(path: str) -> list[pd.Timestamp]:
     df = pd.read_csv(path)
     for column in ["datetime_utc", "analysis_time_utc", "date"]:
         if column in df.columns:
-            return pd.to_datetime(df[column], errors="coerce").dropna().dt.normalize().tolist()
+            dates = pd.to_datetime(df[column], utc=True, errors="coerce").dt.tz_convert(None).dropna().dt.normalize().drop_duplicates()
+            return dates[dates.dt.year.between(1963, 2023)].sort_values().tolist()
     return []
 
 

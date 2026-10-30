@@ -36,6 +36,45 @@ def parse_line(raw_line: str) -> dict[str, object] | None:
     return row
 
 
+def reconcile_dates(df: pd.DataFrame) -> pd.DataFrame:
+    out = df.copy()
+    original = pd.to_datetime(
+        dict(year=out["year"], month=out["month"], day=out["day"], hour=out["hour"].fillna(0)),
+        errors="coerce", utc=True,
+    )
+    year_start = pd.to_datetime(out["year"].astype(str), format="%Y", utc=True)
+    doy = pd.to_numeric(out["doy"], errors="coerce")
+    hour = pd.to_numeric(out["hour"], errors="coerce")
+    from_doy = year_start + pd.to_timedelta(doy - 1, unit="D") + pd.to_timedelta(hour, unit="h")
+    from_hours = pd.Timestamp("1963-01-01", tz="UTC") + pd.to_timedelta(
+        pd.to_numeric(out["hoursfrom1963"], errors="coerce"), unit="h"
+    )
+    redundant_valid = (
+        from_doy.notna() & from_hours.notna() & from_doy.eq(from_hours)
+        & from_doy.dt.year.eq(out["year"]) & doy.ge(1)
+        & hour.between(0, 23) & hour.eq(hour.round())
+    )
+    conflict = original.notna() & (
+        (from_doy.notna() & original.ne(from_doy))
+        | (from_hours.notna() & original.ne(from_hours))
+    )
+    unresolved = original.isna() & ~redundant_valid
+    if (conflict | unresolved).any():
+        lines = out.loc[conflict | unresolved, "line_number"].tolist()
+        raise ValueError(f"Conflicting or unresolved author HCS dates at source lines {lines}.")
+    repaired = original.isna() & redundant_valid
+    out["datetime_source_utc"] = original
+    out["datetime_utc"] = original.where(~repaired, from_doy)
+    out["date_reconciliation_note"] = ""
+    out.loc[repaired, "date_reconciliation_note"] = (
+        "Invalid source Y/M/D resolved using agreement of year/day-of-year/hour "
+        "and elapsed hours since 1963-01-01; raw source fields preserved."
+    )
+    out["date"] = out["datetime_utc"].dt.date.astype("string")
+    out["duplicate_datetime"] = out["datetime_utc"].duplicated(keep=False)
+    return out
+
+
 def main() -> int:
     logger = make_logger("11_ingest_author_hcs")
     cfg = load_config()
@@ -77,14 +116,11 @@ def main() -> int:
         )
         return 1
 
-    dt = pd.to_datetime(
-        dict(year=df["year"], month=df["month"], day=df["day"], hour=df["hour"].fillna(0)),
-        errors="coerce",
-        utc=True,
-    )
-    df["datetime_utc"] = dt
-    df["date"] = df["datetime_utc"].dt.date.astype("string")
-    df["duplicate_datetime"] = df["datetime_utc"].duplicated(keep=False)
+    df = reconcile_dates(df)
+    repaired = df["date_reconciliation_note"].ne("")
+    if repaired.any():
+        logger.warning("Reconciled %d invalid author dates from agreeing redundant fields: source lines %s.",
+                       int(repaired.sum()), df.loc[repaired, "line_number"].tolist())
 
     malformed_df = pd.DataFrame(malformed)
     catalog_outputs = write_dataframe(df, "data/derived/catalogs/author_hcs_catalog")
@@ -101,6 +137,8 @@ def main() -> int:
         "max_datetime_utc": None if df["datetime_utc"].isna().all() else str(df["datetime_utc"].max()),
         "duplicate_rows": int(df["duplicate_datetime"].sum()),
         "malformed_rows": int(len(malformed_df)),
+        "dates_reconciled": int(repaired.sum()),
+        "reconciled_source_lines": df.loc[repaired, "line_number"].tolist(),
         "paper_count_note": "Paper states 1792, but author note says actual count is 1793 because of IDL indexing.",
     }
     write_script_manifest(
@@ -108,7 +146,10 @@ def main() -> int:
         [path],
         outputs,
         metrics,
-        assumptions=["Parsed irregular spacing and optional header lines by tokenizing numeric rows."],
+        assumptions=[
+            "Parsed irregular spacing and optional header lines by tokenizing numeric rows.",
+            "Invalid Y/M/D is resolved only when year/day-of-year/hour and elapsed hours agree; conflicts fail explicitly. Original fields and reconciliation notes are retained.",
+        ],
     )
     logger.info("Parsed %d author HCS rows from %s", len(df), path)
     return 0

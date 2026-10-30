@@ -1,0 +1,28 @@
+{
+  "assumptions": [
+    "Negative-binomial count models estimate alpha by maximum likelihood; count and logistic models use 14-day HAC covariance. Trend is measured in years. Models are exploratory in-sample fits, not forecast validation."
+  ],
+  "generated_at": "2026-10-30T20:55:05.892543+00:00",
+  "inputs": [
+    "data/derived/daily/analysis_daily.csv",
+    "data/derived/catalogs/author_hcs_catalog.csv",
+    "data/derived/catalogs/hcs_from_omni.csv",
+    "data/derived/catalogs/cir_proxy_catalog.csv",
+    "data/derived/catalogs/hss_onset_catalog.csv"
+  ],
+  "metrics": {
+    "model_count": 5
+  },
+  "ok": true,
+  "outputs": {
+    "coefficients": {
+      "csv": "data/derived/models/model_coefficients.csv",
+      "parquet": "data/derived/models/model_coefficients.parquet"
+    },
+    "metrics": {
+      "csv": "data/derived/models/model_metrics.csv",
+      "parquet": "data/derived/models/model_metrics.parquet"
+    }
+  },
+  "script": "20_run_daily_models.py"
+}

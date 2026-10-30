@@ -4,6 +4,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from _utils import complete_window_dates, null_tail_probabilities
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -37,7 +38,7 @@ def main() -> int:
     dates = pd.DatetimeIndex(df["date"])
 
     # Convert event dates to matching daily numpy datetime type
-    event_days = events["event_date"].to_numpy(dtype="datetime64[ns]")
+    event_days = np.asarray(complete_window_dates(events["event_date"], dates, WINDOW), dtype="datetime64[ns]")
     date_days = dates.to_numpy(dtype="datetime64[ns]")
 
     event_idx = np.searchsorted(date_days, event_days)
@@ -90,6 +91,7 @@ def main() -> int:
             "outside_95_band": (obs_mean < low) | (obs_mean > high),
         }
     )
+    result = result.assign(**null_tail_probabilities(obs_mean, null_means), event_count=len(event_idx))
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     result.to_csv(OUT_PATH, index=False)

@@ -1,0 +1,48 @@
+{
+  "assumptions": [],
+  "generated_at": "2026-10-30T20:55:13.360382+00:00",
+  "inputs": [],
+  "metrics": {
+    "output_count": 9
+  },
+  "ok": true,
+  "outputs": {
+    "author_hcs_yearly_figure": {
+      "png": "data/derived/figures/author_hcs_counts_by_year.png",
+      "svg": "data/derived/figures/author_hcs_counts_by_year.svg"
+    },
+    "author_hcs_yearly_table": {
+      "csv": "data/derived/tables/author_hcs_yearly_counts.csv",
+      "parquet": "data/derived/tables/author_hcs_yearly_counts.parquet"
+    },
+    "daily_climatology_figure": {
+      "png": "data/derived/figures/daily_tornado_climatology.png",
+      "svg": "data/derived/figures/daily_tornado_climatology.svg"
+    },
+    "daily_climatology_table": {
+      "csv": "data/derived/tables/daily_tornado_climatology.csv",
+      "parquet": "data/derived/tables/daily_tornado_climatology.parquet"
+    },
+    "dataset_coverage_summary": {
+      "csv": "data/derived/tables/dataset_coverage_summary.csv",
+      "parquet": "data/derived/tables/dataset_coverage_summary.parquet"
+    },
+    "independent_hcs_yearly_figure": {
+      "png": "data/derived/figures/independent_hcs_counts_by_year.png",
+      "svg": "data/derived/figures/independent_hcs_counts_by_year.svg"
+    },
+    "independent_hcs_yearly_table": {
+      "csv": "data/derived/tables/independent_hcs_yearly_counts.csv",
+      "parquet": "data/derived/tables/independent_hcs_yearly_counts.parquet"
+    },
+    "model_coefficient_summary": {
+      "csv": "data/derived/tables/model_coefficient_summary.csv",
+      "parquet": "data/derived/tables/model_coefficient_summary.parquet"
+    },
+    "robustness_summary": {
+      "csv": "data/derived/tables/robustness_summary.csv",
+      "parquet": "data/derived/tables/robustness_summary.parquet"
+    }
+  },
+  "script": "22_generate_figures_and_tables.py"
+}

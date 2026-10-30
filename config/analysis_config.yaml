@@ -20,7 +20,7 @@ file_search:
 tornado:
   strong_rating_threshold: 3
   outbreak_day_threshold: 10
-  utc_assumption: "Daily analyses use the catalog local calendar date; no UTC conversion is applied because SPC timezone codes are not safely invertible here."
+  utc_assumption: "Primary daily analyses retain SPC catalog calendar dates. Script 46 compares documented timezone codes 3=CST (fixed UTC-6) and 0=GMT on paired catalog-date/UTC populations; other codes remain unresolved."
   fscale_harmonization: "Treat mag >= 3 as strong tornadoes across F and EF eras."
 
 spe:
@@ -34,7 +34,7 @@ independent_hcs:
   rolling_hours: 9
   min_persist_hours: 6
   min_gap_hours: 48
-  polarity_rule: "Use the sign of -(Bx_GSE * By_GSE) as a transparent Parker-spiral sector proxy; crossings occur when the smoothed sign flips and persists."
+  polarity_rule: "Use the canonical daily Bx polarity reconstruction in script 26; script 17 exports a compatibility copy. The former sign(-Bx*By) proxy is retired."
 
 cir_hss:
   hss_speed_threshold: 500.0

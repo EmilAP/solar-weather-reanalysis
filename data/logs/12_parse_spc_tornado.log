@@ -1,2 +1,22 @@
 2026-03-14 11:53:39,931 INFO Parsed 70022 tornado events
 2026-03-14 12:00:06,041 INFO Parsed 70022 tornado events
+2026-10-29 16:35:05,864 INFO Parsed 70022 tornado events
+2026-10-29 17:25:16,004 INFO Parsed 70022 tornado events
+2026-10-29 17:38:24,986 INFO Parsed 70022 tornado events
+2026-10-30 10:07:20,790 INFO Parsed 70022 tornado events
+2026-10-30 10:19:11,784 WARNING Removed 1 exact duplicate SPC rows; repeated identifiers with distinct records are retained.
+2026-10-30 10:19:12,515 INFO Parsed 70021 tornado events
+2026-10-30 10:32:47,103 WARNING Removed 1 exact duplicate SPC rows; repeated identifiers with distinct records are retained.
+2026-10-30 10:32:47,719 INFO Parsed 70021 tornado events
+2026-10-30 10:41:17,059 WARNING Removed 1 exact duplicate SPC rows; repeated identifiers with distinct records are retained.
+2026-10-30 10:41:17,675 INFO Parsed 70021 tornado events
+2026-10-30 15:44:15,100 WARNING Removed 1 exact duplicate SPC rows; repeated identifiers with distinct records are retained.
+2026-10-30 15:44:15,746 INFO Parsed 70021 tornado events
+2026-10-30 16:03:48,000 WARNING Removed 1 exact duplicate SPC rows; repeated identifiers with distinct records are retained.
+2026-10-30 16:03:49,136 INFO Parsed 70021 tornado events
+2026-10-30 16:14:40,544 WARNING Removed 1 exact duplicate SPC rows; repeated identifiers with distinct records are retained.
+2026-10-30 16:14:41,343 INFO Parsed 70021 tornado events
+2026-10-30 16:47:43,429 WARNING Removed 1 exact duplicate SPC rows; repeated identifiers with distinct records are retained.
+2026-10-30 16:47:44,688 INFO Parsed 70021 tornado events
+2026-10-30 16:49:26,824 WARNING Removed 1 exact duplicate SPC rows; repeated identifiers with distinct records are retained.
+2026-10-30 16:49:27,924 INFO Parsed 70021 tornado events

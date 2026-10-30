@@ -11,3 +11,25 @@
 2026-03-14 17:15:14,711 INFO Built paper-style author-HCS SPE with 1793 events in 2105.303s (run_null=True)
 2026-03-14 18:40:52,125 INFO Observed-only mode: skipping Monte Carlo null analysis
 2026-03-14 18:40:52,129 INFO Built paper-style author-HCS SPE with 1793 events in 60.283s (run_null=False)
+2026-10-29 16:41:21,355 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-29 16:41:21,357 INFO Built paper-style author-HCS SPE with 1793 events in 109.117s (run_null=False)
+2026-10-29 17:26:18,399 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-29 17:26:18,400 INFO Built paper-style author-HCS SPE with 1793 events in 26.629s (run_null=False)
+2026-10-29 17:39:23,951 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-29 17:39:23,952 INFO Built paper-style author-HCS SPE with 1793 events in 26.957s (run_null=False)
+2026-10-30 10:16:32,097 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-30 10:16:32,098 INFO Built paper-style author-HCS SPE with 1787 events in 29.408s (run_null=False)
+2026-10-30 10:19:53,660 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-30 10:19:53,661 INFO Built paper-style author-HCS SPE with 1787 events in 24.285s (run_null=False)
+2026-10-30 10:33:25,711 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-30 10:33:25,711 INFO Built paper-style author-HCS SPE with 1787 events in 22.759s (run_null=False)
+2026-10-30 10:41:57,710 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-30 10:41:57,710 INFO Built paper-style author-HCS SPE with 1787 events in 24.213s (run_null=False)
+2026-10-30 15:44:55,990 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-30 15:44:55,990 INFO Built paper-style author-HCS SPE with 1788 events in 25.577s (run_null=False)
+2026-10-30 16:05:39,307 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-30 16:05:39,308 INFO Built paper-style author-HCS SPE with 1788 events in 87.578s (run_null=False)
+2026-10-30 16:15:37,741 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-30 16:15:37,742 INFO Built paper-style author-HCS SPE with 1788 events in 32.901s (run_null=False)
+2026-10-30 16:51:22,987 INFO Observed-only mode: skipping Monte Carlo null analysis
+2026-10-30 16:51:22,988 INFO Built paper-style author-HCS SPE with 1788 events in 44.122s (run_null=False)

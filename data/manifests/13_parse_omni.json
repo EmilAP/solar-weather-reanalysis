@@ -2,7 +2,7 @@
   "assumptions": [
     "OMNI fields parsed using the public OMNI2 hourly format definition from OMNIWeb documentation."
   ],
-  "generated_at": "2026-03-14T16:01:02.770575+00:00",
+  "generated_at": "2026-10-30T20:50:28.520753+00:00",
   "inputs": [
     "data/raw/omni/omni2_all_years.dat"
   ],

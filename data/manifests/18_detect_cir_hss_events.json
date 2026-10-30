@@ -1,0 +1,29 @@
+{
+  "assumptions": [
+    "CIR/HSS events are simple transparent proxies based on speed rise plus compression signatures."
+  ],
+  "generated_at": "2026-10-30T20:51:26.137703+00:00",
+  "inputs": [
+    "data/derived/daily/omni_daily.csv"
+  ],
+  "metrics": {
+    "cir_count": 968,
+    "hss_count": 1286
+  },
+  "ok": true,
+  "outputs": {
+    "cir": {
+      "csv": "data/derived/catalogs/cir_proxy_catalog.csv",
+      "parquet": "data/derived/catalogs/cir_proxy_catalog.parquet"
+    },
+    "combined": {
+      "csv": "data/derived/catalogs/cir_hss_catalog.csv",
+      "parquet": "data/derived/catalogs/cir_hss_catalog.parquet"
+    },
+    "hss": {
+      "csv": "data/derived/catalogs/hss_onset_catalog.csv",
+      "parquet": "data/derived/catalogs/hss_onset_catalog.parquet"
+    }
+  },
+  "script": "18_detect_cir_hss_events.py"
+}

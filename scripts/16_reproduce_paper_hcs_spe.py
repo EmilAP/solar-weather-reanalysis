@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from _utils import build_event_window, add_cumulative_columns, load_config, make_logger, random_dates_like, save_figure, write_dataframe, write_script_manifest
+from _utils import add_cumulative_columns, build_event_window, complete_window_dates, load_config, make_logger, random_dates_like, save_figure, write_dataframe, write_script_manifest
 
 
 METRICS = ["all_tornadoes", "strong_tornadoes", "daily_injuries", "daily_fatalities"]
@@ -45,7 +45,7 @@ def _build_null_summary(
 ) -> pd.DataFrame:
     lags = np.arange(-window_days, window_days + 1)
     lag_index = list(lags)
-    date_index = pd.DatetimeIndex(daily["date"])
+    date_index = pd.DatetimeIndex(daily["date"])[window_days:-window_days]
 
     samples: dict[str, np.ndarray] = {
         metric: np.full((iterations, len(lags)), np.nan, dtype=float) for metric in METRICS
@@ -54,15 +54,14 @@ def _build_null_summary(
     for idx in range(iterations):
         random_events = random_dates_like(event_dates, date_index, rng)
         random_window = build_event_window(daily, random_events, METRICS, window_days)
-        random_window = add_cumulative_columns(random_window, METRICS)
         aligned = random_window.set_index("lag").reindex(lag_index)
         for metric in METRICS:
-            samples[metric][idx, :] = aligned[f"{metric}_cumulative"].to_numpy()
+            samples[metric][idx, :] = (aligned[metric] * aligned["event_count"]).to_numpy()
 
         if (idx + 1) % 10 == 0 or (idx + 1) == iterations:
             logger.info("Monte Carlo progress: %d/%d iterations", idx + 1, iterations)
 
-    out = pd.DataFrame({"lag": lags})
+    out = pd.DataFrame({"lag": lags, "statistic": "across_event_total", "event_count": len(event_dates)})
     for metric in METRICS:
         arr = samples[metric]
         out[f"{metric}_cumulative_mean"] = np.nanmean(arr, axis=0)
@@ -94,10 +93,12 @@ def main() -> int:
     author = author[(author["year"] >= 1963) & (author["year"] <= 2023)].copy()
     event_dates = pd.to_datetime(author["datetime_utc"], utc=True, errors="coerce").dropna().dt.tz_convert(None).dt.normalize().tolist()
     window_days = int(cfg["spe"]["window_days"])
+    event_dates = complete_window_dates(event_dates, pd.DatetimeIndex(daily["date"]), window_days)
 
     # Keep the observed author-HCS composite as the first stage and persist immediately.
     observed = build_event_window(daily, event_dates, METRICS, window_days)
     observed = add_cumulative_columns(observed, METRICS)
+    observed["statistic"] = "across_event_total"
 
     outputs: dict[str, object] = {
         "observed": write_dataframe(observed, "data/derived/spe/paper_author_hcs_observed"),
@@ -109,7 +110,7 @@ def main() -> int:
         ax.set_title(metric.replace("_", " "))
         ax.axvline(0, color="0.6", linestyle="--", linewidth=1)
         ax.set_xlabel("Days from HCS crossing")
-        ax.set_ylabel("Cumulative mean")
+        ax.set_ylabel("Total across events at each epoch day")
     fig.tight_layout()
     outputs["paper_style_figure"] = save_figure(fig, "data/derived/figures/paper_style_author_hcs_cumulative")
 
@@ -144,7 +145,7 @@ def main() -> int:
         ["data/derived/daily/analysis_daily.csv", author_path],
         outputs,
         metrics,
-        assumptions=["Paper-style branch uses cumulative curves for comparability, alongside daily-rate versions for interpretation."],
+        assumptions=["Cumulative counts mean totals across events at each epoch day, not running sums over lags. Unique complete-window event dates are used; exact source-data replication is not claimed."],
     )
     logger.info(
         "Built paper-style author-HCS SPE with %d events in %.3fs (run_null=%s)",

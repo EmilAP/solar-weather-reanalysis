@@ -14,3 +14,32 @@ data/derived/tables/
 # Keep lightweight docs/figures if desired
 !data/derived/figures/
 !data/derived/reports/
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Large datasets and generated outputs
+data/raw/
+data/processed/
+data/derived/
+*.nc
+*.nc4
+*.grib
+*.grib2
+*.npz
+
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Operating system files
+.DS_Store
+Thumbs.db

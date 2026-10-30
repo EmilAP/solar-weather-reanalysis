@@ -11,16 +11,17 @@ def main() -> int:
     logger = make_logger("22_generate_figures_and_tables")
     outputs: dict[str, object] = {}
 
-    tornado = pd.read_csv("data/derived/daily/tornado_daily.csv", parse_dates=["date"])
-    climatology = tornado.groupby(tornado["date"].dt.dayofyear, as_index=False).agg(
+    tornado = pd.read_csv("data/derived/daily/analysis_daily.csv", parse_dates=["date"])
+    tornado["day_of_year"] = tornado["date"].dt.dayofyear
+    climatology = tornado.groupby("day_of_year", as_index=False).agg(
         all_tornadoes=("all_tornadoes", "mean"),
         strong_tornadoes=("strong_tornadoes", "mean"),
     )
     outputs["daily_climatology_table"] = write_dataframe(climatology, "data/derived/tables/daily_tornado_climatology")
 
     fig, ax = plt.subplots(figsize=(10, 4))
-    ax.plot(climatology["date"], climatology["all_tornadoes"], color="black", linewidth=1.5, label="All tornadoes")
-    ax.plot(climatology["date"], climatology["strong_tornadoes"], color="0.5", linewidth=1.2, label="Strong tornadoes")
+    ax.plot(climatology["day_of_year"], climatology["all_tornadoes"], color="black", linewidth=1.5, label="All tornadoes")
+    ax.plot(climatology["day_of_year"], climatology["strong_tornadoes"], color="0.5", linewidth=1.2, label="Strong tornadoes")
     ax.set_title("Daily tornado climatology")
     ax.set_xlabel("Day of year")
     ax.set_ylabel("Mean daily count")

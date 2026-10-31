@@ -128,7 +128,7 @@ Adding a path to `.gitignore`, deleting it in a new commit, or running `git rm -
 The manuscript release migrates both files to Git LFS, includes the recorded publication report and derived evidence, and identifies that snapshot with the `publication-2026-10-31` tag. Appendix C uses full GitHub URLs pinned to this tag rather than moving `main` URLs. To perform the same migration on an original, unmigrated checkout with an empty remote, install Git LFS and run the following from a clean working tree. Do not repeat this migration on the already migrated release:
 
 ```bash
-git branch backup-before-lfs
+git bundle create ../reanalysis-before-lfs.bundle main
 git lfs install
 git lfs migrate import \
   --include="data/raw/omni/omni2_all_years.dat,data/derived/daily/omni_hourly_clean.csv" \
@@ -137,7 +137,7 @@ git lfs ls-files
 git push -u origin main
 ```
 
-Push `main`, not `--all`: the backup branch deliberately retains the original oversized history. Check the repository owner's LFS storage and bandwidth allowance before choosing this approach. Migration only converts already committed files; ignored Appendix C evidence still needs to be explicitly included in the release.
+Push `main`, not `--all`: do not publish backup history containing oversized blobs. Keep the backup bundle outside the repository; LFS migration can update other branch references, so a backup branch alone is insufficient. Check the repository owner's LFS storage and bandwidth allowance before choosing this approach. Migration only converts already committed files; ignored Appendix C evidence still needs to be explicitly included in the release.
 
 **Viewing results is not the same as reproducing them.** A reader can inspect uploaded CSVs, figures, and code without rerunning the analysis. Full computational reproduction requires the following raw inputs, the configuration, and the pinned dependencies in [`requirements.txt`](requirements.txt):
 

@@ -1,0 +1,17 @@
+source,metric,event_count,observed_max_abs_daily_effect,empirical_p_max,lag_of_max_abs_effect,statistic,null_model,iterations,p_value_holm
+author_hcs,all_tornadoes,1788,3.4440715883668904,0.0189810189810189,-1,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,0.3036963036963037
+author_hcs,strong_tornadoes,1788,0.1817673378076062,0.0709290709290709,-29,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,0.8511488511488512
+author_hcs,daily_injuries,1788,7.956375838926174,0.2417582417582417,-29,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0
+author_hcs,daily_fatalities,1788,0.5458612975391499,0.1288711288711288,-29,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0
+reconstructed_hcs,all_tornadoes,1783,3.337072349971957,0.2937062937062937,-28,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0
+reconstructed_hcs,strong_tornadoes,1783,0.1682557487380818,0.2117882117882117,-2,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0
+reconstructed_hcs,daily_injuries,1783,7.270891755468312,0.4205794205794206,15,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0
+reconstructed_hcs,daily_fatalities,1783,0.4980370162647223,0.2197802197802197,15,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0
+cir_proxy,all_tornadoes,917,3.681570338058888,0.0439560439560439,-3,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,0.5994005994005994
+cir_proxy,strong_tornadoes,917,0.2224645583424209,0.3816183816183816,-3,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0
+cir_proxy,daily_injuries,917,14.016357688113413,0.0399600399600399,-3,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,0.5994005994005994
+cir_proxy,daily_fatalities,917,0.93020719738277,0.0399600399600399,-3,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,0.5994005994005994
+hss_onset,all_tornadoes,1224,3.522058823529412,0.2147852147852147,-3,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0
+hss_onset,strong_tornadoes,1224,0.1870915032679738,0.6453546453546454,-3,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0
+hss_onset,daily_injuries,1224,11.218954248366012,0.1058941058941058,-3,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0
+hss_onset,daily_fatalities,1224,0.7418300653594772,0.1268731268731268,-3,maximum_raw_daily_mean,within_year_cluster_shift_15d,1000,1.0

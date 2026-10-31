@@ -1,0 +1,7 @@
+branch,season,event_count_used,lag0_observed_all_tornadoes,lag0_null_mean_all_tornadoes,lag0_null_q025_all_tornadoes,lag0_null_q975_all_tornadoes,lag0_outside_band_all_tornadoes,notes
+author_hcs,full_year,1788,2.98993288590604,2.856180089485455,2.5550195749440716,3.178789149888143,False,iterations=500; random dates drawn within same seasonal subset
+author_hcs,mar_jun,608,5.355263157894737,5.175164473684211,4.520518092105263,5.940090460526315,False,iterations=500; random dates drawn within same seasonal subset
+author_hcs,apr_jun,470,6.378723404255319,6.167442553191494,5.360478723404255,6.986542553191489,False,iterations=500; random dates drawn within same seasonal subset
+reconstructed_hcs,full_year,1783,3.061132922041503,2.8384520471116104,2.552776219854178,3.15176668536175,False,iterations=500; random dates drawn within same seasonal subset
+reconstructed_hcs,mar_jun,587,5.647359454855196,5.182201022146508,4.559497444633731,5.877385008517886,False,iterations=500; random dates drawn within same seasonal subset
+reconstructed_hcs,apr_jun,452,6.845132743362832,6.148247787610617,5.253042035398231,7.079037610619468,False,iterations=500; random dates drawn within same seasonal subset

@@ -1,0 +1,6 @@
+author_type,A_like_CIR_following,B_like_HCS_HDP_preceding,C_like_ICME_following,D_like_major_HSS_declining_phase,unclassified
+A_like_CIR_following,17,23,9,7,83
+B_like_HCS_HDP_preceding,1,22,7,13,104
+C_like_ICME_following,7,1,28,2,8
+D_like_major_HSS_declining_phase,10,1,6,27,40
+author_missing,0,2,0,1,38

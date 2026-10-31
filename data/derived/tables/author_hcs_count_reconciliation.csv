@@ -1,0 +1,13 @@
+count_name,value,notes
+dates_reconciled_1963_2023,1,Invalid source Y/M/D resolved only from agreeing day-of-year/hour and elapsed-hours dates; raw fields retained.
+raw_text_nonblank_lines,1827,"All non-empty lines in SBCtorlist1963-2024.txt, including non-data header lines."
+raw_text_data_lines_any_year,1825,Lines beginning with year token (parsed as data rows across full file).
+raw_text_data_lines_1963_2023,1794,Year-token data lines restricted to 1963-2023 before datetime validation and deduplication.
+parsed_catalog_rows,1825,Rows present in data/derived/catalogs/author_hcs_catalog.csv.
+parsed_catalog_rows_1963_2023,1794,Parsed catalog rows with year between 1963 and 2023 inclusive.
+unique_datetime_rows_1963_2023,1792,Unique non-NA datetime_utc values in 1963-2023 after dropping duplicate timestamps.
+author_hcs_event_count_used_primary,1788,"Count after date matching to analysis_daily, dropping NA/duplicates, and applying +/-30-day edge filter."
+author_hcs_event_count_used_seasonal_full_year,1788,From seasonal_control_summary.csv for author_hcs full_year.
+author_hcs_event_count_used_seasonal_mar_jun,608,From seasonal_control_summary.csv for author_hcs mar_jun.
+author_hcs_event_count_used_seasonal_apr_jun,470,From seasonal_control_summary.csv for author_hcs apr_jun.
+author_hcs_event_count_used_phase_randomized,1788,From phase_randomized_author_hcs_summary.csv event_count_used.

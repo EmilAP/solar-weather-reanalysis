@@ -1,0 +1,8 @@
+metric,value,notes
+author_total_count,1792.0,Total author-catalog crossings.
+reconstructed_total_count,1786.0,Total reconstructed-catalog crossings.
+author_annual_average_count,29.37704918032787,Total count divided by number of calendar years covered.
+reconstructed_annual_average_count,29.278688524590162,Total count divided by number of calendar years covered.
+author_median_spacing_days,11.0,Median days between consecutive author-catalog crossings.
+reconstructed_median_spacing_days,10.0,Median days between consecutive reconstructed-catalog crossings.
+median_nearest_event_timing_difference_days,1.0,Median absolute nearest-date difference from author to reconstructed catalog.

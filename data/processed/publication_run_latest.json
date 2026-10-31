@@ -1,0 +1,313 @@
+{
+  "run_id": "20261030T204923Z",
+  "generated_at": "2026-10-30T20:56:39.201583+00:00",
+  "uses_network": false,
+  "started_at_step": "scripts/11_ingest_author_hcs.py",
+  "steps": [
+    {
+      "step": "Ingest author HCS",
+      "script": "scripts/11_ingest_author_hcs.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.554,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:49:24,973 WARNING Reconciled 1 invalid author dates from agreeing redundant fields: source lines [848].\n2026-10-30 16:49:25,050 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt\n"
+    },
+    {
+      "step": "Parse SPC tornadoes",
+      "script": "scripts/12_parse_spc_tornado.py",
+      "return_code": 0,
+      "elapsed_seconds": 2.909,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:49:26,824 WARNING Removed 1 exact duplicate SPC rows; repeated identifiers with distinct records are retained.\n2026-10-30 16:49:27,924 INFO Parsed 70021 tornado events\n"
+    },
+    {
+      "step": "Parse OMNI",
+      "script": "scripts/13_parse_omni.py",
+      "return_code": 0,
+      "elapsed_seconds": 60.658,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:50:28,523 INFO Parsed 561024 OMNI hourly rows\n"
+    },
+    {
+      "step": "Parse ICME",
+      "script": "scripts/14_parse_icme.py",
+      "return_code": 0,
+      "elapsed_seconds": 3.364,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:50:31,789 INFO Parsed 619 ICME rows\n"
+    },
+    {
+      "step": "Build daily analysis table",
+      "script": "scripts/15_build_daily_tornado_series.py",
+      "return_code": 0,
+      "elapsed_seconds": 3.95,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:50:35,963 INFO Built master daily analysis table with 22280 rows\n"
+    },
+    {
+      "step": "Reconstruct daily HCS",
+      "script": "scripts/26_reconstruct_hcs_from_omni.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.725,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:50:37,837 INFO Bx column used: bx_gse_mean\n2026-10-30 16:50:37,837 INFO Candidate crossings before spacing filter: 2067\n2026-10-30 16:50:37,838 INFO Retained crossings: 1865\n"
+    },
+    {
+      "step": "Build paper-style HCS composites",
+      "script": "scripts/16_reproduce_paper_hcs_spe.py",
+      "return_code": 0,
+      "elapsed_seconds": 45.202,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:51:22,987 INFO Observed-only mode: skipping Monte Carlo null analysis\n2026-10-30 16:51:22,988 INFO Built paper-style author-HCS SPE with 1788 events in 44.122s (run_null=False)\n"
+    },
+    {
+      "step": "Build independent HCS catalog",
+      "script": "scripts/17_build_independent_hcs_from_omni.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.713,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:51:24,777 INFO Exported 1865 canonical daily-Bx crossings\n"
+    },
+    {
+      "step": "Detect CIR and HSS events",
+      "script": "scripts/18_detect_cir_hss_events.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.378,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:51:26,138 INFO Detected 1286 HSS onsets and 968 CIR proxies\n"
+    },
+    {
+      "step": "Strict event study",
+      "script": "scripts/19_run_stricter_event_study.py",
+      "return_code": 0,
+      "elapsed_seconds": 212.033,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:54:58,388 INFO Finished stricter event study for 16 source/metric combinations\n"
+    },
+    {
+      "step": "Fit daily models",
+      "script": "scripts/20_run_daily_models.py",
+      "return_code": 0,
+      "elapsed_seconds": 7.524,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:55:05,892 INFO Fitted 5 daily models\n"
+    },
+    {
+      "step": "Compare event catalogs",
+      "script": "scripts/21_compare_event_catalogs.py",
+      "return_code": 0,
+      "elapsed_seconds": 4.013,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:55:10,031 INFO Compared 6 catalog pairs\n"
+    },
+    {
+      "step": "Generate core figures and tables",
+      "script": "scripts/22_generate_figures_and_tables.py",
+      "return_code": 0,
+      "elapsed_seconds": 3.343,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:55:13,361 INFO Generated 9 figure/table outputs\n"
+    },
+    {
+      "step": "Write core summary report",
+      "script": "scripts/23_write_summary_report.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.746,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:55:14,932 INFO Wrote summary report to /home/owner/dev/reanalysis/data/derived/reports/analysis_summary.md\n"
+    },
+    {
+      "step": "Author HCS fast null",
+      "script": "scripts/25_fast_spe_null.py",
+      "return_code": 0,
+      "elapsed_seconds": 4.993,
+      "stdout_tail": "Completed 50/500 iterations\nCompleted 100/500 iterations\nCompleted 150/500 iterations\nCompleted 200/500 iterations\nCompleted 250/500 iterations\nCompleted 300/500 iterations\nCompleted 350/500 iterations\nCompleted 400/500 iterations\nCompleted 450/500 iterations\nCompleted 500/500 iterations\nSaved: /home/owner/dev/reanalysis/data/derived/spe/fast_null_test_all_tornadoes.csv\nEvent count used: 1788\n lag  observed_daily_mean  null_mean  null_q025  null_q975  anomaly_vs_null_mean  outside_95_band  p_value_one_sided  p_value_two_sided  null_iterations  event_count\n   0             2.989933   2.847025   2.539304   3.139723              0.142908            False           0.205589           0.411178              500         1788\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Reconstructed HCS event study",
+      "script": "scripts/27_event_study_reconstructed_hcs.py",
+      "return_code": 0,
+      "elapsed_seconds": 11.447,
+      "stdout_tail": "Reconstructed HCS crossings used: 1783\nLag 0 observed daily mean (all_tornadoes): 3.061133\nLag 0 null mean (all_tornadoes): 2.847564\nLag 0 null 95% band: [2.548233, 3.151739]\nLag 0 outside 95% band: False\n",
+      "stderr_tail": "2026-10-30 16:55:31,040 INFO Fast null progress: 50/500 iterations\n2026-10-30 16:55:31,062 INFO Fast null progress: 100/500 iterations\n2026-10-30 16:55:31,083 INFO Fast null progress: 150/500 iterations\n2026-10-30 16:55:31,108 INFO Fast null progress: 200/500 iterations\n2026-10-30 16:55:31,129 INFO Fast null progress: 250/500 iterations\n2026-10-30 16:55:31,148 INFO Fast null progress: 300/500 iterations\n2026-10-30 16:55:31,163 INFO Fast null progress: 350/500 iterations\n2026-10-30 16:55:31,177 INFO Fast null progress: 400/500 iterations\n2026-10-30 16:55:31,191 INFO Fast null progress: 450/500 iterations\n2026-10-30 16:55:31,210 INFO Fast null progress: 500/500 iterations\n2026-10-30 16:55:31,527 INFO Reconstructed HCS event study completed with 1783 crossings\n"
+    },
+    {
+      "step": "Seasonal controls",
+      "script": "scripts/28_seasonal_control_event_studies.py",
+      "return_code": 0,
+      "elapsed_seconds": 9.814,
+      "stdout_tail": "Saved seasonal summary: /home/owner/dev/reanalysis/data/derived/tables/seasonal_control_summary.csv\nSaved seasonal report: /home/owner/dev/reanalysis/data/derived/reports/seasonal_control_summary.md\n",
+      "stderr_tail": "2026-10-30 16:55:34,461 INFO author_hcs full_year: events=1788 lag0_outside=False\n2026-10-30 16:55:35,858 INFO author_hcs mar_jun: events=608 lag0_outside=False\n2026-10-30 16:55:37,119 INFO author_hcs apr_jun: events=470 lag0_outside=False\n2026-10-30 16:55:38,609 INFO reconstructed_hcs full_year: events=1783 lag0_outside=False\n2026-10-30 16:55:39,883 INFO reconstructed_hcs mar_jun: events=587 lag0_outside=False\n2026-10-30 16:55:41,365 INFO reconstructed_hcs apr_jun: events=452 lag0_outside=False\n"
+    },
+    {
+      "step": "Phase-randomized null",
+      "script": "scripts/29_phase_randomized_null_test.py",
+      "return_code": 0,
+      "elapsed_seconds": 2.456,
+      "stdout_tail": "Saved: /home/owner/dev/reanalysis/data/derived/spe/phase_randomized_author_hcs_all_tornadoes.csv\nSaved: /home/owner/dev/reanalysis/data/derived/figures/phase_randomized_author_hcs_all_tornadoes.png\nSaved: /home/owner/dev/reanalysis/data/derived/tables/phase_randomized_author_hcs_summary.csv\nSaved: /home/owner/dev/reanalysis/data/derived/reports/phase_randomized_author_hcs_summary.md\n event_count_used  iterations  lag0_observed  lag0_null_mean  lag0_null_q025  lag0_null_q975  lag0_outside_band  outside_band_lag_count                                                                                        interpretation\n             1788         200       2.989933        2.833203        2.545342        3.154546              False                       9 Lag 0 is within the surrogate null band; this does not establish equivalence or absence of an effect.\n",
+      "stderr_tail": "2026-10-30 16:55:42,920 INFO Phase-randomized progress: 25/200\n2026-10-30 16:55:42,996 INFO Phase-randomized progress: 50/200\n2026-10-30 16:55:43,071 INFO Phase-randomized progress: 75/200\n2026-10-30 16:55:43,148 INFO Phase-randomized progress: 100/200\n2026-10-30 16:55:43,227 INFO Phase-randomized progress: 125/200\n2026-10-30 16:55:43,332 INFO Phase-randomized progress: 150/200\n2026-10-30 16:55:43,414 INFO Phase-randomized progress: 175/200\n2026-10-30 16:55:43,492 INFO Phase-randomized progress: 200/200\n"
+    },
+    {
+      "step": "Write methods metadata",
+      "script": "scripts/33_write_methods_metadata.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.572,
+      "stdout_tail": "Created methods metadata JSON and Markdown outputs.\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Reconcile author HCS counts",
+      "script": "scripts/35_reconcile_author_hcs_counts.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.633,
+      "stdout_tail": "Saved reconciliation table: /home/owner/dev/reanalysis/data/derived/tables/author_hcs_count_reconciliation.csv\nSaved reconciliation report: /home/owner/dev/reanalysis/data/derived/reports/author_hcs_count_reconciliation.md\nUpdated metadata/reporting files:\n- data/derived/reports/methods_metadata.json\n- data/derived/reports/methods_metadata.md\n- data/derived/tables/paper_table_1_datasets_and_catalogs.csv\n- data/derived/tables/paper_table_2_primary_results.csv\n- data/derived/tables/paper_table_3_robustness_checks.csv\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Block-bootstrap null",
+      "script": "scripts/37_block_bootstrap_null_test.py",
+      "return_code": 0,
+      "elapsed_seconds": 12.053,
+      "stdout_tail": "author_hcs block=7: completed 50/500\nauthor_hcs block=7: completed 100/500\nauthor_hcs block=7: completed 150/500\nauthor_hcs block=7: completed 200/500\nauthor_hcs block=7: completed 250/500\nauthor_hcs block=7: completed 300/500\nauthor_hcs block=7: completed 350/500\nauthor_hcs block=7: completed 400/500\nauthor_hcs block=7: completed 450/500\nauthor_hcs block=7: completed 500/500\nauthor_hcs block=14: completed 50/500\nauthor_hcs block=14: completed 100/500\nauthor_hcs block=14: completed 150/500\nauthor_hcs block=14: completed 200/500\nauthor_hcs block=14: completed 250/500\nauthor_hcs block=14: completed 300/500\nauthor_hcs block=14: completed 350/500\nauthor_hcs block=14: completed 400/500\nauthor_hcs block=14: completed 450/500\nauthor_hcs block=14: completed 500/500\nreconstructed_hcs block=7: completed 50/500\nreconstructed_hcs block=7: completed 100/500\nreconstructed_hcs block=7: completed 150/500\nreconstructed_hcs block=7: completed 200/500\nreconstructed_hcs block=7: completed 250/500\nreconstructed_hcs block=7: completed 300/500\nreconstructed_hcs block=7: completed 350/500\nreconstructed_hcs block=7: completed 400/500\nreconstructed_hcs block=7: completed 450/500\nreconstructed_hcs block=7: completed 500/500\nreconstructed_hcs block=14: completed 50/500\nreconstructed_hcs block=14: completed 100/500\nreconstructed_hcs block=14: completed 150/500\nreconstructed_hcs block=14: completed 200/500\nreconstructed_hcs block=14: completed 250/500\nreconstructed_hcs block=14: completed 300/500\nreconstructed_hcs block=14: completed 350/500\nreconstructed_hcs block=14: completed 400/500\nreconstructed_hcs block=14: completed 450/500\nreconstructed_hcs block=14: completed 500/500\nSaved: /home/owner/dev/reanalysis/data/derived/tables/block_bootstrap_summary.csv\nSaved: /home/owner/dev/reanalysis/data/derived/reports/block_bootstrap_summary.md\nSaved: /home/owner/dev/reanalysis/data/derived/figures/block_bootstrap_combined_comparison.png\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Lag-zero permutation p-values",
+      "script": "scripts/38_lag0_permutation_pvalues.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.568,
+      "stdout_tail": "Saved: /home/owner/dev/reanalysis/data/derived/tables/lag0_permutation_pvalues.csv\nSaved: /home/owner/dev/reanalysis/data/derived/reports/lag0_permutation_pvalues.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Extract supplement table",
+      "script": "scripts/39c_extract_supplement_table_pdfplumber.py",
+      "return_code": 0,
+      "elapsed_seconds": 2.65,
+      "stdout_tail": "Pages scanned: 12\nTables detected: 0\nRows extracted: 457\nRows with missing columns: 10\nTable structure consistent: not_assessable_no_tables_detected\nSaved: /home/owner/dev/reanalysis/data/derived/catalogs/supplement_table_s1_outbreaks_pdfplumber.csv\nSaved: /home/owner/dev/reanalysis/data/derived/catalogs/supplement_table_s1_raw_pdfplumber.txt\nSaved: /home/owner/dev/reanalysis/data/derived/reports/supplement_table_s1_pdfplumber_extraction.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Prepare supplement table",
+      "script": "scripts/39d_prepare_pdfplumber_outbreak_table.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.063,
+      "stdout_tail": "Input row count: 457\nRetained row count: 457\nExcluded row count: 0\nExclusion reasons:\n- none\nSaved: /home/owner/dev/reanalysis/data/derived/catalogs/supplement_table_s1_outbreaks_pdfplumber_flagged.csv\nSaved: /home/owner/dev/reanalysis/data/derived/catalogs/supplement_table_s1_outbreaks.csv\nSaved: /home/owner/dev/reanalysis/data/derived/catalogs/supplement_table_s1_rows_for_manual_review.csv\nSaved: /home/owner/dev/reanalysis/data/derived/reports/supplement_table_s1_pdfplumber_preparation.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Replicate outbreak types",
+      "script": "scripts/40_replicate_outbreak_type_branch.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.274,
+      "stdout_tail": "Author type counts:\nauthor_type  outbreak_count\n          A             139\n          B             147\n          C              46\n          D              84\n    unknown              41\nSaved: /home/owner/dev/reanalysis/data/derived/catalogs/supplement_table_s1_outbreaks_clean.csv\nSaved: /home/owner/dev/reanalysis/data/derived/tables/outbreak_type_author_summary.csv\nSaved: /home/owner/dev/reanalysis/data/derived/figures/outbreak_type_author_counts.png\nSaved: /home/owner/dev/reanalysis/data/derived/reports/outbreak_type_author_replication.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Independent outbreak reclassification",
+      "script": "scripts/41_independent_outbreak_reclassification.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.453,
+      "stdout_tail": "Independent type counts:\n                independent_type  outbreak_count\n            A_like_CIR_following              35\n        B_like_HCS_HDP_preceding              49\n           C_like_ICME_following              50\nD_like_major_HSS_declining_phase              50\n                    unclassified             273\nSaved: /home/owner/dev/reanalysis/data/derived/catalogs/outbreaks_reclassified_independent.csv\nSaved: /home/owner/dev/reanalysis/data/derived/tables/outbreak_type_independent_summary.csv\nSaved: /home/owner/dev/reanalysis/data/derived/reports/outbreak_type_independent_reclassification.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Compare outbreak classifications",
+      "script": "scripts/42_compare_author_vs_reclassified_outbreaks.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.834,
+      "stdout_tail": "Agreement percentage: 20.6%\nConfusion matrix:\nindependent_type                  A_like_CIR_following  B_like_HCS_HDP_preceding  C_like_ICME_following  D_like_major_HSS_declining_phase  unclassified\nauthor_type                                                                                                                                            \nA_like_CIR_following                                17                        23                      9                                 7            83\nB_like_HCS_HDP_preceding                             1                        22                      7                                13           104\nC_like_ICME_following                                7                         1                     28                                 2             8\nD_like_major_HSS_declining_phase                    10                         1                      6                                27            40\nauthor_missing                                       0                         2                      0                                 1            38\nSaved: /home/owner/dev/reanalysis/data/derived/tables/outbreak_type_author_vs_independent_comparison.csv\nSaved: /home/owner/dev/reanalysis/data/derived/tables/outbreak_type_confusion_matrix.csv\nSaved: /home/owner/dev/reanalysis/data/derived/tables/outbreak_type_agreement_summary.csv\nSaved: /home/owner/dev/reanalysis/data/derived/figures/outbreak_type_confusion_matrix.png\nSaved: /home/owner/dev/reanalysis/data/derived/figures/outbreak_type_agreement_bars.png\nSaved: /home/owner/dev/reanalysis/data/derived/reports/outbreak_type_comparison_summary.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Outbreak distance nulls",
+      "script": "scripts/43_author_outbreak_event_distance_test.py",
+      "return_code": 0,
+      "elapsed_seconds": 5.572,
+      "stdout_tail": "Saved: /home/owner/dev/reanalysis/data/derived/tables/author_outbreak_nearest_event_distances.csv\nSaved: /home/owner/dev/reanalysis/data/derived/tables/author_outbreak_event_distance_null_summary.csv\nSaved: /home/owner/dev/reanalysis/data/derived/figures/author_outbreak_distance_null_comparison.png\nSaved: /home/owner/dev/reanalysis/data/derived/figures/author_outbreak_distance_distributions.png\nSaved: /home/owner/dev/reanalysis/data/derived/reports/author_outbreak_event_distance_test.md\n",
+      "stderr_tail": "/home/owner/dev/reanalysis/scripts/43_author_outbreak_event_distance_test.py:402: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.\n  ax2.boxplot(values, labels=labels, showfliers=False)\n"
+    },
+    {
+      "step": "Outbreak coincidence nulls",
+      "script": "scripts/44_author_outbreak_event_coincidence_test.py",
+      "return_code": 0,
+      "elapsed_seconds": 2.603,
+      "stdout_tail": "Saved: /home/owner/dev/reanalysis/data/derived/tables/author_outbreak_event_coincidence_summary.csv\nSaved: /home/owner/dev/reanalysis/data/derived/figures/author_outbreak_event_coincidence_summary.png\nSaved: /home/owner/dev/reanalysis/data/derived/reports/author_outbreak_event_coincidence_test.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Summarize outbreak branch",
+      "script": "scripts/45_author_outbreak_branch_summary.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.204,
+      "stdout_tail": "Saved: /home/owner/dev/reanalysis/data/derived/tables/author_outbreak_branch_key_results.csv\nSaved: /home/owner/dev/reanalysis/data/derived/reports/author_outbreak_branch_summary.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Coverage and timing sensitivities",
+      "script": "scripts/46_observation_sensitivity.py",
+      "return_code": 0,
+      "elapsed_seconds": 13.352,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 16:56:18,100 INFO Daily sensitivity 1/22: author__event_shift_+0__catalog_all\n2026-10-30 16:56:18,389 INFO Daily sensitivity 2/22: author__event_shift_+0__catalog_documented\n2026-10-30 16:56:18,629 INFO Daily sensitivity 3/22: author__event_shift_+0__utc_documented\n2026-10-30 16:56:18,895 INFO Daily sensitivity 4/22: reconstructed_primary__event_shift_+0__catalog_all\n2026-10-30 16:56:19,204 INFO Daily sensitivity 5/22: reconstructed_primary__event_shift_+0__catalog_documented\n2026-10-30 16:56:19,400 INFO Daily sensitivity 6/22: reconstructed_primary__event_shift_+0__utc_documented\n2026-10-30 16:56:19,617 INFO Daily sensitivity 7/22: reconstructed_min_01h__event_shift_+0__catalog_all\n2026-10-30 16:56:19,801 INFO Daily sensitivity 8/22: reconstructed_min_01h__event_shift_+0__catalog_documented\n2026-10-30 16:56:19,981 INFO Daily sensitivity 9/22: reconstructed_min_01h__event_shift_+0__utc_documented\n2026-10-30 16:56:20,174 INFO Daily sensitivity 10/22: reconstructed_min_12h__event_shift_+0__catalog_all\n2026-10-30 16:56:20,371 INFO Daily sensitivity 11/22: reconstructed_min_12h__event_shift_+0__catalog_documented\n2026-10-30 16:56:20,595 INFO Daily sensitivity 12/22: reconstructed_min_12h__event_shift_+0__utc_documented\n2026-10-30 16:56:20,799 INFO Daily sensitivity 13/22: reconstructed_min_18h__event_shift_+0__catalog_all\n2026-10-30 16:56:20,970 INFO Daily sensitivity 14/22: reconstructed_min_18h__event_shift_+0__catalog_documented\n2026-10-30 16:56:21,126 INFO Daily sensitivity 15/22: reconstructed_min_18h__event_shift_+0__utc_documented\n2026-10-30 16:56:21,273 INFO Daily sensitivity 16/22: reconstructed_min_24h__event_shift_+0__catalog_all\n2026-10-30 16:56:21,421 INFO Daily sensitivity 17/22: reconstructed_min_24h__event_shift_+0__catalog_documented\n2026-10-30 16:56:21,618 INFO Daily sensitivity 18/22: reconstructed_min_24h__event_shift_+0__utc_documented\n2026-10-30 16:56:21,823 INFO Daily sensitivity 19/22: author__event_shift_-1__catalog_all\n2026-10-30 16:56:22,008 INFO Daily sensitivity 20/22: author__event_shift_+1__catalog_all\n2026-10-30 16:56:22,257 INFO Daily sensitivity 21/22: reconstructed_primary__event_shift_-1__catalog_all\n2026-10-30 16:56:22,452 INFO Daily sensitivity 22/22: reconstructed_primary__event_shift_+1__catalog_all\n"
+    },
+    {
+      "step": "Plot core null comparisons",
+      "script": "scripts/30_plot_core_null_comparisons.py",
+      "return_code": 0,
+      "elapsed_seconds": 3.635,
+      "stdout_tail": "Created figures and lag-0 summary table for available null comparisons.\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Plot catalog comparisons",
+      "script": "scripts/31_plot_catalog_comparison_figures.py",
+      "return_code": 0,
+      "elapsed_seconds": 3.114,
+      "stdout_tail": "Created catalog comparison figures and summary table.\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Build final paper bundle",
+      "script": "scripts/32_build_paper_results_bundle.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.794,
+      "stdout_tail": "Created paper bundle tables and report.\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Refresh methods metadata",
+      "script": "scripts/33_write_methods_metadata.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.732,
+      "stdout_tail": "Created methods metadata JSON and Markdown outputs.\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Reconcile final manuscript tables",
+      "script": "scripts/35_reconcile_author_hcs_counts.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.788,
+      "stdout_tail": "Saved reconciliation table: /home/owner/dev/reanalysis/data/derived/tables/author_hcs_count_reconciliation.csv\nSaved reconciliation report: /home/owner/dev/reanalysis/data/derived/reports/author_hcs_count_reconciliation.md\nUpdated metadata/reporting files:\n- data/derived/reports/methods_metadata.json\n- data/derived/reports/methods_metadata.md\n- data/derived/tables/paper_table_1_datasets_and_catalogs.csv\n- data/derived/tables/paper_table_2_primary_results.csv\n- data/derived/tables/paper_table_3_robustness_checks.csv\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Build figure index",
+      "script": "scripts/34_generate_paper_figure_index.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.551,
+      "stdout_tail": "Created paper figure index CSV and Markdown outputs.\n",
+      "stderr_tail": ""
+    },
+    {
+      "step": "Export canonical manuscript results",
+      "script": "scripts/36_export_canonical_manuscript_results.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.559,
+      "stdout_tail": "Created: /home/owner/dev/reanalysis/data/derived/tables/manuscript_lag0_results.csv\nCreated: /home/owner/dev/reanalysis/data/derived/tables/manuscript_main_figure_curves.csv\nCreated: /home/owner/dev/reanalysis/data/derived/tables/manuscript_catalog_comparison.csv\nCreated: /home/owner/dev/reanalysis/data/derived/reports/manuscript_results_summary.md\n",
+      "stderr_tail": ""
+    }
+  ],
+  "ok": true
+}

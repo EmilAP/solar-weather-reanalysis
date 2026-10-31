@@ -1,0 +1,7 @@
+left_catalog,right_catalog,left_count,right_count,median_abs_delta_days,overlap_within_1_day,overlap_within_3_days
+author_hcs,reconstructed_hcs,1792,1786,1.0,1191,1357
+author_hcs,cir_proxy,1792,918,9.0,292,461
+author_hcs,hss_onset,1792,1226,6.0,355,597
+cir_proxy,reconstructed_hcs,918,1786,3.0,320,511
+cir_proxy,hss_onset,918,1226,0.0,918,918
+hss_onset,reconstructed_hcs,1226,1786,3.0,401,672

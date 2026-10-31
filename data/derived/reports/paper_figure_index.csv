@@ -1,0 +1,70 @@
+filename,short_title,likely_manuscript_role,notes
+author_hcs_apr_jun_anomalies.png,Author HCS Apr-Jun Anomalies,supplement,Anomaly-oriented event-study figure.
+author_hcs_apr_jun_daily_rates.png,Author HCS Apr-Jun Daily Rates,supplement,Daily-rate composite figure.
+author_hcs_apr_jun_fast_null_all_tornadoes.png,Author HCS Apr-Jun Fast Null All Tornadoes,null-model figure,General manuscript-supporting figure.
+author_hcs_counts_by_year.png,Author HCS Counts By Year,supplement,General manuscript-supporting figure.
+author_hcs_counts_by_year.svg,Author HCS Counts By Year,supplement,General manuscript-supporting figure.
+author_hcs_cumulative_vs_null.png,Author HCS Cumulative Vs Null,null-model figure,Cumulative curves are more interpretive than inferential; likely supplement.
+author_hcs_daily_anomalies.png,Author HCS Daily Anomalies,supplement,Anomaly-oriented event-study figure.
+author_hcs_daily_anomaly_vs_null.png,Author HCS Daily Anomaly Vs Null,main figure,Anomaly-oriented event-study figure.
+author_hcs_daily_rates_check.png,Author HCS Daily Rates Check,supplement,Daily-rate composite figure.
+author_hcs_full_year_anomalies.png,Author HCS Full Year Anomalies,supplement,Anomaly-oriented event-study figure.
+author_hcs_full_year_daily_rates.png,Author HCS Full Year Daily Rates,supplement,Daily-rate composite figure.
+author_hcs_full_year_fast_null_all_tornadoes.png,Author HCS Full Year Fast Null All Tornadoes,null-model figure,General manuscript-supporting figure.
+author_hcs_mar_jun_anomalies.png,Author HCS Mar-Jun Anomalies,supplement,Anomaly-oriented event-study figure.
+author_hcs_mar_jun_daily_rates.png,Author HCS Mar-Jun Daily Rates,supplement,Daily-rate composite figure.
+author_hcs_mar_jun_fast_null_all_tornadoes.png,Author HCS Mar-Jun Fast Null All Tornadoes,null-model figure,General manuscript-supporting figure.
+author_hcs_strict_daily_rates.png,Author HCS Strict Daily Rates,supplement,Daily-rate composite figure.
+author_hcs_strict_daily_rates.svg,Author HCS Strict Daily Rates,supplement,Daily-rate composite figure.
+author_outbreak_distance_distributions.png,Author Outbreak Distance Distributions,supplement,General manuscript-supporting figure.
+author_outbreak_distance_null_comparison.png,Author Outbreak Distance Null Comparison,null-model figure,General manuscript-supporting figure.
+author_outbreak_event_coincidence_summary.png,Author Outbreak Event Coincidence Summary,supplement,General manuscript-supporting figure.
+block_bootstrap_author_hcs_block14.png,Block Bootstrap Author HCS Block14,supplement,General manuscript-supporting figure.
+block_bootstrap_author_hcs_block7.png,Block Bootstrap Author HCS Block7,supplement,General manuscript-supporting figure.
+block_bootstrap_combined_comparison.png,Block Bootstrap Combined Comparison,supplement,General manuscript-supporting figure.
+block_bootstrap_reconstructed_hcs_block14.png,Block Bootstrap Reconstructed HCS Block14,supplement,General manuscript-supporting figure.
+block_bootstrap_reconstructed_hcs_block7.png,Block Bootstrap Reconstructed HCS Block7,supplement,General manuscript-supporting figure.
+cir_proxy_strict_daily_rates.png,Cir Proxy Strict Daily Rates,supplement,Daily-rate composite figure.
+cir_proxy_strict_daily_rates.svg,Cir Proxy Strict Daily Rates,supplement,Daily-rate composite figure.
+combined_author_vs_reconstructed_anomaly_null.png,Combined Author Vs Reconstructed Anomaly Null,main figure,Side-by-side comparison of author and reconstructed anomaly-vs-null curves.
+daily_tornado_climatology.png,Daily Tornado Climatology,supplement,General manuscript-supporting figure.
+daily_tornado_climatology.svg,Daily Tornado Climatology,supplement,General manuscript-supporting figure.
+event_catalog_timing_differences.png,Event Catalog Timing Differences,catalog comparison,General manuscript-supporting figure.
+event_catalog_timing_differences.svg,Event Catalog Timing Differences,catalog comparison,General manuscript-supporting figure.
+hcs_catalog_nearest_difference_histogram.png,HCS Catalog Nearest Difference Histogram,catalog comparison,Summarizes timing offsets between nearest author and reconstructed events.
+hcs_catalog_spacing_comparison.png,HCS Catalog Spacing Comparison,catalog comparison,Compares inter-event spacing distributions across catalogs.
+hcs_catalog_yearly_counts_comparison.png,HCS Catalog Yearly Counts Comparison,catalog comparison,Shows annual event-count agreement and divergence between catalogs.
+hss_onset_strict_daily_rates.png,Hss Onset Strict Daily Rates,supplement,Daily-rate composite figure.
+hss_onset_strict_daily_rates.svg,Hss Onset Strict Daily Rates,supplement,Daily-rate composite figure.
+independent_hcs_counts_by_year.png,Independent HCS Counts By Year,supplement,General manuscript-supporting figure.
+independent_hcs_counts_by_year.svg,Independent HCS Counts By Year,supplement,General manuscript-supporting figure.
+outbreak_type_agreement_bars.png,Outbreak Type Agreement Bars,supplement,General manuscript-supporting figure.
+outbreak_type_author_counts.png,Outbreak Type Author Counts,supplement,General manuscript-supporting figure.
+outbreak_type_confusion_matrix.png,Outbreak Type Confusion Matrix,supplement,General manuscript-supporting figure.
+paper_style_author_hcs_cumulative.png,Paper Style Author HCS Cumulative,supplement,Cumulative curves are more interpretive than inferential; likely supplement.
+paper_style_author_hcs_cumulative.svg,Paper Style Author HCS Cumulative,supplement,Cumulative curves are more interpretive than inferential; likely supplement.
+paper_style_author_hcs_daily_rates.png,Paper Style Author HCS Daily Rates,supplement,Daily-rate composite figure.
+paper_style_author_hcs_daily_rates.svg,Paper Style Author HCS Daily Rates,supplement,Daily-rate composite figure.
+phase_randomized_author_hcs_all_tornadoes.png,Phase Randomized Author HCS All Tornadoes,robustness figure,Surrogate-null comparison preserving broad autocorrelation structure.
+phase_randomized_author_hcs_all_tornadoes_final.png,Phase Randomized Author HCS All Tornadoes Final,robustness figure,Surrogate-null comparison preserving broad autocorrelation structure.
+reconstructed_hcs_anomalies.png,Reconstructed HCS Anomalies,supplement,Anomaly-oriented event-study figure.
+reconstructed_hcs_anomalies.svg,Reconstructed HCS Anomalies,supplement,Anomaly-oriented event-study figure.
+reconstructed_hcs_apr_jun_anomalies.png,Reconstructed HCS Apr-Jun Anomalies,supplement,Anomaly-oriented event-study figure.
+reconstructed_hcs_apr_jun_daily_rates.png,Reconstructed HCS Apr-Jun Daily Rates,supplement,Daily-rate composite figure.
+reconstructed_hcs_apr_jun_fast_null_all_tornadoes.png,Reconstructed HCS Apr-Jun Fast Null All Tornadoes,null-model figure,General manuscript-supporting figure.
+reconstructed_hcs_cumulative.png,Reconstructed HCS Cumulative,supplement,Cumulative curves are more interpretive than inferential; likely supplement.
+reconstructed_hcs_cumulative.svg,Reconstructed HCS Cumulative,supplement,Cumulative curves are more interpretive than inferential; likely supplement.
+reconstructed_hcs_daily_anomaly_vs_null.png,Reconstructed HCS Daily Anomaly Vs Null,main figure,Anomaly-oriented event-study figure.
+reconstructed_hcs_daily_rates.png,Reconstructed HCS Daily Rates,supplement,Daily-rate composite figure.
+reconstructed_hcs_daily_rates.svg,Reconstructed HCS Daily Rates,supplement,Daily-rate composite figure.
+reconstructed_hcs_fast_null_all_tornadoes.png,Reconstructed HCS Fast Null All Tornadoes,null-model figure,General manuscript-supporting figure.
+reconstructed_hcs_fast_null_all_tornadoes.svg,Reconstructed HCS Fast Null All Tornadoes,null-model figure,General manuscript-supporting figure.
+reconstructed_hcs_full_year_anomalies.png,Reconstructed HCS Full Year Anomalies,supplement,Anomaly-oriented event-study figure.
+reconstructed_hcs_full_year_daily_rates.png,Reconstructed HCS Full Year Daily Rates,supplement,Daily-rate composite figure.
+reconstructed_hcs_full_year_fast_null_all_tornadoes.png,Reconstructed HCS Full Year Fast Null All Tornadoes,null-model figure,General manuscript-supporting figure.
+reconstructed_hcs_mar_jun_anomalies.png,Reconstructed HCS Mar-Jun Anomalies,supplement,Anomaly-oriented event-study figure.
+reconstructed_hcs_mar_jun_daily_rates.png,Reconstructed HCS Mar-Jun Daily Rates,supplement,Daily-rate composite figure.
+reconstructed_hcs_mar_jun_fast_null_all_tornadoes.png,Reconstructed HCS Mar-Jun Fast Null All Tornadoes,null-model figure,General manuscript-supporting figure.
+reconstructed_hcs_strict_daily_rates.png,Reconstructed HCS Strict Daily Rates,supplement,Daily-rate composite figure.
+reconstructed_hcs_strict_daily_rates.svg,Reconstructed HCS Strict Daily Rates,supplement,Daily-rate composite figure.
+seasonal_control_anomaly_null_comparison.png,Seasonal Control Anomaly Null Comparison,robustness figure,Season-restricted robustness panel set.

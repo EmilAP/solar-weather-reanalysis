@@ -1,0 +1,2 @@
+event_count_used,iterations,lag0_observed,lag0_null_mean,lag0_null_q025,lag0_null_q975,lag0_outside_band,outside_band_lag_count,interpretation
+1788,200,2.98993288590604,2.8332034573412272,2.5453424896783132,3.1545464180663823,False,9,Lag 0 is within the surrogate null band; this does not establish equivalence or absence of an effect.

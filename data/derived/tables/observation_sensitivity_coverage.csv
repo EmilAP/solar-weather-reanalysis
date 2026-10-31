@@ -1,0 +1,5 @@
+catalog,minimum_valid_bx_hours,qualified_analysis_days,removed_observed_bx_days,analysis_crossings,complete_window_crossings,retained_primary_dates,new_dates_relative_to_primary,coverage_gap_fill
+reconstructed_min_01h,1,19324,0,1665,1662,1665,0,Disallowed on days failing the coverage threshold.
+reconstructed_min_12h,12,17630,1694,1426,1423,1422,4,Disallowed on days failing the coverage threshold.
+reconstructed_min_18h,18,16090,3234,1287,1284,1284,3,Disallowed on days failing the coverage threshold.
+reconstructed_min_24h,24,13206,6118,1057,1054,1053,4,Disallowed on days failing the coverage threshold.

@@ -1,0 +1,6 @@
+independent_type,outbreak_count,percent_of_total,notes
+A_like_CIR_following,35,7.658643326039387,Independent OMNI-based reclassification using explicit date-window rules.
+B_like_HCS_HDP_preceding,49,10.722100656455142,Independent OMNI-based reclassification using explicit date-window rules.
+C_like_ICME_following,50,10.940919037199125,Independent OMNI-based reclassification using explicit date-window rules.
+D_like_major_HSS_declining_phase,50,10.940919037199125,Independent OMNI-based reclassification using explicit date-window rules.
+unclassified,273,59.73741794310722,Independent OMNI-based reclassification using explicit date-window rules.

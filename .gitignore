@@ -33,6 +33,13 @@ data/derived/
 *.grib2
 *.npz
 
+# Publish manuscript evidence, including retained simulation banks.
+!data/derived/
+!data/derived/**/
+!data/derived/**
+!data/processed/
+!data/processed/publication_run_latest.json
+
 # Local secrets and configuration
 .env
 .env.*

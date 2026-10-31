@@ -1,0 +1,6 @@
+model,aic,deviance,dispersion_alpha,covariance
+baseline_nb_all_tornadoes,83782.64154748566,,2.983990577509745,HAC_14_days
+augmented_nb_all_tornadoes,83777.62015400421,,2.980872377180511,HAC_14_days
+baseline_nb_strong_tornadoes,12711.324856307976,,15.598776966570139,HAC_14_days
+augmented_nb_strong_tornadoes,12706.708783970773,,15.447259826057499,HAC_14_days
+outbreak_logit,11236.814660787579,11220.814660787579,,HAC_14_days

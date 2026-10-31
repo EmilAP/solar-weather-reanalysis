@@ -1,0 +1,12 @@
+metric,value,source_file,notes
+author_count_total,1792,data/derived/tables/hcs_catalog_comparison_summary.csv,Direct from hcs_catalog_comparison_summary.csv
+reconstructed_count_total,1786,data/derived/tables/hcs_catalog_comparison_summary.csv,Direct from hcs_catalog_comparison_summary.csv
+author_period_start,1963-01-13,data/derived/tables/hcs_catalog_comparison_summary.csv,Direct from hcs_catalog_comparison_summary.csv
+author_period_end,2023-12-29,data/derived/tables/hcs_catalog_comparison_summary.csv,Direct from hcs_catalog_comparison_summary.csv
+reconstructed_period_start,1963-12-03,data/derived/tables/hcs_catalog_comparison_summary.csv,Direct from hcs_catalog_comparison_summary.csv
+reconstructed_period_end,2023-12-29,data/derived/tables/hcs_catalog_comparison_summary.csv,Direct from hcs_catalog_comparison_summary.csv
+author_annual_average_count,29.37704918032787,data/derived/tables/hcs_catalog_comparison_summary.csv,Computed as author_count_total / number of covered calendar years.
+reconstructed_annual_average_count,29.278688524590162,data/derived/tables/hcs_catalog_comparison_summary.csv,Computed as reconstructed_count_total / number of covered calendar years.
+median_author_spacing_days,11.0,data/derived/tables/hcs_catalog_comparison_summary.csv,Direct from hcs_catalog_comparison_summary.csv
+median_reconstructed_spacing_days,10.0,data/derived/tables/hcs_catalog_comparison_summary.csv,Direct from hcs_catalog_comparison_summary.csv
+median_nearest_author_to_reconstructed_diff_days,1.0,data/derived/tables/hcs_catalog_comparison_summary.csv,Direct from hcs_catalog_comparison_summary.csv

@@ -1,0 +1,8 @@
+dataset,source,period_start,period_end,notes
+tornado_analysis_daily,data/derived/daily/analysis_daily.csv,1963-01-01,2023-12-31,Merged daily tornado and OMNI analysis table used by later event-study outputs.
+author_hcs_catalog,data/derived/catalogs/author_hcs_catalog.csv,1963-01-13,2024-12-29,Author HCS catalog parsed from source text file. Raw 1963-2023 rows=1794; unique valid datetimes=1792; primary event-study used=1788 after date matching and +/-30-day edge filtering.
+reconstructed_hcs_catalog,data/derived/catalogs/hcs_from_omni.csv,1963-12-03,2026-02-14,Independent HCS reconstruction from daily OMNI polarity flips. Bx column used: bx_gse_mean.
+author_hcs_core_null,data/derived/tables/core_null_lag0_summary.csv,1963-01-01,2023-12-31,Core lag-0 summary includes author and reconstructed fast-null comparisons.
+seasonal_controls,data/derived/tables/seasonal_control_summary.csv,1963-01-01,2023-12-31,"Season-restricted random-date null comparisons for full year, Mar-Jun, and Apr-Jun subsets."
+phase_randomized_null,data/derived/tables/phase_randomized_author_hcs_summary.csv,1963-01-01,2023-12-31,Author-HCS lag-0 summary under phase-randomized surrogate nulls.
+catalog_comparison,data/derived/tables/hcs_catalog_comparison_summary.csv,,,Direct summary comparison of author and reconstructed HCS catalogs.

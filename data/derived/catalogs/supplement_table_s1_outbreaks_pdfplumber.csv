@@ -1,0 +1,458 @@
+row_id,author_type,outbreak_date_text,tornado_counts_text,location_text,key_event_text,notes,source_page,raw_row_text
+1,?,29-30 Apr 1963,"12, 22",Central,HCS: Apr 28 (data gap),,7,"? 29-30 Apr 1963 (12, 22) Central HCS: Apr 28 (data gap)"
+2,?,23 Apr 1964,26,Great Plains,HCS: Apr 23 (data gap),,7,? 23 Apr 1964 (26) Great Plains HCS: Apr 23 (data gap)
+3,?,6 May 1964,34,"Midwest, Great Plains",HCS: May 5 (data gap),,7,"? 6 May 1964 (34) Midwest, Great Plains HCS: May 5 (data gap)"
+4,?,12 Apr 1965,47,Midwest ? (data gap),,missing_key_event,7,? 12 Apr 1965 (47) Midwest ? (data gap)
+5,?,9 May 1965,37,Northern Great Plains,HCS/CIRs: May 8? (data gap),,7,? 9 May 1965 (37) Northern Great Plains HCS/CIRs: May 8? (data gap)
+6,B,25-26 May 1965,"34, 43",Great Plains,HCS/CIR: May 27,,7,"B 25-26 May 1965 (34, 43) Great Plains HCS/CIR: May 27"
+7,B,24 May 1966,24,Midwest South,HCS: May 27,,7,B 24 May 1966 (24) Midwest South HCS: May 27
+8,B,15 Oct 1967,22,Midwest,HCS: Oct 15,,7,B 15 Oct 1967 (22) Midwest HCS: Oct 15
+9,A,25 Jan 1967,30,Midwest,CIR: Jan 25,,7,A 25 Jan 1967 (30) Midwest CIR: Jan 25
+10,B,14 Apr 1967,20,South,HCS/CIR: Apr 14,,7,B 14 Apr 1967 (20) South HCS/CIR: Apr 14
+11,B,22 Apr 1967,46,Midwest,HCS/CIR: April 23,,7,B 22 Apr 1967 (46) Midwest HCS/CIR: April 23; HDP
+12,A,1-2 May 1967,"21, 16","Midwest, South",CIR: Apr 30,,7,"A 1-2 May 1967 (21, 16) Midwest, South CIR: Apr 30"
+13,D,10-12 Jun 1967,"14, 25, 22","Midwest, Southwest",CIR: Jun 8,,7,"D 10-12 Jun 1967 (14, 25, 22) Midwest, Southwest CIR: Jun 8"
+14,A,14-15 Jun 1967,"16, 25",Midwest,CIR: Jun 13,,7,"A 14-15 Jun 1967 (16, 25) Midwest CIR: Jun 13"
+15,C,20-23 Sep. 1967,"18, 59, 22, 20",TX (TC Beulah),ICMEs: Sep,,7,"C 20-23 Sep. 1967 (18, 59, 22, 20) TX (TC Beulah) ICMEs: Sep. 19 and 20 (Dst: −111 nT)"
+16,B,25 Oct 1967,21,Midwest,HCS: Oct 25,,7,B 25 Oct 1967 (21) Midwest HCS: Oct 25; HDP
+17,B,4 Apr 1968,20,Central Midwest,HCS/CIR Apr 5,,7,B 4 Apr 1968 (20) Central Midwest HCS/CIR Apr 5; HDP
+18,B,16-17 May 1968,"39, 7",Central Midwest,HCS/CIR May 17,,7,"B 16-17 May 1968 (39, 7) Central Midwest HCS/CIR May 17; HDP"
+19,?,12-13 Jun 1970,"21, 18",Great Plains ? (data gap),,missing_key_event,7,"? 12-13 Jun 1970 (21, 18) Great Plains ? (data gap)"
+20,A,31 May – 1 Jun 1971,"17, 20",Great Plains,HCS/CIR: May 29,,7,"A 31 May – 1 Jun 1971 (17, 20) Great Plains HCS/CIR: May 29"
+21,D,7-10 Jun 1971,"23, 14, 9, 20",Midwest,HCS/CIR: Jun 1,,7,"D 7-10 Jun 1971 (23, 14, 9, 20) Midwest HCS/CIR: Jun 1; HSS >600 km/s"
+22,?,18 Oct 1971,23,Great Plains ? (data gap),,missing_key_event,7,? 18 Oct 1971 (23) Great Plains ? (data gap)
+23,?,15 Dec 1971,37,"Texas, Central ? (data gap)",,missing_key_event,7,"? 15 Dec 1971 (37) Texas, Central ? (data gap)"
+24,A,22 Apr 1972,21,"Central, Southeast",CIR: Apr 21,,7,"A 22 Apr 1972 (21) Central, Southeast CIR: Apr 21"
+25,B,23 May 1972,23,Great Plains,HCS/CIR: May 23,,7,B 23 May 1972 (23) Great Plains HCS/CIR: May 23; HDP
+26,D,20-22 Apr 1973,"34, 22, 12","South, Midwest",CIR: Apr 16,,7,"D 20-22 Apr 1973 (34, 22, 12) South, Midwest CIR: Apr 16; HSS >700 km/s"
+27,A,7-8 May 1973,"18, 25","Midwest, Southeast",CIR: May 6*,,7,"A* 7-8 May 1973 (18, 25) Midwest, Southeast CIR: May 6*"
+28,B,26-27 May 1973,"13, 34","Midwest, Central",HCS/CIR: May 28,,7,"B 26-27 May 1973 (13, 34) Midwest, Central HCS/CIR: May 28; HDP"
+29,A,28-29 May 1973,"41, 23","Midwest, Southeast",HCS/CIR: May 28,,7,"A 28-29 May 1973 (41, 23) Midwest, Southeast HCS/CIR: May 28"
+30,A,3-5 Jun 1973,"18, 20, 24",Midwest,CIR: Jun 2*,,7,"A* 3-5 Jun 1973 (18, 20, 24) Midwest CIR: Jun 2*; HSS >700 km/s"
+31,B,17 Jun 1973,27,Midwest,HCS/CIR: Jun 17,,7,B 17 Jun 1973 (27) Midwest HCS/CIR: Jun 17; HDP
+32,B,27 Jun 1973,28,Midwest,HCS/CIR: Jun 28,,7,B 27 Jun 1973 (28) Midwest HCS/CIR: Jun 28; HDP
+33,A,25 Nov 1973,22,"Central, Southeast",HCS/CIR: Nov 24,,7,"A 25 Nov 1973 (22) Central, Southeast HCS/CIR: Nov 24; HSS >700 km/s"
+34,B,2 Apr 1974,23,Midwest to South,HCS: Apr 3,,7,B 2 Apr 1974 (23) Midwest to South HCS: Apr 3; HDP
+35,A,4 Apr 1974,143,Midwest to South,HCS/CIR: Apr 3,,7,A 4 Apr 1974 (143) Midwest to South HCS/CIR: Apr 3
+36,B,8-9 Jun 1974,"17, 36",South,HCS: Jun 9,,7,"B 8-9 Jun 1974 (17, 36) South HCS: Jun 9; HDP"
+37,A,21 Jun 1974,34,Midwest,CIR: Jun 20 6,,7,A 21 Jun 1974 (34) Midwest CIR: Jun 20 6
+38,D,11 Aug 1974,25,Illinois,HCS/CIR: Aug 2,,8,D 11 Aug 1974 (25) Illinois HCS/CIR: Aug 2; HSS >600 km/s decl.
+39,A,11 Jan 1975,32,South,CIR: Jan 10,,8,A 11 Jan 1975 (32) South CIR: Jan 10
+40,B,30 Apr – 1 May 1975,"18, 15",South,HCS/CIR: May 1,,8,"B 30 Apr – 1 May 1975 (18, 15) South HCS/CIR: May 1; HDP"
+41,D,7-8 May 1975,"13, 23","Central, South",CIR: May 5,,8,"D 7-8 May 1975 (13, 23) Central, South CIR: May 5; HSS >600 km/s"
+42,B,26 Jun 1975,23,Midwest,HCS: Jun 27,,8,B 26 Jun 1975 (23) Midwest HCS: Jun 27
+43,D,13 Mar 1976,27,"Midwest, Southeast",CIR: Mar 8,,8,"D 13 Mar 1976 (27) Midwest, Southeast CIR: Mar 8; HSS>600 km/s"
+44,D,21 Mar 1976,51,"Midwest, South",HCS/CIR: Mar15/ 16,,8,"D 21 Mar 1976 (51) Midwest, South HCS/CIR: Mar15/ 16; HSS>600 km/s"
+45,D,30 Mar 1976,20,South,HCS/CIR: Mar 26,,8,D 30 Mar 1976 (20) South HCS/CIR: Mar 26; HSS~600 km/s decl.
+46,D,16 Apr 1976,24,"Great Plains, Texas",CIR: Apr 13,,8,"D 16 Apr 1976 (24) Great Plains, Texas CIR: Apr 13; HSS>600 km/s declining"
+47,B,20 Apr 1976,20,Texas,HCS/CIR: Apr 22,,8,B 20 Apr 1976 (20) Texas HCS/CIR: Apr 22
+48,A,26-27 May 1976,"12, 20",Texas,HCS/CIR: May 25,,8,"A 26-27 May 1976 (12, 20) Texas HCS/CIR: May 25"
+49,A,5 Jun 1976,21,Great Plains,HCS/CIR: Jun 3,,8,A 5 Jun 1976 (21) Great Plains HCS/CIR: Jun 3
+50,A,12-14 Jun 1976,"33, 12, 16",Midwest,CIR: Jun 10,,8,"A 12-14 Jun 1976 (33, 12, 16) Midwest CIR: Jun 10"
+51,A,5-6 May 1977,"30, 14","Midwest, South",CIR: May 4,,8,"A 5-6 May 1977 (30, 14) Midwest, South CIR: May 4"
+52,D,17-19 May 1977,"13, 13, 25","Midwest, Great Plains",CIR: May 14,,8,"D 17-19 May 1977 (13, 13, 25) Midwest, Great Plains CIR: May 14, 22; HSS ~600 km/s decl."
+53,B,21 May 1977,28,Great Plains,HCS: May 21,,8,B 21 May 1977 (28) Great Plains HCS: May 21; HDP
+54,B,1 Jul 1977,29,Midwest,HCS/CIR: Jul 1,,8,B 1 Jul 1977 (29) Midwest HCS/CIR: Jul 1; HDP
+55,?,7 Aug 1977,20,Midwest,HCS/CIR: Aug 3/4? (data gap),,8,? 7 Aug 1977 (20) Midwest HCS/CIR: Aug 3/4? (data gap)
+56,A,18-20 Apr 1978,"18, 13, 9",Southeast,HCS/CIR: Apr 17/18,,8,"A 18-20 Apr 1978 (18, 13, 9) Southeast HCS/CIR: Apr 17/18"
+57,A,12-13 May 1978,"25, 26","Great Plains, Midwest, South",HCS/CIR May 11,,8,"A 12-13 May 1978 (25, 26) Great Plains, Midwest, South HCS/CIR May 11"
+58,A,11-12 Apr 1979,"29, 31","South, Southeast",HCS/CIR: Apr 9/10,,8,"A 11-12 Apr 1979 (29, 31) South, Southeast HCS/CIR: Apr 9/10"
+59,B,4 May 1979,26,"TX, Southeast",HCS/CIR: May 5,,8,"B 4 May 1979 (26) TX, Southeast HCS/CIR: May 5; HDP"
+60,B,20 Jun 1979,24,Midwest,HCS/CIR: 22,,8,B 20 Jun 1979 (24) Midwest HCS/CIR: 22; HDP
+61,D,29 Jun 1979,38,Midwest,CIR: Jun 26,,8,D 29 Jun 1979 (38) Midwest CIR: Jun 26; HSS>400 km/s declining
+62,C,8-9 Apr 1980,"33, 27","Great Plains, Central",ICMEs: Apr 6/9 (Dst −33/−56 nT),,8,"C 8-9 Apr 1980 (33, 27) Great Plains, Central ICMEs: Apr 6/9 (Dst −33/−56 nT)"
+63,A,30 May 1980,40,"Midwest, Great Plains",HCS/CIR: May 29,,8,"A 30 May 1980 (40) Midwest, Great Plains HCS/CIR: May 29"
+64,A,5-6 Jun 1980,"34, 17",Midwest,HCS/CIR: Jun 4,,8,"A 5-6 Jun 1980 (34, 17) Midwest HCS/CIR: Jun 4"
+65,A,8 Jun 1980,23,Midwest,HCS/CIR: Jun 7,,8,A 8 Jun 1980 (23) Midwest HCS/CIR: Jun 7
+66,A,10-11 Aug 1980,"8, 22","TX, Midwest",CIR: Aug 9,,8,"A 10-11 Aug 1980 (8, 22) TX, Midwest CIR: Aug 9"
+67,C,18 May 1981,20,Great Plains,ICME: May 17 (Dst −117 nT),,8,C 18 May 1981 (20) Great Plains ICME: May 17 (Dst −117 nT)
+68,?,23-24 May 1981,"15, 28",Great Plains ?,ICME: May 23 (Dst −60 nT) (data gap),,8,"? 23-24 May 1981 (15, 28) Great Plains ?ICME: May 23 (Dst −60 nT) (data gap)"
+69,B,14-16 Jun 1981,"29, 7, 8",Midwest,HCS/CIR: Jun 14/15,,8,"B 14-16 Jun 1981 (29, 7, 8) Midwest HCS/CIR: Jun 14/15; HDP"
+70,B,21-22 Jun 1981,"12, 35",Midwest,HCS: Jun 22,,8,"B 21-22 Jun 1981 (12, 35) Midwest HCS: Jun 22; HDP"
+71,B,16 Mar 1982,24,Great Plains,HCS/CIR: Mar 18,,8,B 16 Mar 1982 (24) Great Plains HCS/CIR: Mar 18; HDP
+72,C,2-3 Apr 1982,61,"Great Plains, Midwest, South",ICME/CIR: Apr 1/3 (Dst −88 nT),,8,"C 2-3 Apr 1982 (61) Great Plains, Midwest, South ICME/CIR: Apr 1/3 (Dst −88 nT)"
+73,C,26-27 Apr 1982,"19, 8",South,ICME: Apr 24 (Dst −78 nT),,8,"C 26-27 Apr 1982 (19, 8) South ICME: Apr 24 (Dst −78 nT)"
+74,D,12-13 May 1982,"38, 32","Great Plains, South",HCS/CIR: May 9,,8,"D 12-13 May 1982 (38, 32) Great Plains, South HCS/CIR: May 9; HSS declining"
+75,A,28-31 May 1982,"22, 14, 11, 17",Great Plains,HCS/CIR: May 26,,8,"A 28-31 May 1982 (22, 14, 11, 17) Great Plains HCS/CIR: May 26; HSS >700 km/s"
+76,C,15 Jun 1982,26,"Great Plains, Midwest",ICME: Jun 12 (Dst −58 nT),,8,"C 15 Jun 1982 (26) Great Plains, Midwest ICME: Jun 12 (Dst −58 nT)"
+77,B,2-3 Dec 1982,"9, 25",Mississippi River Basin,HCS/CIR: Dec 3,,8,"B 2-3 Dec 1982 (9, 25) Mississippi River Basin HCS/CIR: Dec 3"
+78,B,24-25 Dec 1982,"17, 26",Mississippi River Basin,HCS: Dec 27,,8,"B 24-25 Dec 1982 (17, 26) Mississippi River Basin HCS: Dec 27"
+79,B,2-3 May 1983,"33, 22","Great Lakes, MRB",HCS: May 2 7,,8,"B 2-3 May 1983 (33, 22) Great Lakes, MRB HCS: May 2 7"
+80,D,13-14 May 1983,"8, 32",Great Plains,HCS/CIR: May 11,,9,"D 13-14 May 1983 (8, 32) Great Plains HCS/CIR: May 11; HSS >700 km/s"
+81,B,18-21 May 1983,"12, 21, 26, 19","Great Plains, South",HCS/CIR: May 20,,9,"B 18-21 May 1983 (12, 21, 26, 19) Great Plains, South HCS/CIR: May 20; HDP"
+82,C,13-14 Jun 1983,"17, 28","Great Plains, MN",ICME: Jun 13 (Dst −110 nT),,9,"C 13-14 Jun 1983 (17, 28) Great Plains, MN ICME: Jun 13 (Dst −110 nT)"
+83,?,4 Jul 1983,25,Midwest,HCS: Jul 6 (data gap),,9,? 4 Jul 1983 (25) Midwest HCS: Jul 6 (data gap)
+84,A,28-29 Mar 1984,"11, 24",Southeast,HCS/CIR: Mar 27/28,,9,"A 28-29 Mar 1984 (11, 24) Southeast HCS/CIR: Mar 27/28"
+85,?,27 Apr 1984,33,Great Plains,HCS/CIR/ICME?: Apr 24/25 (data gap),,9,? 27 Apr 1984 (33) Great Plains HCS/CIR/ICME?: Apr 24/25 (data gap)
+86,?,30 Apr 1984,42,"Great Plains, Midwest",HCS/CIR: Apr 30? (data gap),,9,"? 30 Apr 1984 (42) Great Plains, Midwest HCS/CIR: Apr 30? (data gap)"
+87,?,3-4 May 1984,"25, 37",Southeast,CIR?: May 2 (Dst: -60 nT) (data gap),,9,"? 3-4 May 1984 (25, 37) Southeast CIR?: May 2 (Dst: -60 nT) (data gap)"
+88,?,8 May 1984,22,Central HDP/,CIR: May 9? (data gap),,9,? 8 May 1984 (22) Central HDP/CIR: May 9? (data gap)
+89,?,8-9 Jun 1984,"45, 13",Midwest,CIR? (data gap),,9,"? 8-9 Jun 1984 (45, 13) Midwest CIR? (data gap)"
+90,?,12 Jun 1984,22,Great Plains,HSS? (data gap),,9,? 12 Jun 1984 (22) Great Plains HSS? (data gap)
+91,?,23 Jun 1984,22,Midwest,HSS? (data gap),,9,? 23 Jun 1984 (22) Midwest HSS? (data gap)
+92,B,21-22 Apr 1985,"14, 23",Southwest,HCS: Apr 22,,9,"B 21-22 Apr 1985 (14, 23) Southwest HCS: Apr 22; HDP"
+93,C,29 Apr 1985,21,Texas,ICME: Apr 26 (Dst −98 nT),,9,C 29 Apr 1985 (21) Texas ICME: Apr 26 (Dst −98 nT)
+94,B,11-12 May 1985,"16, 24",Midwest,HCS/CIR: May 12,,9,"B 11-12 May 1985 (16, 24) Midwest HCS/CIR: May 12; HDP"
+95,A,30-31 May 1985,"17, 30","Midwest, Great Lakes",HCS/CIR: May 31,,9,"A 30-31 May 1985 (17, 30) Midwest, Great Lakes HCS/CIR: May 31; HDP"
+96,B,17-18 Aug 1985,"31, 10",Southeast,HCS/CIR: Aug 18,,9,"B 17-18 Aug 1985 (31, 10) Southeast HCS/CIR: Aug 18; HDP"
+97,?,11–12 Mar 1986,"20, 13","Central, Southeast ?",,missing_key_event,9,"? 11–12 Mar 1986 (20, 13) Central, Southeast ?"
+98,?,15-17 May 1986,"20, 25, 33","Great Plains, South, Central",HCS/CIR: May 18/19,,9,"? 15-17 May 1986 (20, 25, 33) Great Plains, South, Central HCS/CIR: May 18/19; HDP (data gap)"
+99,?,26-27 May 1987,"22, 14","TX, Great Plains",HCS/CIR: May 22/23? (data gap),,9,"? 26-27 May 1987 (22, 14) TX, Great Plains HCS/CIR: May 22/23? (data gap)"
+100,B,7-8 Jul 1987,"28, 16","Midwest, Great Plains",HCS/CIR: Jul 8,,9,"B 7-8 Jul 1987 (28, 16) Midwest, Great Plains HCS/CIR: Jul 8; HDP"
+101,D,16-17 Nov 1987,"22, 28",South,CIR: Nov 10,,9,"D 16-17 Nov 1987 (22, 28) South CIR: Nov 10, 19; HSS > 600 km/s"
+102,D,9 May 1988,57,Midwest,CIR/ICME: May 5/6 (Dst −159 nT),,9,D 9 May 1988 (57) Midwest CIR/ICME: May 5/6 (Dst −159 nT)
+103,?,17-18 Sep 1988,"24, 24","TX, TC Gilbert",HCS/CIR: Sep 17? (data gap),,9,"? 17-18 Sep 1988 (24, 24) TX, TC Gilbert HCS/CIR: Sep 17? (data gap)"
+104,D,16 Nov 1988,44,"Great Plains, MRB",HCS/CIR: Nov 11/12,,9,"D 16 Nov 1988 (44) Great Plains, MRB HCS/CIR: Nov 11/12; HSS ~600 km/s"
+105,?,20 Nov 1988,21,South ? (data gap),,missing_key_event,9,? 20 Nov 1988 (21) South ? (data gap)
+106,?,4-5 Apr 1989,"20, 19","Central, South",HSS>700 km/s (data gap),,9,"? 4-5 Apr 1989 (20, 19) Central, South HSS>700 km/s (data gap)"
+107,?,16-18 May 1989,"12, 20, 16",Texas ? (data gap),,missing_key_event,9,"? 16-18 May 1989 (12, 20, 16) Texas ? (data gap)"
+108,C,25 May 1989,33,Midwest,ICME: May 23 (Dst −84 nT),,9,C 25 May 1989 (33) Midwest ICME: May 23 (Dst −84 nT)
+109,C,7-9 Jun 1989,"19, 28, 23",South,ICMEs: Jun 6/8 (Dst –81/–144 nT),,9,"C 7-9 Jun 1989 (19, 28, 23) South ICMEs: Jun 6/8 (Dst –81/–144 nT)"
+110,?,16-17 Nov 1989,"18, 21","Southeast, East",HCS/HDP/ICME? (data gap),,9,"? 16-17 Nov 1989 (18, 21) Southeast, East HCS/HDP/ICME? (data gap)"
+111,B,10 Feb 1990,20,South,HCS/HDP: Feb 12,,9,B 10 Feb 1990 (20) South HCS/HDP: Feb 12
+112,C,14-15 Mar 1990,"59, 11",Great Plains,ICME: Mar 12 (Dst −165 nT),,9,"C 14-15 Mar 1990 (59, 11) Great Plains ICME: Mar 12 (Dst −165 nT)"
+113,?,28 Apr 1990,29,"Great Plains, South",CIR: Apr 28,,9,"? 28 Apr 1990 (29) Great Plains, South CIR: Apr 28; HCS: May 1 (data gap)"
+114,?,25 May 1990,24,Northern Great Plains,ICMEs: May 21/25 (data gap),,9,? 25 May 1990 (24) Northern Great Plains ICMEs: May 21/25 (data gap)
+115,D,2-3 Jun 1990,"21, 68","South, Central",CIR: May 30,,9,"D 2-3 Jun 1990 (21, 68) South, Central CIR: May 30; HSS ~600 km/s"
+116,A,7-9 Jun 1990,"16, 23, 21",Great Plains,CIR/HCS: Jun 6,,9,"A 7-9 Jun 1990 (16, 23, 21) Great Plains CIR/HCS: Jun 6"
+117,D,17 Jun 1990,28,Midwest,ICME/CIR: Jun 12/14,,9,D 17 Jun 1990 (28) Midwest ICME/CIR: Jun 12/14; HSS>700 km/s
+118,B,22 Dec 1990,23,South,HCS: Dec 22,,9,B 22 Dec 1990 (23) South HCS: Dec 22
+119,A,22-23 Mar 1991,"19,23","IA, OK, AR, TN",HCS/CIR: Mar 21,,9,"A 22-23 Mar 1991 (19,23) IA, OK, AR, TN HCS/CIR: Mar 21"
+120,C,27-28 Mar 1991,"24, 26","CA(!), Great Plains, Great Lakes",ICME: Mar 24 (Dst −300 nT),,9,"C 27-28 Mar 1991 (24, 26) CA(!), Great Plains, Great Lakes ICME: Mar 24 (Dst −300 nT)"
+121,B,10 Apr 1991,25,"Central, Northeast",HCS/CIR: Apr 10/11,,9,"B 10 Apr 1991 (25) Central, Northeast HCS/CIR: Apr 10/11; HDP 8"
+122,A,13 Apr 1991,24,Great Plains,HCS/CIR: Apr 10/11,,10,A 13 Apr 1991 (24) Great Plains HCS/CIR: Apr 10/11
+123,A,27 Apr 1991,55,"Great Plains, Midwest, South",CIR: Apr 25,,10,"A 27 Apr 1991 (55) Great Plains, Midwest, South CIR: Apr 25"
+124,?,30 Apr 1991,23,Midwest,CIR: Apr 25 (data gap),,10,? 30 Apr 1991 (23) Midwest CIR: Apr 25 (data gap)
+125,?,11-12 May 1991,"16, 22","TX, North Great Plains",HCS/CIR: May 7 (data gap),,10,"? 11-12 May 1991 (16, 22) TX, North Great Plains HCS/CIR: May 7 (data gap)"
+126,?,15-17 May 1991,"10, 32, 48",Great Plains,ICMEs: May 13/16 (Dst −75/−106 nT) gap,,10,"? 15-17 May 1991 (10, 32, 48) Great Plains ICMEs: May 13/16 (Dst −75/−106 nT) gap"
+127,?,29-31 May 1991,"16, 21,19",Great Plains,HCS/CIR: May 22 (data gap),,10,"? 29-31 May 1991 (16, 21,19) Great Plains HCS/CIR: May 22 (data gap)"
+128,C,6-7 Jun 1991,"19, 22","South, Great Plains",ICME: Jun 4 (Dst −222 nT),,10,"C 6-7 Jun 1991 (19, 22) South, Great Plains ICME: Jun 4 (Dst −222 nT)"
+129,C,12 May 1992,33,"OK, TX",ICME: May 9 (Dst −289 nT),,10,"C 12 May 1992 (33) OK, TX ICME: May 9 (Dst −289 nT)"
+130,B,16-17 May 1992,"24, 12",Midwest,HCS/CIR: May 18/19,,10,"B 16-17 May 1992 (24, 12) Midwest HCS/CIR: May 18/19; HDP"
+131,A,15-18 Jun 1992,"58, 65, 29, 21","TX, Great Plains, Midwest",HCS/CIR: Jun 15,,10,"A 15-18 Jun 1992 (58, 65, 29, 21) TX, Great Plains, Midwest HCS/CIR: Jun 15"
+132,B,27-28 Jun 1992,"11, 23","Great Plains, Southwest",HCS: Jun 28,,10,"B 27-28 Jun 1992 (11, 23) Great Plains, Southwest HCS: Jun 28; HDP"
+133,A,13-16 Jul 1992,"39, 12, 8, 17",Great Lakes,HCS/CIR Jul 11/12,,10,"A 13-16 Jul 1992 (39, 12, 8, 17) Great Lakes HCS/CIR Jul 11/12"
+134,A,27-29 Aug 1992,"39, 10, 13","South, East Coast",HCS/CIR: Aug 26,,10,"A 27-29 Aug 1992 (39, 10, 13) South, East Coast HCS/CIR: Aug 26"
+135,A,22-23 Nov 1992,"43, 52",Southeast,HCS/CIR: Nov 22,,10,"A 22-23 Nov 1992 (43, 52) Southeast HCS/CIR: Nov 22"
+136,A,22 Feb 1993,22,Southeast,CIR: Feb 20,,10,A 22 Feb 1993 (22) Southeast CIR: Feb 20
+137,A,6-10 May 1993,"16, 21, 46, 19, 16","Great Plains, South",HCS/CIR: May 6,,10,"A 6-10 May 1993 (16, 21, 46, 19, 16) Great Plains, South HCS/CIR: May 6; HSS >600 km/s"
+138,B,8-9 Jun 1993,"41, 57",Midwest,HCS/CIR: Jun 10,,10,"B 8-9 Jun 1993 (41, 57) Midwest HCS/CIR: Jun 10; HDP"
+139,B,22-23 Jun 1993,"9, 24",Midwest,HCS/CIR: Jun 23,,10,"B 22-23 Jun 1993 (9, 24) Midwest HCS/CIR: Jun 23; HDP"
+140,A,30 Jun – 4 Jul 1993,"16, 33, 17, 12,12",Midwest,HCS/CIR: Jun 29,,10,"A 30 Jun – 4 Jul 1993 (16, 33, 17, 12,12) Midwest HCS/CIR: Jun 29"
+141,A,8-10 Jul 1993,"15, 19, 17",Great Plains,HCS/CIR: Jul 8/9,,10,"A 8-10 Jul 1993 (15, 19, 17) Great Plains HCS/CIR: Jul 8/9"
+142,A,6-7 Aug 1993,"6, 22",East Coast,HCS/CIR: Aug 4,,10,"A 6-7 Aug 1993 (6, 22) East Coast HCS/CIR: Aug 4"
+143,?,14 Sep 1993,22,"Southwest, Midwest",CIR: Sep 13? (data gap),,10,"? 14 Sep 1993 (22) Southwest, Midwest CIR: Sep 13? (data gap)"
+144,A,28 Mar 1994,28,Southeast,CIR: Mar 27,,10,A 28 Mar 1994 (28) Southeast CIR: Mar 27
+145,B,15-16 Apr 1994,"12, 24",Central,HCS/CIR: Apr 16,,10,"B 15-16 Apr 1994 (12, 24) Central HCS/CIR: Apr 16"
+146,A,26-27 Apr 1994,"29, 67","Great Plains, South, Central",CIR: Apr 25,,10,"A 26-27 Apr 1994 (29, 67) Great Plains, South, Central CIR: Apr 25"
+147,B,14 May 1994,29,TX,HCS/CIR: May 14,,10,B 14 May 1994 (29) TX HCS/CIR: May 14; HDP
+148,A,30 May 1994,23,"TX, LA",CIR: May 28,,10,"A 30 May 1994 (23) TX, LA CIR: May 28"
+149,A,26-28 Jun 1994,"11, 48, 14",Central Southeast,HCS/CIR: Jun 25/26,,10,"A 26-28 Jun 1994 (11, 48, 14) Central Southeast HCS/CIR: Jun 25/26"
+150,?,28 Jul 1994,25,East,CIR: Jul 28? (data gap),,10,? 28 Jul 1994 (25) East CIR: Jul 28? (data gap)
+151,D,17 Aug 1994,32,Southeast,CIR: Aug 13,,10,D 17 Aug 1994 (32) Southeast CIR: Aug 13; HSS >600 km/s declining
+152,B,18-21 Apr 1995,21,OK,HCS: Apr 18,,10,B 18-21 Apr 1995 (21) OK HCS: Apr 18; HDP
+153,B,20-21 Apr 1995,"38, 22",South,HCS: Apr 21,,10,"B 20-21 Apr 1995 (38, 22) South HCS: Apr 21; HDP"
+154,D,8-10 May 1995,"32, 19, 39","South, Midwest",CIR: May 2,,10,"D 8-10 May 1995 (32, 19, 39) South, Midwest CIR: May 2; HSS >700 km/s declining"
+155,C,14 May 1995,28,"Midwest, Central",HCS/ICME: May 13 (Dst −13 nT),,10,"C 14 May 1995 (28) Midwest, Central HCS/ICME: May 13 (Dst −13 nT)"
+156,A,17-19 May 1995,"25, 8, 77","Great Plains, Central South",HCS/CIR: May 16,,10,"A 17-19 May 1995 (25, 8, 77) Great Plains, Central South HCS/CIR: May 16"
+157,B,23 May 1995,21,Great Plains,HCS/CIR: May 23,,10,B 23 May 1995 (21) Great Plains HCS/CIR: May 23; HDP
+158,D,28 May 1995,29,Midwest to East,HCS/CIR: May 23,,10,D 28 May 1995 (29) Midwest to East HCS/CIR: May 23; HSS >600 km/s
+159,B,8-10 Jun 1995,"24, 29, 31",Great Plains,HCS/CIR: Jun 9,,10,"B 8-10 Jun 1995 (24, 29, 31) Great Plains HCS/CIR: Jun 9; HDP"
+160,D,28 Jul 1995,27,Great Plains,HCS/CIR: Jul 24,,10,D 28 Jul 1995 (27) Great Plains HCS/CIR: Jul 24; HSS >500 km/s
+161,A,5-6 Oct 1995,"24, 9",Southeast,HCS/CIR: Oct 4,,10,"A 5-6 Oct 1995 (24, 9) Southeast HCS/CIR: Oct 4"
+162,A,27-28 Oct 1995,"7, 22",Southeast,HCS/CIR: Oct 26,,10,"A 27-28 Oct 1995 (7, 22) Southeast HCS/CIR: Oct 26"
+163,D,8 Nov 1995,41,Southeast,CIR: Nov 5,,10,D 8 Nov 1995 (41) Southeast CIR: Nov 5; HSS >500 km/s declining 9
+164,A,19 Mar 1996,21,"MS, AL",CIR: Mar 19,,11,"A 19 Mar 1996 (21) MS, AL CIR: Mar 19"
+165,A,12 Nov 1995,25,Southeast,CIR: Nov 11,,11,A 12 Nov 1995 (25) Southeast CIR: Nov 11
+166,D,20-22 Apr 1996,"74, 7, 33","Midwest, Central",CIR: Apr 17,,11,"D 20-22 Apr 1996 (74, 7, 33) Midwest, Central CIR: Apr 17; HSS >700 km/s"
+167,B,9-10 May 1996,"21, 18",Midwest,HCS/CIR: May 9,,11,"B 9-10 May 1996 (21, 18) Midwest HCS/CIR: May 9; HDP"
+168,A,24-26 May 1996,"9, 20, 20","Great Plains, South",CIR: May 24,,11,"A 24-26 May 1996 (9, 20, 20) Great Plains, South CIR: May 24"
+169,A,31 May - 24 Jun 1996,"27, 24","Central, Great Plains",CIR: May 29,,11,"A 31 May - 24 Jun 1996 (27, 24) Central, Great Plains CIR: May 29"
+170,?,18-19 Jul 1996,"11, 12, 20","Midwest, East",HCS/CIR: Jul 17?,,11,"? 18-19 Jul 1996 (11, 12, 20) Midwest, East HCS/CIR: Jul 17?"
+171,?,17 Sep 1996,23,Southeast,CIR: Sep 16?,,11,? 17 Sep 1996 (23) Southeast CIR: Sep 16?
+172,B,8 Oct 1996,22,Southeast,HCS/CIR: Oct 8,,11,B 8 Oct 1996 (22) Southeast HCS/CIR: Oct 8; HDP
+173,B,27 Oct 1996,26,Midwest,HCS/CIR: Oct 27,,11,B 27 Oct 1996 (26) Midwest HCS/CIR: Oct 27; HDP
+174,B,25 Jan 1997,20,Southeast,HCS: Jan 25,,11,B 25 Jan 1997 (20) Southeast HCS: Jan 25; HDP
+175,D,1–2 Mar 1997,"15, 47",South Central,CIR: Feb 26,,11,"D 1–2 Mar 1997 (15, 47) South Central CIR: Feb 26; HSS >600 km/s declining"
+176,A,28 Mar 1997,28,Central,CIR: Mar 28,,11,A 28 Mar 1997 (28) Central CIR: Mar 28
+177,C,11 Apr 1997,20,TX,CIR/ICME: Apr 10 (Dst −82 nT),,11,C 11 Apr 1997 (20) TX CIR/ICME: Apr 10 (Dst −82 nT)
+178,A,24 Apr 1997,24,FL,CIR: Apr 23,,11,A 24 Apr 1997 (24) FL CIR: Apr 23
+179,B,1 May 1997,30,Midwest,HCS: Apr 30,,11,B 1 May 1997 (30) Midwest HCS: Apr 30; CIR: May 1; HDP
+180,C,26-28 May 1997,"53, 29, 22","Great Plains, South",ICME: May 25 (Dst −74 nT),,11,"C 26-28 May 1997 (53, 29, 22) Great Plains, South ICME: May 25 (Dst −74 nT)"
+181,B,12 Jun 1997,22,Great Plains,HCS: Jun 12,,11,B 12 Jun 1997 (22) Great Plains HCS: Jun 12; HDP
+182,A,17 Jun 1997,24,"TX, OK",CIR: Jun 15,,11,"A 17 Jun 1997 (24) TX, OK CIR: Jun 15"
+183,B,2-4 Jul 1997,"19, 24, 10",Great Lakes,HCS/CIR: Jul 3,,11,"B 2-4 Jul 1997 (19, 24, 10) Great Lakes HCS/CIR: Jul 3; HDP"
+184,A,24 Oct 1997,23,South,CIR: Oct 23,,11,A 24 Oct 1997 (23) South CIR: Oct 23
+185,B,9 Mar 1998,23,Southeast,HCS/CIR: Mar 10,,11,B 9 Mar 1998 (23) Southeast HCS/CIR: Mar 10; HDP
+186,A,8-9 Apr 1998,"35, 15","Midwest, Southeast",HCS/CIR: Apr 7/8,,11,"A 8-9 Apr 1998 (35, 15) Midwest, Southeast HCS/CIR: Apr 7/8"
+187,A,16-17 Apr 1998,"23, 38",Central South,HCS/CIR: Apr 16,,11,"A 16-17 Apr 1998 (23, 38) Central South HCS/CIR: Apr 16"
+188,A,8-9 May 1998,"42, 10",Southeast,CIR: May 7,,11,"A 8-9 May 1998 (42, 10) Southeast CIR: May 7"
+189,A,16 May 1998,26,Midwest,HCS/CIR: May 15,,11,A 16 May 1998 (26) Midwest HCS/CIR: May 15
+190,A,25 May 1998,28,Great Plains,CIR: May 24,,11,A 25 May 1998 (28) Great Plains CIR: May 24
+191,D,31 May - 1 Jun 1998,"25, 39","Midwest, Northeast",HCS/CIR: May 28/29,,11,"D 31 May - 1 Jun 1998 (25, 39) Midwest, Northeast HCS/CIR: May 28/29; HSS >700 km/s"
+192,B,3 Jun 1998,36,Northeast,HCS/CIR: 3,,11,B 3 Jun 1998 (36) Northeast HCS/CIR: 3; HDP
+193,D,9-11 Jun 1998,"25, 8, 11","Great Plains, Midwest",CIR: Jun 5,,11,"D 9-11 Jun 1998 (25, 8, 11) Great Plains, Midwest CIR: Jun 5; HSS >600 km/s declining"
+194,C,14-15 Jun 1998,"45, 22",Southeast,ICME: Jun 13,,11,"C 14-15 Jun 1998 (45, 22) Southeast ICME: Jun 13"
+195,A,19-20 Jun 1998,"23, 6",Midwest,HCS/CIR: 18/19,,11,"A 19-20 Jun 1998 (23, 6) Midwest HCS/CIR: 18/19"
+196,B,24 Jun 1998,22,Midwest,HCS: Jun 24,,11,B 24 Jun 1998 (22) Midwest HCS: Jun 24; HDP
+197,C,27-28 Jun 1998,"11, 33",Midwest,ICME: Jun 25 (Dst −101 nT),,11,"C 27-28 Jun 1998 (11, 33) Midwest ICME: Jun 25 (Dst −101 nT)"
+198,B,30 Jun - 1 Jul 1998,"29, 11","Midwest, Northeast",HCS/CIR: Jul 1,,11,"B 30 Jun - 1 Jul 1998 (29, 11) Midwest, Northeast HCS/CIR: Jul 1; HDP"
+199,B,29-30 Sep 1998,"25, 16",Southeast,HCS: Sep 30,,11,"B 29-30 Sep 1998 (25, 16) Southeast HCS: Sep 30; HDP"
+200,D,5 Oct 1998,28,Great Plains,CIR/ICME: Oct 1/2,,11,D 5 Oct 1998 (28) Great Plains CIR/ICME: Oct 1/2; HSS >600 km/s
+201,?,2-3 Jan 1999,"34, 12",South ?,,missing_key_event,11,"? 2-3 Jan 1999 (34, 12) South ?"
+202,D,18 Jan 1999,22,Central HDP/,CIR: Jan 18,,11,D 18 Jan 1999 (22) Central HDP/CIR: Jan 18
+203,A,22-23 Jan 1999,"99, 30",South,CIR: Jan 20,,11,"A 22-23 Jan 1999 (99, 30) South CIR: Jan 20"
+204,A,4-6 Apr 1999,"10, 8, 20","South, Great Plains",CIR: Apr 4,,11,"A 4-6 Apr 1999 (10, 8, 20) South, Great Plains CIR: Apr 4"
+205,B,9 Apr 1999,55,Midwest,HCS/CIR: Apr 9/10,,11,B 9 Apr 1999 (55) Midwest HCS/CIR: Apr 9/10; HDP 10
+206,B,4-6 May 1999,"75, 39, 18","Great Plains, Southeast",HCS/CIR: May 5,,12,"B 4-6 May 1999 (75, 39, 18) Great Plains, Southeast HCS/CIR: May 5; HDP"
+207,B,17 May 1999,25,Great Plains,CIR: May 18,,12,B 17 May 1999 (25) Great Plains CIR: May 18; HDP
+208,B,1-2 Jun 1999,"23, 30","Great Plains, Midwest",HCS/CIR: Jun 1,,12,"B 1-2 Jun 1999 (23, 30) Great Plains, Midwest HCS/CIR: Jun 1; HDP"
+209,D,4-6 Jun 1999,"20, 44, 21",Midwest,CIR/ICME: Jun 2 (Dst −6 nT),,12,"D 4-6 Jun 1999 (20, 44, 21) Midwest CIR/ICME: Jun 2 (Dst −6 nT)"
+210,B,7 Jun 1999,37,Midwest,HCS/CIR: Jun 8,,12,B 7 Jun 1999 (37) Midwest HCS/CIR: Jun 8; HDP
+211,C,27-30 Jun1999,"11, 11, 4, 24",Great Plains,ICME: Jun 27 (Dst –41),,12,"C 27-30 Jun1999 (11, 11, 4, 24) Great Plains ICME: Jun 27 (Dst –41)"
+212,A,24 Apr 2000,37,"South, Southeast",CIR/ICME: Apr 23/24,,12,"A 24 Apr 2000 (37) South, Southeast CIR/ICME: Apr 23/24"
+213,C,18-19 May 2000,"32, 37","Great Plains, Midwest",ICME: May 16 (Dst −92 nT),,12,"C 18-19 May 2000 (32, 37) Great Plains, Midwest ICME: May 16 (Dst −92 nT)"
+214,C,24-25 May 2000,"17, 22","Great Plains, Midwest",ICMEs: May 23 (Dst −147 nT),,12,"C 24-25 May 2000 (17, 22) Great Plains, Midwest ICMEs: May 23 (Dst −147 nT)"
+215,A,26-27 May 2000,"23, 10",Central,CIR: May 26,,12,"A 26-27 May 2000 (23, 10) Central CIR: May 26"
+216,B,17 Dec 2000,24,Southeast,HCS/CIR: Dec 17,,12,B 17 Dec 2000 (24) Southeast HCS/CIR: Dec 17; HDP
+217,B,25 Feb 2001,25,South Central,HCS/CIR: Feb 27,,12,B 25 Feb 2001 (25) South Central HCS/CIR: Feb 27; HDP
+218,C,11 Apr 2001,46,Midwest,ICME: Apr 8 (Dst –59 nT),,12,C 11 Apr 2001 (46) Midwest ICME: Apr 8 (Dst –59 nT)
+219,C,12 Apr 2001,33,Midwest,ICME: Apr 11 (Dst −271 nT),,12,C 12 Apr 2001 (33) Midwest ICME: Apr 11 (Dst −271 nT)
+220,B,21-22 May 2001,"33, 26","Great Plains, Great Lakes, MI",HCS/CIR: May 22/23,,12,"B 21-22 May 2001 (33, 26) Great Plains, Great Lakes, MI HCS/CIR: May 22/23; HDP"
+221,C,28-30 May 2001,"12, 14, 29","Great Plains, Midwest",ICME: May 27 (Dst −46 nT),,12,"C 28-30 May 2001 (12, 14, 29) Great Plains, Midwest ICME: May 27 (Dst −46 nT)"
+222,B,1-2 Jun 2001,"10, 25","Great Plains, Midwest",HCS/CIR: Jun 2,,12,"B 1-2 Jun 2001 (10, 25) Great Plains, Midwest HCS/CIR: Jun 2; HDP"
+223,D,10-14 Jun 2001,"19, 4, 27, 36, 40",Midwest,CIR: Jun 9,,12,"D 10-14 Jun 2001 (19, 4, 27, 36, 40) Midwest CIR: Jun 9; HSS >600 km/s declining"
+224,D,18-19 Jul 2001,"12, 26",Midwest,CIR: Jul 15,,12,"D 18-19 Jul 2001 (12, 26) Midwest CIR: Jul 15; HSS >600 km/s declining"
+225,A,10 Oct 2001,30,Great Plains,HCS/CIR: Oct 8,,12,A 10 Oct 2001 (30) Great Plains HCS/CIR: Oct 8
+226,C,12-14 Oct 2001,"9, 21, 28",South,ICME: Oct 11 (Dst −71 nT),,12,"C 12-14 Oct 2001 (9, 21, 28) South ICME: Oct 11 (Dst −71 nT)"
+227,C,25 Oct 2001,25,Midwest,ICMEs: Oct 21/25 (Dst –187/–43 nT),,12,C 25 Oct 2001 (25) Midwest ICMEs: Oct 21/25 (Dst –187/–43 nT)
+228,A,16 Nov 2001,20,TX,CIR: Nov 15,,12,A 16 Nov 2001 (20) TX CIR: Nov 15
+229,C,24-25 Nov 2001,"23, 45",Southeast,ICME: Nov 24 (Dst −221 nT),,12,"C 24-25 Nov 2001 (23, 45) Southeast ICME: Nov 24 (Dst −221 nT)"
+230,A,30 Mar 2002,23,TX,CIR: Mar 30,,12,A 30 Mar 2002 (23) TX CIR: Mar 30
+231,A,28-29 Apr 2002,"24, 24",Central to East,CIR: Apr 27,,12,"A 28-29 Apr 2002 (24, 24) Central to East CIR: Apr 27"
+232,B,5-6 May 2002,"12, 34",Great Plains,HCS/CIR: May 6,,12,"B 5-6 May 2002 (12, 34) Great Plains HCS/CIR: May 6; HDP"
+233,A,8-9 May 2002,"20, 22","Great Plains, Midwest",HCS/CIR: May 6,,12,"A 8-9 May 2002 (20, 22) Great Plains, Midwest HCS/CIR: May 6"
+234,C,4 Oct 2002,25,South,ICME: Oct 2 (Dst −146 nT),,12,C 4 Oct 2002 (25) South ICME: Oct 2 (Dst −146 nT)
+235,A,10-11 Nov 2002,"11, 68","Central, Southeast",HCS/CIR: Nov 10,,12,"A 10-11 Nov 2002 (11, 68) Central, Southeast HCS/CIR: Nov 10"
+236,B,18-19 Dec 2002,"9, 33",Central to South,HCS/CIR: Dec 19,,12,"B 18-19 Dec 2002 (9, 33) Central to South HCS/CIR: Dec 19; HDP"
+237,A,24-25 Dec 2002,"20, 12",South,CIR: Dec 22,,12,"A 24-25 Dec 2002 (20, 12) South CIR: Dec 22"
+238,B,5-7 Apr 2003,"10, 7, 20","Midwest, South",HCS/CIR: Apr 7/8,,12,"B 5-7 Apr 2003 (10, 7, 20) Midwest, South HCS/CIR: Apr 7/8; HDP"
+239,A,24-25 Apr 2003,"9, 30",South,CIR: Apr 24,,12,"A 24-25 Apr 2003 (9, 30) South CIR: Apr 24"
+240,A,1-2 May 2003,"21, 13",Midwest,CIR: Apr 29,,12,"A 1-2 May 2003 (21, 13) Midwest CIR: Apr 29"
+241,A,5-9 May 2003,"86, 22, 75, 31, 41","Great Plains, Southeast",HSS/HCS/CIR: May 4/5,,12,"A 5-9 May 2003 (86, 22, 75, 31, 41) Great Plains, Southeast HSS/HCS/CIR: May 4/5"
+242,C,10-11 May 2003,"33, 60","Great Plains, Central",ICME: May 9 (Dst −84 nT),,12,"C 10-11 May 2003 (33, 60) Great Plains, Central ICME: May 9 (Dst −84 nT)"
+243,D,16-17 May 2003,"49, 40","Great Plains, South",CIR: May 11,,12,"D 16-17 May 2003 (49, 40) Great Plains, South CIR: May 11; HSS >700 km/s declining"
+244,C,31 May 2003,21,Midwest,ICMEs: May 29-30 (Dst −144 nT),,12,C 31 May 2003 (21) Midwest ICMEs: May 29-30 (Dst −144 nT)
+245,D,9-12 Jun 2003,"10, 21, 7, 22",Midwest,CIR: Jun 6,,12,"D 9-12 Jun 2003 (10, 21, 7, 22) Midwest CIR: Jun 6; HSS >700 km/s declining"
+246,B,25 Jun 2003,95,Midwest,HCS/CIR: Jun 26,,12,B 25 Jun 2003 (95) Midwest HCS/CIR: Jun 26; HDP
+247,B,10-11 Jul 2003,"21, 8","Midwest, Great Plains",HCS/CIR: Jul 11,,12,"B 10-11 Jul 2003 (21, 8) Midwest, Great Plains HCS/CIR: Jul 11; HDP 11"
+248,D,20-22 Jul 2003,"8, 17, 23","Midwest, Northeast",CIR: Jul 19,,13,"D 20-22 Jul 2003 (8, 17, 23) Midwest, Northeast CIR: Jul 19; HSS >600 km/s declining"
+249,D,18-19 Nov 2003,"30, 9","TX, LA",CIR: Nov 15,,13,"D 18-19 Nov 2003 (30, 9) TX, LA CIR: Nov 15; HSS >700 km/s declining"
+250,D,5 Mar 2004,25,TX,HCS/CIR: Feb 26/27,,13,D 5 Mar 2004 (25) TX HCS/CIR: Feb 26/27; HSS>700 km/s decl
+251,A,21-23 Apr 2004,"32, 5, 11","Midwest, Great Plains",HCS/CIR: Apr 21,,13,"A 21-23 Apr 2004 (32, 5, 11) Midwest, Great Plains HCS/CIR: Apr 21"
+252,D,22-25 May 2004,"24, 66, 9, 53",Midwest,HCS/CIR: May 20,,13,"D 22-25 May 2004 (24, 66, 9, 53) Midwest HCS/CIR: May 20; HSS declining"
+253,A,28-31 May 2004,"26, 15, 81, 88",Midwest,HCS/CIR: May 28,,13,"A 28-31 May 2004 (26, 15, 81, 88) Midwest HCS/CIR: May 28"
+254,B,11-12 Jun 2004,"20, 38","Great Plains, Midwest",HCS/CIR: Jun 12/13,,13,"B 11-12 Jun 2004 (20, 38) Great Plains, Midwest HCS/CIR: Jun 12/13; HDP"
+255,B,24 Jun 2004,24,Midwest,HCS/CIR: Jun 25,,13,B 24 Jun 2004 (24) Midwest HCS/CIR: Jun 25; HDP
+256,B,8 Jul 2004,25,KS,HCS/CIR: Jul 9,,13,B 8 Jul 2004 (25) KS HCS/CIR: Jul 9; HDP
+257,B,13-15 Aug 2004,"21, 14, 14",Southeast,HCS/CIR: Aug 14,,13,"B 13-15 Aug 2004 (21, 14, 14) Southeast HCS/CIR: Aug 14; HDP"
+258,A,6-9 Sep 2004,"28, 23, 43, 20","Midwest, Southeast, TC Frances",HCS/CIR: Sep 5,,13,"A 6-9 Sep 2004 (28, 23, 43, 20) Midwest, Southeast, TC Frances HCS/CIR: Sep 5"
+259,D,16-18 Sep 2004,"34, 25, 59","Southeast, TC Ivan",HCS/CIR/ICME: Sep 14,,13,"D 16-18 Sep 2004 (34, 25, 59) Southeast, TC Ivan HCS/CIR/ICME: Sep 14; HSS >500 km/s"
+260,A,27-28 Sep 2004,"10, 25",Southeast,HCS/CIR: Sep 27,,13,"A 27-28 Sep 2004 (10, 25) Southeast HCS/CIR: Sep 27"
+261,A,19 Oct 2004,36,Central,HCS/CIR: Oct 18,,13,A 19 Oct 2004 (36) Central HCS/CIR: Oct 18
+262,A,24-25 Nov 2004,"76, 22",South,HCS/CIR: Nov 23/24,,13,"A 24-25 Nov 2004 (76, 22) South HCS/CIR: Nov 23/24"
+263,D,6-7 Apr 2005,"15, 23",South,CIR: Apr 4,,13,"D 6-7 Apr 2005 (15, 23) South CIR: Apr 4; HSS >600 km/s"
+264,B,11 Apr 2005,21,Great Plains,HCS/CIR: Apr 11,,13,B 11 Apr 2005 (21) Great Plains HCS/CIR: Apr 11; HDP
+265,A,4-8 Jun 2005,"13, 40, 15, 13, 16","Great Plains, Midwest, TX",HCS/CIR: Jun 4,,13,"A 4-8 Jun 2005 (13, 40, 15, 13, 16) Great Plains, Midwest, TX HCS/CIR: Jun 4"
+266,B,10-12 Jun 2005,"38, 13, 24","Great Plains, Midwest, TX",HCS/CIR: Jun 12,,13,"B 10-12 Jun 2005 (38, 13, 24) Great Plains, Midwest, TX HCS/CIR: Jun 12; HDP"
+267,B,7-8 Jul 2005,"25, 22",South to East (TC Cindy),HCS/CIR: Jul 9,,13,"B 7-8 Jul 2005 (25, 22) South to East (TC Cindy) HCS/CIR: Jul 9; HDP"
+268,D,19 Aug 2005,28,WI,CIR: Aug 15,,13,D 19 Aug 2005 (28) WI CIR: Aug 15; HSS >700 km/s declining
+269,B,30-31 Aug 2005,"40, 14","Southeast, East (TC Katrina)",HCS/CIR: Aug 31,,13,"B 30-31 Aug 2005 (40, 14) Southeast, East (TC Katrina) HCS/CIR: Aug 31; HDP"
+270,A,25-26 Sep 2005,"60, 38",South (TC Rita),HCS/CIR: Sep 24/25,,13,"A 25-26 Sep 2005 (60, 38) South (TC Rita) HCS/CIR: Sep 24/25"
+271,D,16 Nov 2005,49,Central,HCS/CIR: Nov 11,,13,D 16 Nov 2005 (49) Central HCS/CIR: Nov 11; HSS declining
+272,B,28 Nov 2005,67,Great Plains,HCS/CIR: Nov 28/29,,13,B 28 Nov 2005 (67) Great Plains HCS/CIR: Nov 28/29; HDP
+273,D,12-14 Mar 2006,"16, 57, 16",Central to Southeast,HCS/CIR: Mar 9,,13,"D 12-14 Mar 2006 (16, 57, 16) Central to Southeast HCS/CIR: Mar 9; HSS declining"
+274,?,31 Mar 2006,26,Great Plains ?,CIR: Mar 27,,13,? 31 Mar 2006 (26) Great Plains ?CIR: Mar 27
+275,B,3 Apr 2006,67,Central,CIR: Apr 4,,13,B 3 Apr 2006 (67) Central CIR: Apr 4; HDP
+276,B,7-8 Apr 2006,"12, 56",Great Plains to Southeast,CIR: Apr 9,,13,"B 7-8 Apr 2006 (12, 56) Great Plains to Southeast CIR: Apr 9; HDP"
+277,A,14-17 Apr 2006,"18, 6, 14, 14",Midwest,HCS/CIR/ICME: Apr 13 (Dst −88 nT),,13,"A 14-17 Apr 2006 (18, 6, 14, 14) Midwest HCS/CIR/ICME: Apr 13 (Dst −88 nT)"
+278,B,6 May 2006,20,TX,HCS/CIR: May 6,,13,B 6 May 2006 (20) TX HCS/CIR: May 6 ; HDP
+279,B,22-23 Jun 2006,"14, 23","Great Plains, Midwest",HCS: Jun 24,,13,"B 22-23 Jun 2006 (14, 23) Great Plains, Midwest HCS: Jun 24; HDP"
+280,B,22-23 Sep 2006,"15, 34",Great Plains to Central,HCS/CIR: Sep 23,,13,"B 22-23 Sep 2006 (15, 34) Great Plains to Central HCS/CIR: Sep 23; HDP"
+281,B,27 Oct 2006,31,Great Plains,HCS/CIR: Oct 27/28,,13,B 27 Oct 2006 (31) Great Plains HCS/CIR: Oct 27/28; HDP
+282,B,15-16 Nov 2006,"12, 22",South,HCS/CIR: Nov 15,,13,"B 15-16 Nov 2006 (12, 22) South HCS/CIR: Nov 15; HDP"
+283,A,30 Dec 2006,27,TX,HCS/CIR: Dec 29,,13,A 30 Dec 2006 (27) TX HCS/CIR: Dec 29
+284,D,1-2 Mar 2007,"13, 41",Southeast,HCS/CIR: Feb 26,,13,"D 1-2 Mar 2007 (13, 41) Southeast HCS/CIR: Feb 26; HSS >600 km/s"
+285,D,29-31 Mar 2007,"59, 3, 14","TX, Great Plains",CIR: Mar 27,,13,"D 29-31 Mar 2007 (59, 3, 14) TX, Great Plains CIR: Mar 27"
+286,B,14-16 Apr 2007,"7, 21, 9",Southeast,HCS/CIR: Apr 17,,13,"B 14-16 Apr 2007 (7, 21, 9) Southeast HCS/CIR: Apr 17; HDP"
+287,B,22 Apr 2007,24,"TX, Great Plains",HCS/CIR: Apr 22,,13,"B 22 Apr 2007 (24) TX, Great Plains HCS/CIR: Apr 22; HDP"
+288,A,24-25 Apr 2007,"24, 24","Great Plains, South",HCS/CIR: Apr 22,,13,"A 24-25 Apr 2007 (24, 24) Great Plains, South HCS/CIR: Apr 22"
+289,B,5-7 May 2007,"32, 90, 14","Great Plains, Midwest",HCS/CIR: May 7,,13,"B 5-7 May 2007 (32, 90, 14) Great Plains, Midwest HCS/CIR: May 7; HDP 12"
+290,A,18-19 Oct 2007,"17, 45",Midwest to South,CIR: Oct 18,,14,"A 18-19 Oct 2007 (17, 45) Midwest to South CIR: Oct 18"
+291,D,8-9 Jan 2008,"47, 9",Midwest,HCS/CIR: Jan 4/5,,14,"D 8-9 Jan 2008 (47, 9) Midwest HCS/CIR: Jan 4/5; HSS >600 km/s decl."
+292,B,6 Feb 2008,85,"Central, South",HCS: Feb 8,,14,"B 6 Feb 2008 (85) Central, South HCS: Feb 8; HDP"
+293,D,18 Feb 2008,23,Southeast,CIR: Feb 10,,14,D 18 Feb 2008 (23) Southeast CIR: Feb 10; HSS>700 km/s declining
+294,D,16 Mar 2008,46,Southeast,HCS/CIR: Mar 8,,14,D 16 Mar 2008 (46) Southeast HCS/CIR: Mar 8; HSS >600 km/s decl.
+295,D,10-12 Apr 2008,"34, 20, 23","South, Midwest",CIR: Apr 4,,14,"D 10-12 Apr 2008 (34, 20, 23) South, Midwest CIR: Apr 4; HSS >600 km/s declining"
+296,A,24-26 Apr 2008,"20, 8, 9",TX,HCS/CIR: Apr 22/23,,14,"A 24-26 Apr 2008 (20, 8, 9) TX HCS/CIR: Apr 22/23; HSS >600 km/s"
+297,A,2-3 May 2008,"29, 32","Great Plains, South",HCS/CIR: Apr 30,,14,"A 2-3 May 2008 (29, 32) Great Plains, South HCS/CIR: Apr 30"
+298,B,11-12 May 2008,"59, 20",Southeast,CIR: May 13,,14,"B 11-12 May 2008 (59, 20) Southeast CIR: May 13; HDP"
+299,B,15 May 2008,20,South,CIR: May 16,,14,B 15 May 2008 (20) South CIR: May 16; HDP
+300,D,23-26 May 2008,"27, 79, 23, 32","Great Plains, Midwest",HCS/CIR: May 19,,14,"D 23-26 May 2008 (27, 79, 23, 32) Great Plains, Midwest HCS/CIR: May 19; HSS ~600 km/s decl."
+301,A,30-31 May 2008,"40, 16","Great Plains, Midwest",HCS/CIR: May 28,,14,"A 30-31 May 2008 (40, 16) Great Plains, Midwest HCS/CIR: May 28; HSS ~600 km/s"
+302,B,5-8 Jun 2008,"40, 40, 10, 33","Great Plains, Midwest",HCS/CIR: Jun 6,,14,"B 5-8 Jun 2008 (40, 40, 10, 33) Great Plains, Midwest HCS/CIR: Jun 6; HDP"
+303,B,12-13 Jun 2008,"40, 26",Midwest,HCS/CIR: Jun 14,,14,"B 12-13 Jun 2008 (40, 26) Midwest HCS/CIR: Jun 14; HDP"
+304,B,2-3 Sep 2008,"19, 21",South,CIR: Sep 3,,14,"B 2-3 Sep 2008 (19, 21) South CIR: Sep 3; HDP"
+305,B,13-14 Sep 2008,"13, 31","Great Plains, South",HCS/CIR: Sep 14/15,,14,"B 13-14 Sep 2008 (13, 31) Great Plains, South HCS/CIR: Sep 14/15; HDP"
+306,B,10 Dec 2008,25,Southeast,HCS/CIR: Dec 11,,14,B 10 Dec 2008 (25) Southeast HCS/CIR: Dec 11; HDP
+307,A,8-9 Mar 2009,"8, 26",Midwest,CIR: Mar 8,,14,"A 8-9 Mar 2009 (8, 26) Midwest CIR: Mar 8"
+308,A,24 Mar 2009,20,"Great Plains, South",CIR: Mar 24,,14,"A 24 Mar 2009 (20) Great Plains, South CIR: Mar 24"
+309,A,10-11 Apr 2009,"24, 63",South to Southeast,HCS/CIR: Apr 8*,,14,"A* 10-11 Apr 2009 (24, 63) South to Southeast HCS/CIR: Apr 8*"
+310,A,30 Apr 2009,21,Great Plains,CIR: Apr 29,,14,A 30 Apr 2009 (21) Great Plains CIR: Apr 29
+311,A,3-4 May 2009,"12, 23",Southeast,HCS/CIR: May 2,,14,"A 3-4 May 2009 (12, 23) Southeast HCS/CIR: May 2"
+312,A,6-9 May 2009,"12, 18, 4, 47","Southeast, West North Central",HCS/CIR: May 5/6*,,14,"A* 6-9 May 2009 (12, 18, 4, 47) Southeast, West North Central HCS/CIR: May 5/6*"
+313,A,14 May 2009,25,Great Plains,HCS/CIR: May 13,,14,A 14 May 2009 (25) Great Plains HCS/CIR: May 13
+314,B,16-17 Jun 2009,"31, 22","Great Plains, Midwest",HCS/CIR: Jun 17,,14,"B 16-17 Jun 2009 (31, 22) Great Plains, Midwest HCS/CIR: Jun 17; HDP"
+315,A,20 Aug 2009,30,Midwest,CIR: Aug 19,,14,A 20 Aug 2009 (30) Midwest CIR: Aug 19
+316,C,30 Oct 2009,32,South,ICME: Oct 29 (Dst −41 nT),,14,C 30 Oct 2009 (32) South ICME: Oct 29 (Dst −41 nT)
+317,D,23-25 Apr 2010,"42, 13, 35",Great Plains to Southeast,CIR/HCS: Apr 20/21*,,14,"D* 23-25 Apr 2010 (42, 13, 35) Great Plains to Southeast CIR/HCS: Apr 20/21*"
+318,B,1–2 May 2010,"26, 30",Midwest to Southeast,CIR/HCS: May 2,,14,"B 1–2 May 2010 (26, 30) Midwest to Southeast CIR/HCS: May 2; HDP"
+319,A,11 May 2010,69,Great Plains,HCS/CIR: May 10,,14,A 11 May 2010 (69) Great Plains HCS/CIR: May 10
+320,A,19-20 May 2010,"31, 21",Great Plains,HCS/CIR: May 19*,,14,"A* 19-20 May 2010 (31, 21) Great Plains HCS/CIR: May 19*"
+321,B,25-26 May 2010,"22, 30","Midwest, Great Plains",HCS/CIR: May 25/26,,14,"B 25-26 May 2010 (22, 30) Midwest, Great Plains HCS/CIR: May 25/26; HDP"
+322,B,6 Jun 2010,46,Great Lakes,HCS: Jun 6,,14,B 6 Jun 2010 (46) Great Lakes HCS: Jun 6; HDP
+323,D,18 Jun 2010,74,Midwest,HCS/CIR: Jun 15*,,14,D* 18 Jun 2010 (74) Midwest HCS/CIR: Jun 15*
+324,A,22 Jun 2010,27,"Midwest, Great Plains",CIR: Jun 21,,14,"A 22 Jun 2010 (27) Midwest, Great Plains CIR: Jun 21"
+325,A,26-27 Jun 2010,"22, 13",Midwest,HCS/CIR: Jun 25/26,,14,"A 26-27 Jun 2010 (22, 13) Midwest HCS/CIR: Jun 25/26"
+326,D,25-28 Oct 2010,"19, 3, 60, 9","South, Midwest, Southeast",CIR: Oct 22,,14,"D 25-28 Oct 2010 (19, 3, 60, 9) South, Midwest, Southeast CIR: Oct 22; HSS >600 km/s declining"
+327,D,30 Nov 2010,22,South,HCS/CIR: Nov 27,,14,D 30 Nov 2010 (22) South HCS/CIR: Nov 27
+328,B,1 Jan 2011,33,Midwest to South,HCS/CIR: Jan 2,,14,B 1 Jan 2011 (33) Midwest to South HCS/CIR: Jan 2; HDP
+329,B,,"33, 12",,HCS/CIR: Jan 1,missing_outbreak_date;missing_location,14,"B 28 Feb - 1 Mar (33, 12) Midwest, Southeast HCS/CIR: Jan 1; HDP"
+330,B,5 Apr 2011,46,Southeast,CIR/HCS: Apr 5,,14,B 5 Apr 2011 (46) Southeast CIR/HCS: Apr 5; HDP
+331,B,10-11 Apr 2011,"27, 20",Midwest,HCS/CIR: April 11,,14,"B 10-11 Apr 2011 (27, 20) Midwest HCS/CIR: April 11; HDP 13"
+332,B,15-17 Apr 2011,"56, 67, 55","Great Plains, Southeast",HCS/CIR: Apr 17/18,,15,"B 15-17 Apr 2011 (56, 67, 55) Great Plains, Southeast HCS/CIR: Apr 17/18; HDP"
+333,A,20 Apr 2011,80,East North Central,CIR: Apr 20,,15,A 20 Apr 2011 (80) East North Central CIR: Apr 20
+334,D,26 Apr 2011,50,South,CIR: Apr 24,,15,D 26 Apr 2011 (50) South CIR: Apr 24; HSS declining
+335,B,27-28 Apr 2011,"110, 173",Southeast,HCS/CIR: Apr 28/29*,,15,"B* 27-28 Apr 2011 (110, 173) Southeast HCS/CIR: Apr 28/29*; HDP"
+336,A,22-24 May 2011,"18, 48, 17","Midwest, Great Plains",CIR: May 21,,15,"A 22-24 May 2011 (18, 48, 17) Midwest, Great Plains CIR: May 21"
+337,B,25-26 May 2011,"49, 93","Midwest, Great Plains, South",HCS/CIR: May 26*,,15,"B* 25-26 May 2011 (49, 93) Midwest, Great Plains, South HCS/CIR: May 26*; HDP"
+338,B,19-21 Jun 2011,"17, 10, 37","Great Plains, Midwest",HCS/CIR: Jun 21*,,15,"B* 19-21 Jun 2011 (17, 10, 37) Great Plains, Midwest HCS/CIR: Jun 21*; HDP"
+339,C,23 Jan 2012,23,Central,ICME: Jan 22 (Dst −73 nT),,15,C 23 Jan 2012 (23) Central ICME: Jan 22 (Dst −73 nT)
+340,C,26 Jan 2012,22,South,ICME: Jan 24 (Dst −80 nT),,15,C 26 Jan 2012 (22) South ICME: Jan 24 (Dst −80 nT)
+341,C,29 Feb 2012,27,Eastern,ICME: Feb 29 (Dst −12 nT),,15,C 29 Feb 2012 (27) Eastern ICME: Feb 29 (Dst −12 nT)
+342,C,3 Mar 2012,71,Eastern,ICME: Mar 2 (Dst -32 nT),,15,C 3 Mar 2012 (71) Eastern ICME: Mar 2 (Dst -32 nT)
+343,B,4 Apr 2012,21,South,HCS: Apr 5,,15,B 4 Apr 2012 (21) South HCS: Apr 5; HDP
+344,D,14-16 Apr 2012,"14, 84, 14",Great Plains,CIR: Apr 12*,,15,"D* 14-16 Apr 2012 (14, 84, 14) Great Plains CIR: Apr 12*; HSS ~600 km/s declining"
+345,B,1-2 May 2012,"23, 16","Great Plains, Midwest",HCS: May 3,,15,"B 1-2 May 2012 (23, 16) Great Plains, Midwest HCS: May 3; HDP"
+346,D,11 May 2012,20,TX,HCS/CIR: May 8*,,15,D* 11 May 2012 (20) TX HCS/CIR: May 8*; HSS >600 km/s decl.
+347,B,2 Jun 2012,26,Mid Atlantic,HCS/CIR: Jun 3,,15,B 2 Jun 2012 (26) Mid Atlantic HCS/CIR: Jun 3; HDP
+348,A,25 Jun 2012,22,FL,HCS/CIR Jun 23/24,,15,A 25 Jun 2012 (22) FL HCS/CIR Jun 23/24
+349,?,26 Dec 2012,30,South,HCS: Dec 23,,15,? 26 Dec 2012 (30) South HCS: Dec 23; HSS declining
+350,B,30-31 Jan 2013,"60, 5",Central South,HCS: Jan 31,,15,"B 30-31 Jan 2013 (60, 5) Central South HCS: Jan 31"
+351,A,16 May 2013,20,Southwest,CIR: May 15,,15,A 16 May 2013 (20) Southwest CIR: May 15
+352,B,20-21 May 2013,"27, 38","Midwest, Central, South",HCS/CIR: May 22,,15,"B 20-21 May 2013 (27, 38) Midwest, Central, South HCS/CIR: May 22; HDP: May 15-22"
+353,D,28-30 May 2013,"16, 25, 25","Great Plains, Midwest",CIR/ICME (Dst −51 nT): May 24/25,,15,"D 28-30 May 2013 (16, 25, 25) Great Plains, Midwest CIR/ICME (Dst −51 nT): May 24/25"
+354,B,31 May - 1 Jun 2013,"30, 36","South, Midwest South",HCS/CIR: May 22,,15,"B 31 May - 1 Jun 2013 (30, 36) South, Midwest South HCS/CIR: May 22; HDP"
+355,D,13-14 Jun 2013,"21, 15","Midwest, East Central",CIR: Jun 10,,15,"D 13-14 Jun 2013 (21, 15) Midwest, East Central CIR: Jun 10; HSS declining"
+356,B,1 Nov 2013,33,"Central, South",HCS/CIR: Nov 2,,15,"B 1 Nov 2013 (33) Central, South HCS/CIR: Nov 2; HDP"
+357,D,18 Nov 2013,74,"Midwest, Central",CIR: Nov 16,,15,"D 18 Nov 2013 (74) Midwest, Central CIR: Nov 16; HSS declining"
+358,C,21 Feb 2014,35,"Central, South, East",ICME: Feb 19,,15,"C 21 Feb 2014 (35) Central, South, East ICME: Feb 19, 20 (Dst -116, −91 nT)"
+359,B,28-29 Apr 2014,"20, 57","Central, South",HCS: Apr 30,,15,"B 28-29 Apr 2014 (20, 57) Central, South HCS: Apr 30; HDP"
+360,A,12 May 2014,36,Great Plains,CIR: May 11,,15,A 12 May 2014 (36) Great Plains CIR: May 11
+361,A,17-19 Jun 2014,"36, 19, 18",Midwest,HCS/CIR: Jun 16/17,,15,"A 17-19 Jun 2014 (36, 19, 18) Midwest HCS/CIR: Jun 16/17"
+362,A,1 Jul 2014,42,Midwest,CIR: Jun 30,,15,A 1 Jul 2014 (42) Midwest CIR: Jun 30
+363,A,13-14 Oct 2014,"7, 35",Central South,CIR: Oct 13,,15,"A 13-14 Oct 2014 (7, 35) Central South CIR: Oct 13"
+364,B,20 Apr 2015,22,Southeast,HCS/CIR: Apr 20,,15,B 20 Apr 2015 (22) Southeast HCS/CIR: Apr 20; HDP
+365,B,25-27 Apr 2015,"27, 4, 20","Mid Atlantic, Great Plains",HCS/CIR: Apr 27,,15,"B 25-27 Apr 2015 (27, 4, 20) Mid Atlantic, Great Plains HCS/CIR: Apr 27; HDP"
+366,C,7-11 May 2015,"47, 10, 11, 29, 25","Great Plains, South",ICMEs: May 6,,15,"C 7-11 May 2015 (47, 10, 11, 29, 25) Great Plains, South ICMEs: May 6, 7, 10 (Dst −51 nT)"
+367,B,17 May 2015,59,"Great Plains, Midwest",HCS: May 17,,15,"B 17 May 2015 (59) Great Plains, Midwest HCS: May 17; HDP"
+368,C,20 May 2015,37,South,ICME/CIR: May 18,,15,C 20 May 2015 (37) South ICME/CIR: May 18
+369,B,24-26 May 2015,"26, 14, 34","South, Great Plains",HCS/CIR: May 26,,15,"B 24-26 May 2015 (26, 14, 34) South, Great Plains HCS/CIR: May 26; HDP"
+370,B,5 Jun 2015,20,Great Plains,HCS/CIR: 7/6,,15,B 5 Jun 2015 (20) Great Plains HCS/CIR: 7/6; HDP
+371,C,22-23 Jun 2015,"9, 24","Midwest, Great Lakes",CIR/ICME: Jun 21/22 (Dst −204 nT),,15,"C 22-23 Jun 2015 (9, 24) Midwest, Great Lakes CIR/ICME: Jun 21/22 (Dst −204 nT)"
+372,C,28 Jun 2015,28,Midwest,ICME: Jun 27 (Dst −56 nT),,15,C 28 Jun 2015 (28) Midwest ICME: Jun 27 (Dst −56 nT)
+373,D,12 Nov 2015,23,IA,CIR: Nov 9,,15,D 12 Nov 2015 (23) IA CIR: Nov 9; HSS ~700 km/s declining 14
+374,B,17-18 Nov 2015,"43, 13","Great Plains, South",HCS/CIR: Nov 17/18,,16,"B 17-18 Nov 2015 (43, 13) Great Plains, South HCS/CIR: Nov 17/18; HDP"
+375,A,24 Dec 2015,32,"Central, South",CIR: Dec 22,,16,"A 24 Dec 2015 (32) Central, South CIR: Dec 22; HSS"
+376,B,24-25 Feb 2016,"41, 23","South, Mid Atlantic",HCS/CIR: Feb 25/26,,16,"B 24-25 Feb 2016 (41, 23) South, Mid Atlantic HCS/CIR: Feb 25/26; HDP"
+377,B,1 Apr 2016,20,"IN, South",HCS/CIR: Apr 2,,16,"B 1 Apr 2016 (20) IN, South HCS/CIR: Apr 2; HDP"
+378,D,27-28 Apr 2016,43 23,"Great Plains, Midwest",CIR: Apr 23,,16,"D 27-28 Apr 2016 (43 23) Great Plains, Midwest CIR: Apr 23; HSS declining"
+379,A,10-11 May 2016,"28, 12","Great Plains, Central",HCS/CIR: May 8,,16,"A 10-11 May 2016 (28, 12) Great Plains, Central HCS/CIR: May 8"
+380,D,23-25 May 2016,"25, 5, 45","Great Plains, Midwest",CIR: May 21,,16,"D 23-25 May 2016 (25, 5, 45) Great Plains, Midwest CIR: May 21; HSS ~600 km/s declining"
+381,A,23 Jun 2016,23,Midwest,HCS/CIR: Jun 22,,16,A 23 Jun 2016 (23) Midwest HCS/CIR: Jun 22
+382,A,25 Aug 2016,22,"IN, OH, ON",CIR: Aug 23,,16,"A 25 Aug 2016 (22) IN, OH, ON CIR: Aug 23"
+383,D,30 Nov 2016,29,Southeast,CIR: Nov 24,,16,D 30 Nov 2016 (29) Southeast CIR: Nov 24; HSS>600 km/s declining
+384,B,3 Jan 2017,36,South,HCS/CIR: Jan 3,,16,B 3 Jan 2017 (36) South HCS/CIR: Jan 3; HDP
+385,D,22-23 Jan 2017,"61, 19",South,CIR: Jan 18,,16,"D 22-23 Jan 2017 (61, 19) South CIR: Jan 18; HSS ~600 km/s declining"
+386,A,1-2 Mar 2017,"55, 14","Midwest, Central",CIR: Mar 1,,16,"A 1-2 Mar 2017 (55, 14) Midwest, Central CIR: Mar 1"
+387,D,7 Mar 2017,62,Midwest,CIR: Mar 1,,16,D 7 Mar 2017 (62) Midwest CIR: Mar 1; HSS ~700 km/s declining
+388,D,29-30 Mar 2017,"20, 15",South,CIR: Mar 27,,16,"D 29-30 Mar 2017 (20, 15) South CIR: Mar 27; HSS >600 km/s declining"
+389,B,3-4 Apr 2017,"25, 38","South, Southeast",HCS: Apr 4,,16,"B 3-4 Apr 2017 (25, 38) South, Southeast HCS: Apr 4; HDP"
+390,A,6 Apr 2017,24,Southeast,ICME/CIR: Apr 4/5,,16,A 6 Apr 2017 (24) Southeast ICME/CIR: Apr 4/5
+391,B,30 Apr – 1 May 2017,"29, 32","Central, Southeast, Northeast",HCS: May 1,,16,"B 30 Apr – 1 May 2017 (29, 32) Central, Southeast, Northeast HCS: May 1; HDP"
+392,A,5 May 2017,22,Southeast,CIR: May 4,,16,A 5 May 2017 (22) Southeast CIR: May 4
+393,D,17 May 2017,21,Great Plains,CIR: May 17,,16,D 17 May 2017 (21) Great Plains CIR: May 17; HSS>600 km/s declining
+394,A,19-20 May 2017,"58, 34",Great Plains,CIR: May 19,,16,"A 19-20 May 2017 (58, 34) Great Plains CIR: May 19"
+395,D,25 May 2017,25,"Midwest, Southeast",CIR: May 19,,16,"D 25 May 2017 (25) Midwest, Southeast CIR: May 19; HSS>600 km/s declining"
+396,A,13 Jun 2017,21,Midwest,HCS/CIR: Jun 11,,16,A 13 Jun 2017 (21) Midwest HCS/CIR: Jun 11
+397,D,29 Jun 2017,26,Midwest,CIR: Jun 25,,16,D 29 Jun 2017 (26) Midwest CIR: Jun 25; HSS declining
+398,B,6 Nov 2017,24,Midwest,HCS/CIR Nov 7,,16,B 6 Nov 2017 (24) Midwest HCS/CIR Nov 7; HDP
+399,D,25 Feb 2018,30,Southeast,CIR: Feb 21,,16,D 25 Feb 2018 (30) Southeast CIR: Feb 21; HSS>500 km/s declining
+400,D,20 Mar 2018,20,Southeast,CIR: Mar 14,,16,D 20 Mar 2018 (20) Southeast CIR: Mar 14; HSS ~600 km/s declining
+401,B,4 Apr 2018,22,Eastern,CIR: Apr 4,,16,B 4 Apr 2018 (22) Eastern CIR: Apr 4; HDP
+402,D,14-16 Apr 2018,"40, 16, 18","South, Southeast",HCS/CIR: Apr 8/9,,16,"D 14-16 Apr 2018 (40, 16, 18) South, Southeast HCS/CIR: Apr 8/9; HSS ~600 km/s decl."
+403,B,3 May 2018,33,Great Plains,HCS/CIR: May 4/5,,16,B 3 May 2018 (33) Great Plains HCS/CIR: May 4/5; HDP
+404,A,29 May 2018,29,Great Plains,CIR: May 27,,16,A 29 May 2018 (29) Great Plains CIR: May 27
+405,A,20-21 Jul 2018,"23, 9",Midwest,CIR: Jul 19,,16,"A 20-21 Jul 2018 (23, 9) Midwest CIR: Jul 19"
+406,D,29 Aug 2018,26,Midwest,HCS/CIR: Aug 25/26,,16,D 29 Aug 2018 (26) Midwest HCS/CIR: Aug 25/26; HSS ~600 km/s
+407,B,21 Sep 2018,30,"Midwest, Great lakes",HCS/CIR: Sep 21,,16,"B 21 Sep 2018 (30) Midwest, Great lakes HCS/CIR: Sep 21; HDSP"
+408,B,2 Oct 2018,21,Northeast,HCS/CIR: Oct 3,,16,B 2 Oct 2018 (21) Northeast HCS/CIR: Oct 3
+409,D,10 Oct 2018,23,"Great Plains, Midwest",HCS/CIR: Oct 7*,,16,"D* 10 Oct 2018 (23) Great Plains, Midwest HCS/CIR: Oct 7*; HSS ~600 km/s decl."
+410,B,1 Nov 2018,51,South,HCS: Nov 2,,16,B 1 Nov 2018 (51) South HCS: Nov 2; HDP
+411,D,6 Nov 2018,29,Central South,HCS/CIR: Nov 4*,,16,D* 6 Nov 2018 (29) Central South HCS/CIR: Nov 4*; HSS ~600 km/s decl.
+412,A,1-2 Dec 2018,"15, 34","Great Plains, Midwest, IL",HCS/CIR: Dec 1*,,16,"A* 1-2 Dec 2018 (15, 34) Great Plains, Midwest, IL HCS/CIR: Dec 1*"
+413,D,4 Mar 2019,44,Southeast,CIR: Feb 27,,16,D 4 Mar 2019 (44) Southeast CIR: Feb 27; HSS ~600 km/s declining
+414,A,15 Mar 2019,31,"Midwest, South",CIR: Mar 15,,16,"A 15 Mar 2019 (31) Midwest, South CIR: Mar 15"
+415,B,14-15 Apr 2019,"46, 28","South, Northeast",CIR: Apr 15,,16,"B 14-15 Apr 2019 (46, 28) South, Northeast CIR: Apr 15; HDP 15"
+416,B,19-20 Apr 2019,"45, 43","South, Southeast",HCS/CIR: Apr 19,,17,"B 19-20 Apr 2019 (45, 43) South, Southeast HCS/CIR: Apr 19"
+417,B,1 May 2019,57,Great Plains HDP/,CIR: May 1,,17,B 1 May 2019 (57) Great Plains HDP/CIR: May 1
+418,B,8-9 May 2019,"23, 18",South HDP/,CIR: May 9,,17,"B 8-9 May 2019 (23, 18) South HDP/CIR: May 9"
+419,D,18-19 May 2019,"27, 32","Great Plains, South",CIR/ICME: May 13,,17,"D 18-19 May 2019 (27, 32) Great Plains, South CIR/ICME: May 13; HSS>500 km/s decl"
+420,B,21-23 May 2019,"52, 21, 36","Great Plains, Midwest",HCS: May 22,,17,"B 21-23 May 2019 (52, 21, 36) Great Plains, Midwest HCS: May 22; HDP"
+421,B,26 May 2019,28,"Great Plains, Midwest",HCS/CIR: May 26/27,,17,"B 26 May 2019 (28) Great Plains, Midwest HCS/CIR: May 26/27; HDP"
+422,C,27-28 May 2019,"34, 62","Great Plains, Midwest",ICME: May 26 (Dst −16 nT),,17,"C 27-28 May 2019 (34, 62) Great Plains, Midwest ICME: May 26 (Dst −16 nT)"
+423,A,30 May 2019,41,"TX, Midwest, East",CIR: May 29,,17,"A 30 May 2019 (41) TX, Midwest, East CIR: May 29"
+424,D,16-17 Jun 2019,"29, 13","Great Plains, Midwest",HCS/cir,,17,"D 16-17 Jun 2019 (29, 13) Great Plains, Midwest HCS/cir; Jun 12; HSS declining"
+425,B,21 Oct 2019,33,"Great Plains, South",HCS/CIR: Oct 21,,17,"B 21 Oct 2019 (33) Great Plains, South HCS/CIR: Oct 21; HDP"
+426,B,17 Dec 2019,36,South,HCS: Dec 18,,17,B 17 Dec 2019 (36) South HCS: Dec 18; HDP
+427,D,11-12 Jan 2020,"50, 30","Central South, Southeast",CIR: Jan 8,,17,"D 11-12 Jan 2020 (50, 30) Central South, Southeast CIR: Jan 8; HSS >500 km/s declining"
+428,A,6-7 Feb 2020,"19, 12","Central South, Southeast",CIR: Feb 6,,17,"A 6-7 Feb 2020 (19, 12) Central South, Southeast CIR: Feb 6"
+429,?,29 Mar 2020,22,Midwest,CIR: Mar 30,,17,? 29 Mar 2020 (22) Midwest CIR: Mar 30; HDP ?
+430,A,8-9 Apr 2020,"7, 25",Central North,CIR: Apr 8,,17,"A 8-9 Apr 2020 (7, 25) Central North CIR: Apr 8"
+431,A,12-14 Apr 2020,"5, 113, 24",Southeast,CIR: Apr 11,,17,"A 12-14 Apr 2020 (5, 113, 24) Southeast CIR: Apr 11"
+432,C,20 Apr 2020,19,South,ICME: Apr 20 (Dst −59 nT),,17,C 20 Apr 2020 (19) South ICME: Apr 20 (Dst −59 nT)
+433,D,23-24 Apr 2020,"32, 17","South, Southeast",CIR: Apr 21,,17,"D 23-24 Apr 2020 (32, 17) South, Southeast CIR: Apr 21; HSS~500 km/s declining"
+434,D,4-5 Aug 2020,"30, 13",Mid Atlantic,CIR: Aug 2,,17,"D 4-5 Aug 2020 (30, 13) Mid Atlantic CIR: Aug 2"
+435,?,11 Aug 2020,27,Midwest ?,,missing_key_event,17,? 11 Aug 2020 (27) Midwest ?
+436,B,15 Aug 2020,32,Midwest,HCS/CIR: Aug 16,,17,B 15 Aug 2020 (32) Midwest HCS/CIR: Aug 16; HDP
+437,A,28-29 Aug 2020,"22, 6","SD, AR, Northeast",HCS/CIR: Aug 25/26,,17,"A 28-29 Aug 2020 (22, 6) SD, AR, Northeast HCS/CIR: Aug 25/26"
+438,A,14 Mar 2021,21,"TX, Southwest",HCS/CIR: Mar 12/13,,17,"A 14 Mar 2021 (21) TX, Southwest HCS/CIR: Mar 12/13"
+439,B,18 Mar 2021,40,Southeast,HCS/CIR: Mar 18/20,,17,B 18 Mar 2021 (40) Southeast HCS/CIR: Mar 18/20; HDP
+440,A,26 Mar 2021,20,Southeast,CIR: Mar 24,,17,A 26 Mar 2021 (20) Southeast CIR: Mar 24
+441,A,28 Mar 2021,20,Southeast,CIR: Mar 27,,17,A 28 Mar 2021 (20) Southeast CIR: Mar 27
+442,A,3-5 May 2021,"27, 52, 18","Great Plains, Southeast, Midwest",CIR: May 3,,17,"A 3-5 May 2021 (27, 52, 18) Great Plains, Southeast, Midwest CIR: May 3"
+443,A,27 May 2021,21,Great Plains,HCS/CIR: May 26,,17,A 27 May 2021 (21) Great Plains HCS/CIR: May 26
+444,A,15 Jul 2021,26,Midwest,CIR: Jul 14,,17,A 15 Jul 2021 (26) Midwest CIR: Jul 14
+445,A,29-30 Jul 2021,"18, 29","Midwest, Northeast",CIR: Jul 27,,17,"A 29-30 Jul 2021 (18, 29) Midwest, Northeast CIR: Jul 27"
+446,A,9-10 Aug 2021,"10, 20",Midwest,HCS/CIR: Aug 9/10,,17,"A 9-10 Aug 2021 (10, 20) Midwest HCS/CIR: Aug 9/10"
+447,A,11 Oct 2021,21,OK,CIR: Oct 10,,17,A 11 Oct 2021 (21) OK CIR: Oct 10
+448,C,13 Oct 2021,24,"OK, KS",ICME: Oct 12 (Dst −64 nT),,17,"C 13 Oct 2021 (24) OK, KS ICME: Oct 12 (Dst −64 nT)"
+449,A,11 Dec 2021,68,Central,HCS/CIR: Dec 10,,17,A 11 Dec 2021 (68) Central HCS/CIR: Dec 10
+450,A,16 Dec 2021,125,Midwest,CIR: Dec 15,,17,A 16 Dec 2021 (125) Midwest CIR: Dec 15
+451,A,6 Mar 2022,22,Midwest,CIR: Mar 5,,17,A 6 Mar 2022 (22) Midwest CIR: Mar 5
+452,B,22-23 Mar 2022,"37, 40","TX, South, Southeast HDP/",CIR: Mar 21/22,,17,"B 22-23 Mar 2022 (37, 40) TX, South, Southeast HDP/CIR: Mar 21/22"
+453,C,31 Mar 2022,78,Southeast,ICME: Mar 31 (Dst -19 nT),,17,C 31 Mar 2022 (78) Southeast ICME: Mar 31 (Dst -19 nT)
+454,D,5 Apr 2022,65,Southeast,CIR: Apr 2,,17,D 5 Apr 2022 (65) Southeast CIR: Apr 2; HSS >500 km/s declining
+455,C,13-14 Apr 2022,"28, 40",Midwest,ICMEs: Apr 12/14 (Dst -24/-81 nT),,17,"C 13-14 Apr 2022 (28, 40) Midwest ICMEs: Apr 12/14 (Dst -24/-81 nT)"
+456,D,30 Apr 2022,21,"Midwest, South, Southeast",CIR: Apr 27,,17,"D 30 Apr 2022 (21) Midwest, South, Southeast CIR: Apr 27; HSS >500 km/s declining"
+457,B,13 May 2022,32,Midwest,HCS/CIR: May 12/14 16,,17,B 13 May 2022 (32) Midwest HCS/CIR: May 12/14 16

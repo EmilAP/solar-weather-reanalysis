@@ -1,0 +1,12 @@
+test,event_count,lag0_outside_band,outside_band_lag_count_if_available,interpretation
+author_hcs_full_year,1788,False,,Lag 0 remains inside the seasonal null band.
+author_hcs_mar_jun,608,False,,Lag 0 remains inside the seasonal null band.
+author_hcs_apr_jun,470,False,,Lag 0 remains inside the seasonal null band.
+reconstructed_hcs_full_year,1783,False,,Lag 0 remains inside the seasonal null band.
+reconstructed_hcs_mar_jun,587,False,,Lag 0 remains inside the seasonal null band.
+reconstructed_hcs_apr_jun,452,False,,Lag 0 remains inside the seasonal null band.
+author_hcs_phase_randomized,1788,False,9.0,Lag 0 is within the surrogate null band; this does not establish equivalence or absence of an effect.
+author_hcs_block_bootstrap_7d,1788,False,6.0,Block bootstrap lag 0 inside pointwise 95% band=True.
+author_hcs_block_bootstrap_14d,1788,False,7.0,Block bootstrap lag 0 inside pointwise 95% band=True.
+reconstructed_hcs_block_bootstrap_7d,1783,False,7.0,Block bootstrap lag 0 inside pointwise 95% band=True.
+reconstructed_hcs_block_bootstrap_14d,1783,False,5.0,Block bootstrap lag 0 inside pointwise 95% band=True.

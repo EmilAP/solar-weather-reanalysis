@@ -1,0 +1,58 @@
+{
+  "tornado_dataset": {
+    "path": "data/derived/daily/analysis_daily.csv",
+    "apparent_period_start": "1963-01-01",
+    "apparent_period_end": "2023-12-31"
+  },
+  "author_hcs_catalog": {
+    "path": "data/derived/catalogs/author_hcs_catalog.csv",
+    "raw_count_1963_2023": 1794,
+    "event_count_used": 1788,
+    "source_path": "data/raw/hcs/SBCtorlist1963-2024.txt",
+    "unique_datetime_rows_1963_2023": 1792,
+    "invalid_datetime_rows_1963_2023": 0,
+    "duplicate_datetime_rows_1963_2023": 4,
+    "event_count_used_primary": 1788,
+    "dates_reconciled_1963_2023": 1,
+    "count_reconciliation_note": "Raw 1963-2023 rows include duplicates; invalid source dates are reconciled only from agreeing redundant fields. primary event-study count additionally applies date matching and +/-30-day edge filtering."
+  },
+  "omni_reconstruction": {
+    "catalog_path": "data/derived/catalogs/hcs_from_omni.csv",
+    "variable_used": "bx_gse_mean",
+    "rules": [
+      "Polarity is defined as sign(Bx) using the preferred available daily OMNI Bx-like component.",
+      "Crossing date is set to the later of two consecutive daily observations because a midpoint is not a clean daily date.",
+      "Bx threshold=0.3 nT; ambiguous gaps ffilled up to 1 day; required run lengths >= 2 days on both sides when available."
+    ],
+    "date_range": {
+      "start": "1963-12-03",
+      "end": "2026-02-14"
+    }
+  },
+  "event_study": {
+    "lag_window_days": 30,
+    "date_ranges_actually_analyzed": {
+      "analysis_daily_start": "1963-01-01",
+      "analysis_daily_end": "2023-12-31",
+      "author_catalog_start": "1963-01-13 00:00:00+00:00",
+      "author_catalog_end": "2024-12-29 12:00:00+00:00",
+      "reconstructed_catalog_start": "1963-12-03",
+      "reconstructed_catalog_end": "2026-02-14"
+    }
+  },
+  "null_models": {
+    "seasonal_random_date_iterations": 500,
+    "reconstructed_fast_null_iterations": 500,
+    "phase_randomization_iterations": 200
+  },
+  "seasonal_subsets_used": [
+    "full_year",
+    "mar_jun",
+    "apr_jun"
+  ],
+  "phase_randomization": {
+    "event_count_used": 1788,
+    "outside_band_lag_count": 9
+  },
+  "missing_inputs": []
+}

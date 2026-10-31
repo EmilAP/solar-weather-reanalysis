@@ -5,7 +5,7 @@ This workspace now contains both:
 - a reproducible acquisition/staging layer for the public raw inputs
 - a full reanalysis pipeline intended to reproduce and stress-test the paper's HCS-keyed tornado results
 
-Note: Raw datasets are not stored in this repository.
+The manuscript release includes the staged raw inputs and derived evidence. The oversized raw OMNI file and cleaned hourly CSV use Git LFS; retrieve their contents before analysis. See [GitHub publication and reproducibility](#github-publication-and-reproducibility) before distributing this project.
 
 Required data sources:
 
@@ -118,6 +118,53 @@ The publication workflow assumes acquisition inputs are already present locally.
 ```bash
 python3 scripts/run_publication.py
 ```
+
+### GitHub publication and reproducibility
+
+GitHub rejects ordinary Git blobs larger than 100 MiB. The attempted initial push was rejected because `data/raw/omni/omni2_all_years.dat` is 184,015,872 bytes; the 65,761,728-byte `data/derived/daily/omni_hourly_clean.csv` also exceeds GitHub's recommended 50 MB size. The entire push was rejected, not just the large files.
+
+Adding a path to `.gitignore`, deleting it in a new commit, or running `git rm --cached` does not remove its large blobs from earlier commits. Publication requires either migrating those blobs to Git LFS or removing them from the history being pushed and supplying the required inputs separately. History migration changes commit IDs: preserve a backup first and coordinate with collaborators. Do not force-push an existing shared branch without agreement.
+
+The manuscript release migrates both files to Git LFS, includes the recorded publication report and derived evidence, and identifies that snapshot with the `publication-2026-10-31` tag. Appendix C uses full GitHub URLs pinned to this tag rather than moving `main` URLs. To perform the same migration on an original, unmigrated checkout with an empty remote, install Git LFS and run the following from a clean working tree. Do not repeat this migration on the already migrated release:
+
+```bash
+git branch backup-before-lfs
+git lfs install
+git lfs migrate import \
+  --include="data/raw/omni/omni2_all_years.dat,data/derived/daily/omni_hourly_clean.csv" \
+  --include-ref=refs/heads/main
+git lfs ls-files
+git push -u origin main
+```
+
+Push `main`, not `--all`: the backup branch deliberately retains the original oversized history. Check the repository owner's LFS storage and bandwidth allowance before choosing this approach. Migration only converts already committed files; ignored Appendix C evidence still needs to be explicitly included in the release.
+
+**Viewing results is not the same as reproducing them.** A reader can inspect uploaded CSVs, figures, and code without rerunning the analysis. Full computational reproduction requires the following raw inputs, the configuration, and the pinned dependencies in [`requirements.txt`](requirements.txt):
+
+| Required input | Expected location | Acquisition or regeneration |
+|---|---|---|
+| SPC tornado records | `data/raw/spc_tornado/spc_actual_tornadoes_1950_2023.csv` | `python3 scripts/01_download_spc_tornado.py` |
+| OMNI hourly records | `data/raw/omni/omni2_all_years.dat` | `python3 scripts/03_download_omni.py` |
+| Richardson-Cane ICME table | `data/raw/icme/icmetable2.csv` | `python3 scripts/04_download_icme.py` |
+| Exact author HCS crossing list | `data/raw/hcs/SBCtorlist1963-2024.txt` | Supply the original file; the candidate-page HCS downloader does not obtain this exact list. |
+| Published supplement PDF | `data/papers/tornado-paper-supplement.pdf` | Obtain the [published supplement](https://asr.copernicus.org/articles/22/19/2025/asr-22-19-2025-supplement.pdf) and save it at this exact path. |
+
+The cleaned OMNI CSV is an output of `scripts/13_parse_omni.py`, not a separately required input. It can be regenerated from the raw OMNI file during the publication run. NCEI, green-corona, ERA5, and outlook acquisition is not required by the current 38-step manuscript workflow.
+
+For a fresh checkout, follow Setup above. If the release uses LFS, install Git LFS and run `git lfs pull` before analysis; a pointer file is not usable scientific data. Do not assume a GitHub ZIP includes LFS contents. If required public inputs are absent, the three acquisition commands in the table can fetch them; supply the exact author list and supplement separately. Avoid redownloading over an archived input snapshot.
+
+Once all five inputs are present and their fingerprints have been checked against [the recorded snapshot](docs/provenance.md#manuscript-input-snapshot), run:
+
+```bash
+python3 -m unittest discover -s tests -q
+python3 scripts/run_publication.py
+```
+
+Fresh upstream downloads are not guaranteed to reproduce the manuscript's numerical values: OMNI and ICME records can be revised, and matching a year range does not establish matching contents. Exact-input reproduction requires an immutable, retrievable input snapshot with checksums, an identified code commit and environment, and comparison against archived outputs. The current checksums document the local inputs but do not themselves make those files downloadable.
+
+The previously recorded reproduction checks used staged local inputs and an already installed environment. They do not establish that a fresh installation reproduces the expanded workflow. The release supplies the inputs and evidence, but this README does not claim that the expanded workflow has been independently rerun from a fresh public checkout. Appendix C's full, tag-pinned URLs also work in a separately distributed Markdown manuscript. GitHub can display text evidence; binary NumPy banks require downloading and opening with NumPy.
+
+The included source paper, supplement, and extracted supplement material are attributed to Prikryl and Rusin (2025), [doi:10.5194/asr-22-19-2025](https://doi.org/10.5194/asr-22-19-2025), distributed by the publisher under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), except where otherwise noted in the source. Extracted catalogs are transformed outputs: parsing, date reconciliation, and classification changes are documented in the scripts and manuscript. The full author HCS file is a separately supplied input; inclusion is not a claim that it was extracted from the published supplement.
 
 The runner executes the core reanalysis, null and robustness analyses, supplement extraction/preparation, outbreak analyses, manuscript tables, metadata, figure index, and canonical results export in dependency order. It stops at the first failed step and writes a detailed report to `data/processed/publication_run_latest.json`.
 

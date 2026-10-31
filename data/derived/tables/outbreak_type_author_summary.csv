@@ -1,0 +1,6 @@
+author_type,outbreak_count,percent_of_total,first_date,last_date,median_tornado_count_if_available,notes
+A,139,30.415754923413566,1967-01-25,2022-03-06,27.0,Parsed from supplement author labels or raw row text.
+B,147,32.16630196936543,1965-05-25,2022-05-13,29.0,Parsed from supplement author labels or raw row text.
+C,46,10.065645514223196,1967-09-20,2022-04-13,28.5,Parsed from supplement author labels or raw row text.
+D,84,18.38074398249453,1967-06-10,2022-04-30,32.0,Parsed from supplement author labels or raw row text.
+unknown,41,8.971553610503282,1963-04-29,2020-08-11,24.0,Label missing or not cleanly recoverable from supplement text.

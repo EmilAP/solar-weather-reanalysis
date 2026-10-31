@@ -1,0 +1,5 @@
+branch,block_length_days,event_count_used,iterations,lag0_observed,lag0_null_mean,lag0_null_q025,lag0_null_q975,lag0_inside_band,outside_band_lag_count,notes
+author_hcs,7,1788,500,2.98993288590604,2.8403310961968655,2.556753355704698,3.201663870246085,True,6,Block bootstrap preserves local clustering with contiguous blocks sampled with replacement. reconciled_author_primary=1788.
+author_hcs,14,1788,500,2.98993288590604,2.847146532438476,2.5554670022371364,3.16696029082774,True,7,Block bootstrap preserves local clustering with contiguous blocks sampled with replacement. reconciled_author_primary=1788.
+reconstructed_hcs,7,1783,500,3.061132922041503,2.837316881660122,2.5259113853056645,3.126219854178351,True,7,Block bootstrap preserves local clustering with contiguous blocks sampled with replacement.
+reconstructed_hcs,14,1783,500,3.061132922041503,2.8377801458216494,2.517049915872126,3.199719573752103,True,5,Block bootstrap preserves local clustering with contiguous blocks sampled with replacement.

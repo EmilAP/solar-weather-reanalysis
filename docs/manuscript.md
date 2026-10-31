@@ -137,7 +137,7 @@ $$
 For nonnegative tornado counts, this is the maximum count mean, not a maximum centered anomaly or a standardized effect. The reported Monte Carlo value is
 
 $$
-p_{\mathrm{MC}}=\frac{1+\#\{T_b^{*}\geq T_{\mathrm{obs}}\}}{B+1}.
+p_{\mathrm{MC}}=\frac{1+\sum_{b=1}^{B}\mathbf{1}(T_b^{*}\geq T_{\mathrm{obs}})}{B+1}.
 $$
 
 The maximum accounts for scanning lags within a source-outcome combination. A separate Holm correction covers all 16 combinations of four event sources and four outcomes, not every analysis variant explored in the project. Observed and null populations now use the same complete-window eligibility and the canonical daily-$B_x$ reconstruction. Event counts are 1,788 author HCS dates, 1,783 reconstructed HCS dates, 917 CIR proxies, and 1,224 HSS onsets. The analyses remain retrospective and exploratory rather than prospectively registered confirmation.

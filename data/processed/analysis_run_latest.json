@@ -1,0 +1,105 @@
+{
+  "run_id": "20261030T140712Z",
+  "generated_at": "2026-10-30T14:18:19.689493+00:00",
+  "results": [
+    {
+      "script": "11_ingest_author_hcs.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.621,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:07:13,711 INFO Parsed 1825 author HCS rows from /home/owner/dev/reanalysis/data/raw/hcs/SBCtorlist1963-2024.txt\n"
+    },
+    {
+      "script": "12_parse_spc_tornado.py",
+      "return_code": 0,
+      "elapsed_seconds": 7.041,
+      "stdout_tail": "",
+      "stderr_tail": "/home/owner/dev/reanalysis/scripts/12_parse_spc_tornado.py:39: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.\n  df[\"event_datetime_local\"] = pd.to_datetime(\n2026-10-30 10:07:20,790 INFO Parsed 70022 tornado events\n"
+    },
+    {
+      "script": "13_parse_omni.py",
+      "return_code": 0,
+      "elapsed_seconds": 516.692,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:15:57,234 INFO Parsed 561024 OMNI hourly rows\n"
+    },
+    {
+      "script": "14_parse_icme.py",
+      "return_code": 0,
+      "elapsed_seconds": 2.078,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:15:59,557 INFO Parsed 619 ICME rows\n"
+    },
+    {
+      "script": "15_build_daily_tornado_series.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.425,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:16:01,016 INFO Built master daily analysis table with 22280 rows\n"
+    },
+    {
+      "script": "26_reconstruct_hcs_from_omni.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.856,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:16:01,902 INFO Bx column used: bx_gse_mean\n2026-10-30 10:16:01,902 INFO Candidate crossings before spacing filter: 2067\n2026-10-30 10:16:01,903 INFO Retained crossings: 1865\n"
+    },
+    {
+      "script": "16_reproduce_paper_hcs_spe.py",
+      "return_code": 0,
+      "elapsed_seconds": 30.255,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:16:32,097 INFO Observed-only mode: skipping Monte Carlo null analysis\n2026-10-30 10:16:32,098 INFO Built paper-style author-HCS SPE with 1787 events in 29.408s (run_null=False)\n"
+    },
+    {
+      "script": "17_build_independent_hcs_from_omni.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.913,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:16:33,044 INFO Exported 1865 canonical daily-Bx crossings\n"
+    },
+    {
+      "script": "18_detect_cir_hss_events.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.093,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:16:34,112 INFO Detected 1286 HSS onsets and 968 CIR proxies\n"
+    },
+    {
+      "script": "19_run_stricter_event_study.py",
+      "return_code": 0,
+      "elapsed_seconds": 94.094,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:18:08,220 INFO Finished stricter event study for 16 source/metric combinations\n"
+    },
+    {
+      "script": "20_run_daily_models.py",
+      "return_code": 0,
+      "elapsed_seconds": 5.964,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:18:14,060 INFO Fitted 5 daily models\n"
+    },
+    {
+      "script": "21_compare_event_catalogs.py",
+      "return_code": 0,
+      "elapsed_seconds": 2.763,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:18:16,942 INFO Compared 6 catalog pairs\n"
+    },
+    {
+      "script": "22_generate_figures_and_tables.py",
+      "return_code": 0,
+      "elapsed_seconds": 1.759,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:18:18,678 INFO Generated 9 figure/table outputs\n"
+    },
+    {
+      "script": "23_write_summary_report.py",
+      "return_code": 0,
+      "elapsed_seconds": 0.832,
+      "stdout_tail": "",
+      "stderr_tail": "2026-10-30 10:18:19,533 INFO Wrote summary report to /home/owner/dev/reanalysis/data/derived/reports/analysis_summary.md\n"
+    }
+  ],
+  "ok": true
+}
